@@ -1,0 +1,48 @@
+.nav-link {
+  color: $primary-color;
+  position: relative;
+  &::before,
+  &::after {
+    background-color: $primary-color;
+    bottom: 0;
+    content: "";
+    height: 0.2rem;
+    position: absolute;
+    transition-duration: 0.15s;
+    width: 0;
+  }
+  &::before {
+    left: 50%;
+  }
+  &::after {
+    right: 50%;
+  }
+  &.active {
+    &::before,
+    &::after {
+      width: 50%;
+    }
+  }
+  &:hover {
+    color: $primary-color;
+    cursor: pointer;
+    &:before,
+    &:after {
+      background-color: $primary-color;
+      width: 50%;
+    }
+  }
+}
+
+.navbar-brand {
+  color: $primary-color;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.navbar {
+  background-color: $tertiary-color-rgba;
+  padding: 0 2rem;
+  top: 2rem;
+}

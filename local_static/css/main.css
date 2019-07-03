@@ -1,3 +1,54 @@
+.nav-link {
+  color: white;
+  position: relative;
+}
+
+.nav-link::before, .nav-link::after {
+  background-color: white;
+  bottom: 0;
+  content: "";
+  height: 0.2rem;
+  position: absolute;
+  -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+  width: 0;
+}
+
+.nav-link::before {
+  left: 50%;
+}
+
+.nav-link::after {
+  right: 50%;
+}
+
+.nav-link.active::before, .nav-link.active::after {
+  width: 50%;
+}
+
+.nav-link:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.nav-link:hover:before, .nav-link:hover:after {
+  background-color: white;
+  width: 50%;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.navbar {
+  background-color: rgba(0, 242, 165, 0.8);
+  padding: 0 2rem;
+  top: 2rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,9 +58,5 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: Segoe UI, Franklin Gothic, Arial, Helvetica, Verdana, sans-serif;
-}
-
-body {
-  background: green;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,12 +1,64 @@
+.icon-hamburger {
+  height: 6vh;
+  width: 6vh;
+}
+
+.navbar-toggler {
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.navbar-brand {
+  color: $primary-color;
+  font-size: 4vw;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.navbar {
+  background-color: $tertiary-color-rgba;
+  padding: 0 1vw;
+  top: 2vw;
+}
+
+@media (min-width: 768px) {
+  .navbar-stripe {
+    background-color: $tertiary-color-rgba;
+    height: 1.3vw;
+    padding: 0 1vw;
+    position: absolute;
+    top: 10vw;
+    width: 100%;
+    &::before {
+      color: $primary-color;
+      content: 'PRESSURE WASHING';
+      font-size: 3vw;
+      font-style: italic;
+      font-weight: 700;
+      position: absolute;
+      top: -1.5vw;
+    }
+  }
+}
+
+.navbar-toggler-icon {
+  fill: red;
+  background: blue;
+  stroke: yellow;
+}
+
 .nav-link {
   color: $primary-color;
+  font-size: 1.55vw;
   position: relative;
   &::before,
   &::after {
     background-color: $primary-color;
     bottom: 0;
     content: "";
-    height: 0.2rem;
+    height: 0.4vw;
     position: absolute;
     transition-duration: 0.15s;
     width: 0;
@@ -31,36 +83,5 @@
       background-color: $primary-color;
       width: 50%;
     }
-  }
-}
-
-.navbar-brand {
-  color: $primary-color;
-  font-size: 3rem;
-  font-style: italic;
-  font-weight: 900;
-}
-
-.navbar {
-  background-color: $tertiary-color-rgba;
-  padding: 0 2rem;
-  top: 1.5rem;
-}
-
-.navbar-stripe {
-  background-color: $tertiary-color-rgba;
-  height: 0.65rem;
-  padding: 0 2rem;
-  position: absolute;
-  top: 8rem;
-  width: 100%;
-  &::before {
-    color: $primary-color;
-    content: 'PRESSURE WASHING';
-    font-size: 2rem;
-    font-style: italic;
-    font-weight: 700;
-    position: absolute;
-    top: -1.25rem;
   }
 }

@@ -1,9 +1,5 @@
 from django.shortcuts import render
 
-def about(request):
-  context = {}
-  return render(request, 'pages/about.html', context)
-
 def contact(request):
   context = {}
   return render(request, 'pages/contact.html', context)
@@ -19,3 +15,7 @@ def reviews(request):
 def services(request):
   context = {}
   return render(request, 'pages/services.html', context)
+
+def ourwork(request):
+  context = {}
+  return render(request, 'pages/ourwork.html', context)

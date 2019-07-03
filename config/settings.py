@@ -117,8 +117,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
+# Website URL that points to the STATIC_ROOT in production
 STATIC_URL = '/static/'
+
+# This is where 'python3 manage.py collectstatic' dumps stuff
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# Django will search any folders listed here for static files when developing
+# locally on your own computer
 STATICFILES_DIRS = [
-  os.path.join(BASE_DIR, 'static_local'),
+  os.path.join(BASE_DIR, 'local_static'),
 ]

@@ -1,14 +1,14 @@
 {% load static %}
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container">
     <a class="navbar-brand" href="#">Simple Clean</a>
-    <img src="{% static 'img/arrow-right.svg' %}" alt='img'>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-simple-clean" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
+
     <div class="collapse navbar-collapse" id="navbar-simple-clean">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" href="{% url 'index' %}">Home</a>
         </li>
@@ -26,4 +26,5 @@
         </li>
       </ul>
     </div>
-  </nav>
+  </div>
+</nav>

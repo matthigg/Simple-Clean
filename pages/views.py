@@ -1,16 +1,21 @@
 from django.shortcuts import render
 
 def about(request):
-  return render(request, 'pages/about.html')
+  context = {}
+  return render(request, 'pages/about.html', context)
 
 def contact(request):
-  return render(request, 'pages/contact.html')
+  context = {}
+  return render(request, 'pages/contact.html', context)
 
 def index(request):
-  return render(request, 'pages/index.html')
+  context = {}
+  return render(request, 'pages/index.html', context)
 
 def reviews(request):
-  return render(request, 'pages/reviews.html')
+  context = {}
+  return render(request, 'pages/reviews.html', context)
 
 def services(request):
-  return render(request, 'pages/services.html')
+  context = {}
+  return render(request, 'pages/services.html', context)

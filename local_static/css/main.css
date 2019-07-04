@@ -222,18 +222,58 @@
   height: 20vw;
 }
 
+.section-2-row .card-body {
+  color: #17685E;
+  font-size: 2vw;
+  font-weight: 500;
+  padding: 1vh;
+  text-align: center;
+}
+
 .section-2-row .card-link {
   font-size: 1.5vw;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .section-2-row .card-link .card-link-text {
+  color: #17685E;
   margin-right: 1vw;
+  position: relative;
 }
 
-.section-2-row .icon-arrow-right {
+.section-2-row .card-link .card-link-text::before {
+  background-color: #00F2A5;
+  bottom: 0;
+  content: "";
+  height: 0.2vw;
+  position: absolute;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  width: 0;
+}
+
+.section-2-row .card-link .icon-arrow-right {
   fill: #17685E;
   height: 2vw;
   stroke: white;
+}
+
+.section-2-row .card-link:hover {
+  cursor: pointer;
+}
+
+.section-2-row .card-link:hover > .card-link-text {
+  color: #00F2A5;
+}
+
+.section-2-row .card-link:hover > .card-link-text::before {
+  width: 100%;
+}
+
+.section-2-row .card-link:hover > .icon-arrow-right {
+  fill: #00F2A5;
 }
 
 * {

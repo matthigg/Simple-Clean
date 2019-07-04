@@ -117,15 +117,46 @@
     height: 20vw;
     @extend %background-fixed;
   }
+  & .card-body {
+    color: $quarternary-color;
+    font-size: 2vw;
+    font-weight: 500;
+    padding: 1vh;
+    text-align: center;
+  }
   & .card-link {
     font-size: 1.5vw;
+    width: max-content;
     & .card-link-text {
+      color: $quarternary-color;
       margin-right: 1vw;
+      position: relative;
+      &::before {
+        background-color: $tertiary-color;
+        bottom: 0;
+        content: "";
+        height: 0.2vw;
+        position: absolute;
+        transition-duration: 0.2s;
+        width: 0;
+      }
     }
-  }
-  & .icon-arrow-right {
-    fill: $quarternary-color;
-    height: 2vw;
-    stroke: $primary-color;
+    & .icon-arrow-right {
+      fill: $quarternary-color;
+      height: 2vw;
+      stroke: $primary-color;
+    }
+    &:hover {
+      cursor: pointer;
+      & > .card-link-text {
+        color: $tertiary-color;
+        &::before {
+          width: 100%;
+        }
+      }
+      & > .icon-arrow-right {
+        fill: $tertiary-color;
+      }
+    }
   }
 }

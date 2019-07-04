@@ -17,15 +17,11 @@
   z-index: -1;
 }
 
-.container-fluid {
-  padding: 0;
-}
-
 .landing-page-headline {
   color: $primary-color;
   font-size: 4.3vw;
   left: 15vw;
-  position: relative;
+  position: absolute;
   top: 60vh;
   &>.lph-bold {
     font-weight: 500;
@@ -44,27 +40,51 @@
     font-style: italic;
     left: 1.5vw;
     position: relative;
-    top: -2vw;
+    top: 3.5vw;
   }
   &>.lph-dash-omega {
     color: $secondary-color;
     left: 1.5vw;
     position: relative;
-    top: -4vw;
+    top: 1.5vw;
   }
   &>.lph-omega-spacer {
     opacity: 0;
   }
 }
 
-.landing-page-spacer {
+.landing-page-placeholder {
   height: 100vh;
   width: 100%;
 }
 
-.section-1-left {
-  background-image: url('/static/img/pressure-washer-1.jpg');
-  height: 100vh;
-  position: absolute;
-  width: 100%;
+.section-1-image{
+  width: 46vw;
+}
+
+.section-1-headline {
+  color: $quarternary-color;
+  font-size: 3vw;
+  font-weight: 400;
+  margin-bottom: 4vw;
+  width: 46vw;
+  &>.section-1-headline-bold {
+    color: $secondary-color;
+    font-style: italic;
+    font-weight: 600;
+  }
+}
+
+.section-1-paragraph {
+  width: 46vw;
+}
+
+.section-1-row {
+  background-color: $primary-color;
+  padding: 6vh 2vh;
+}
+
+.section-translucent-1 {
+  background-color: $secondary-color-rgba;
+  height: 1.5vw;
 }

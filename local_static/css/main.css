@@ -88,8 +88,12 @@
 }
 
 .landing-page {
-  background-image: url("/static/img/house1.jpg");
   background-color: #17685E;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(23, 104, 94, 0.5)), to(rgba(23, 104, 94, 0.5))), url("/static/img/house2.jpg");
+  background-image: linear-gradient(rgba(23, 104, 94, 0.5), rgba(23, 104, 94, 0.5)), url("/static/img/house2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 100vh;
   left: 0;
   margin: 0;
@@ -98,6 +102,44 @@
   top: 0;
   width: 100%;
   z-index: -1;
+}
+
+.landing-page-headline {
+  color: white;
+  font-size: 4.3vw;
+  left: 16.5vw;
+  position: absolute;
+  top: 75vh;
+}
+
+.landing-page-headline > .lph-bold {
+  font-weight: 500;
+}
+
+.landing-page-headline > .lph-super-bold-alpha {
+  color: #14D3C9;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.landing-page-headline > .lph-dash-alpha {
+  position: relative;
+  top: -2vw;
+}
+
+.landing-page-headline > .lph-super-bold-omega {
+  font-weight: 900;
+  font-style: italic;
+  left: 47vw;
+  position: absolute;
+  top: 4vw;
+}
+
+.landing-page-headline > .lph-dash-omega {
+  color: #14D3C9;
+  left: 40vw;
+  position: relative;
+  top: 2vw;
 }
 
 * {

@@ -1,90 +1,106 @@
-.landing-page-background {
-  background-color: $quarternary-color;
-  background-image: 
-    linear-gradient(
-      rgba(23, 104, 94, 0.5),
-      rgba(23, 104, 94, 0.5)
-    ),
-    url('/static/img/house2.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: -1;
-}
 
-.landing-page-headline {
-  color: $primary-color;
-  font-size: 4.3vw;
-  left: 15vw;
-  position: absolute;
-  top: 60vh;
-  &>.lph-bold {
-    font-weight: 500;
+// Landing Page
+.landing-page-row {
+  & .landing-page-background {
+    background-color: $quarternary-color;
+    background-image: 
+      linear-gradient(
+        rgba(23, 104, 94, 0.5),
+        rgba(23, 104, 94, 0.5)
+      ),
+      url('/static/img/house2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
   }
-  &>.lph-super-bold-alpha {
-    color: $secondary-color;
-    font-weight: 900;
-    font-style: italic;
+  & .landing-page-headline {
+    color: $primary-color;
+    font-size: 4.3vw;
+    left: 15vw;
+    position: absolute;
+    top: 60vh;
+    &>.lph-bold {
+      font-weight: 500;
+    }
+    &>.lph-super-bold-alpha {
+      color: $secondary-color;
+      font-weight: 900;
+      font-style: italic;
+    }
+    &>.lph-dash-alpha {
+      position: relative;
+      top: -2vw;
+    }
+    &>.lph-super-bold-omega {
+      font-weight: 900;
+      font-style: italic;
+      left: 1.5vw;
+      position: relative;
+      top: 3.5vw;
+    }
+    &>.lph-dash-omega {
+      color: $secondary-color;
+      left: 1.5vw;
+      position: relative;
+      top: 1.5vw;
+    }
+    &>.lph-omega-spacer {
+      opacity: 0;
+    }
   }
-  &>.lph-dash-alpha {
-    position: relative;
-    top: -2vw;
-  }
-  &>.lph-super-bold-omega {
-    font-weight: 900;
-    font-style: italic;
-    left: 1.5vw;
-    position: relative;
-    top: 3.5vw;
-  }
-  &>.lph-dash-omega {
-    color: $secondary-color;
-    left: 1.5vw;
-    position: relative;
-    top: 1.5vw;
-  }
-  &>.lph-omega-spacer {
-    opacity: 0;
-  }
-}
-
-.landing-page-placeholder {
-  height: 100vh;
-  width: 100%;
-}
-
-.section-1-image{
-  width: 46vw;
-}
-
-.section-1-headline {
-  color: $quarternary-color;
-  font-size: 3vw;
-  font-weight: 400;
-  margin-bottom: 4vw;
-  width: 46vw;
-  &>.section-1-headline-bold {
-    color: $secondary-color;
-    font-style: italic;
-    font-weight: 600;
+  & .landing-page-placeholder {
+    height: 100vh;
+    width: 100%;
   }
 }
 
-.section-1-paragraph {
-  width: 46vw;
-}
-
+// Section 1
 .section-1-row {
   background-color: $primary-color;
   padding: 6vh 2vh;
+  & .section-1-paragraph {
+    width: 46vw;
+  }
+  & .section-1-headline {
+    color: $quarternary-color;
+    font-size: 3vw;
+    font-weight: 400;
+    margin-bottom: 4vw;
+    width: 46vw;
+    &>.section-1-headline-bold {
+      color: $secondary-color;
+      font-style: italic;
+      font-weight: 600;
+    }
+  }
+  & .section-1-image{
+    width: 46vw;
+  }
 }
 
-.section-translucent-1 {
+.section-1-top-border {
   background-color: $secondary-color-rgba;
   height: 1.5vw;
+}
+
+// Section 2
+.section-2-row {
+  background-color: $secondary-color-rgba;
+  height: 75vh;
+  padding: 6vh 2vh;
+  & .card {
+    width: 24vw;
+  }
+  & .card-link {
+
+  }
+  & .icon-arrow-right {
+    height: 4vh;
+  }
 }

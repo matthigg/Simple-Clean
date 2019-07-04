@@ -5,7 +5,7 @@
   <div class="container-fluid">
 
     <!-- Landing Page -->
-    <div class="row">
+    <div class="row landing-page-row">
       <div class="landing-page-background"></div>
       <div class="col-12">
         <div class="landing-page-headline">
@@ -23,9 +23,9 @@
       <div class="landing-page-placeholder"></div>
     </div>
 
-    <div class="row section-translucent-1"></div>
-
     <!-- Section 1 -->
+    <div class="row section-1-top-border"></div>
+
     <div class="row section-1-row justify-content-around">
       <div class="col-6-md my-auto">
         <img class="section-1-image" src="{% static 'img/pressure-washer-1.png' %}" alt="Pressure Washer">
@@ -59,8 +59,18 @@
     </div>
 
     <!-- Section 2 -->
-    <div class="row">
-      <div class="col-12 section-2"></div>
+    <div class="row section-2-row">
+      <div class="col-12">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'img/house1.jpg' %}" alt="House Washing">
+          <div class="card-footer">
+            <div class="card-link">
+              <span>Learn More</span>
+              {% include "svg/arrow-right.svg" %}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Contact Form -->

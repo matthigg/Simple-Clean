@@ -1,3 +1,15 @@
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
 .icon-hamburger {
   height: 6vh;
   width: 6vh;
@@ -87,7 +99,7 @@
   width: 50%;
 }
 
-.landing-page {
+.landing-page-background {
   background-color: #17685E;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(23, 104, 94, 0.5)), to(rgba(23, 104, 94, 0.5))), url("/static/img/house2.jpg");
   background-image: linear-gradient(rgba(23, 104, 94, 0.5), rgba(23, 104, 94, 0.5)), url("/static/img/house2.jpg");
@@ -96,20 +108,22 @@
   background-size: cover;
   height: 100vh;
   left: 0;
-  margin: 0;
-  padding: 0;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: -1;
 }
 
+.container-fluid {
+  padding: 0;
+}
+
 .landing-page-headline {
   color: white;
   font-size: 4.3vw;
-  left: 16.5vw;
-  position: absolute;
-  top: 75vh;
+  left: 15vw;
+  position: relative;
+  top: 60vh;
 }
 
 .landing-page-headline > .lph-bold {
@@ -130,16 +144,32 @@
 .landing-page-headline > .lph-super-bold-omega {
   font-weight: 900;
   font-style: italic;
-  left: 47vw;
-  position: absolute;
-  top: 4vw;
+  left: 1.5vw;
+  position: relative;
+  top: -2vw;
 }
 
 .landing-page-headline > .lph-dash-omega {
   color: #14D3C9;
-  left: 40vw;
+  left: 1.5vw;
   position: relative;
-  top: 2vw;
+  top: -4vw;
+}
+
+.landing-page-headline > .lph-omega-spacer {
+  opacity: 0;
+}
+
+.landing-page-spacer {
+  height: 100vh;
+  width: 100%;
+}
+
+.section-1-left {
+  background-image: url("/static/img/pressure-washer-1.jpg");
+  height: 100vh;
+  position: absolute;
+  width: 100%;
 }
 
 * {

@@ -60,40 +60,58 @@
 
     <!-- Section 2 -->
     <div class="row section-2-row">
-      <div class="col-12 d-flex justify-content-around">
+      <div class="col-12">
+        <div class="container">
 
-        <!-- House Washing Card -->
-        <div class="card">
-          <div class="card-background-house-washing"></div>
-          <div class="card-body">House Washing</div>
-          <div class="card-footer d-flex justify-content-end">
-            <div class="card-link d-flex">
-              <span class="card-link-text">Learn More</span>
-              {% include "svg/arrow-right.svg" %}
+          <!-- Cards -->
+          <div class="row">
+            <div class="col-12 d-flex justify-content-around">
+
+              <!-- House Washing Card -->
+              <div class="card">
+                <div class="card-background-house-washing"></div>
+                <div class="card-body">House Washing</div>
+                <div class="card-footer d-flex justify-content-end">
+                  <div class="card-link d-flex">
+                    <span class="card-link-text">Learn More</span>
+                    {% include "svg/arrow-right.svg" %}
+                  </div>
+                </div>
+              </div>
+
+              <!-- Patio & Deck -->
+              <div class="card">
+                <div class="card-background-patio-and-deck"></div>
+                <div class="card-body">Patio & Deck</div>
+                <div class="card-footer d-flex justify-content-end">
+                  <div class="card-link d-flex">
+                    <span class="card-link-text">Learn More</span>
+                    {% include "svg/arrow-right.svg" %}
+                  </div>
+                </div>
+              </div>
+
+              <!-- Graffiti Removal -->
+              <div class="card">
+                <div class="card-background-graffiti-removal"></div>
+                <div class="card-body">Graffiti Removal</div>
+                <div class="card-footer d-flex justify-content-end">
+                  <div class="card-link d-flex">
+                    <span class="card-link-text">Learn More</span>
+                    {% include "svg/arrow-right.svg" %}
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Patio & Deck -->
-        <div class="card">
-          <div class="card-background-patio-and-deck"></div>
-          <div class="card-body">Patio & Deck</div>
-          <div class="card-footer d-flex justify-content-end">
-            <div class="card-link d-flex">
-              <span class="card-link-text">Learn More</span>
-              {% include "svg/arrow-right.svg" %}
-            </div>
-          </div>
-        </div>
-
-        <!-- Graffiti Removal -->
-        <div class="card">
-          <div class="card-background-graffiti-removal"></div>
-          <div class="card-body">Graffiti Removal</div>
-          <div class="card-footer d-flex justify-content-end">
-            <div class="card-link d-flex">
-              <span class="card-link-text">Learn More</span>
-              {% include "svg/arrow-right.svg" %}
+          <!-- Flair -->
+          <div class="row section-2-row-flair">
+            <div class="col-12 d-flex justify-content-around">
+              <img src="{% static 'img/google.svg' %}" alt="Facebook" class="section-2-icon-flair">
+              <img src="{% static 'img/facebook.svg' %}" alt="Facebook" class="section-2-icon-flair">
+              <img src="{% static 'img/yelp.svg' %}" alt="Facebook" class="section-2-icon-flair">
+              <img src="{% static 'img/bbb.svg' %}" alt="Facebook" class="section-2-icon-flair">
             </div>
           </div>
         </div>

@@ -222,8 +222,18 @@
   height: 20vw;
 }
 
+.section-2-row .card-link {
+  font-size: 2vw;
+}
+
+.section-2-row .card-link .card-link-text {
+  margin-right: 1vw;
+}
+
 .section-2-row .icon-arrow-right {
-  height: 4vh;
+  fill: #17685E;
+  height: 3vw;
+  stroke: white;
 }
 
 * {

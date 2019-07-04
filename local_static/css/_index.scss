@@ -118,9 +118,14 @@
     @extend %background-fixed;
   }
   & .card-link {
-
+    font-size: 2vw;
+    & .card-link-text {
+      margin-right: 1vw;
+    }
   }
   & .icon-arrow-right {
-    height: 4vh;
+    fill: $quarternary-color;
+    height: 3vw;
+    stroke: $primary-color;
   }
 }

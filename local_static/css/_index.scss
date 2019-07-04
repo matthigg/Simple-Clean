@@ -96,7 +96,7 @@
 // Section 2
 .section-2-row {
   background-color: $secondary-color-rgba;
-  height: 75vw;
+  height: 50vw;
   padding: 6vh 2vh;
   & .card {
     height: 25vw;
@@ -160,9 +160,9 @@
     }
   }
   & .section-2-row-flair {
-    padding: 4vw 0;
+    padding-top: 4vw;
     & .section-2-icon-flair {
-      height: 7vw;
+      height: 6vw;
     }
   }
 }

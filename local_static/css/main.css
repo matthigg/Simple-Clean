@@ -198,7 +198,7 @@
 
 .section-2-row {
   background-color: rgba(20, 211, 201, 0.8);
-  height: 75vw;
+  height: 50vw;
   padding: 6vh 2vh;
 }
 
@@ -277,11 +277,11 @@
 }
 
 .section-2-row .section-2-row-flair {
-  padding: 4vw 0;
+  padding-top: 4vw;
 }
 
 .section-2-row .section-2-row-flair .section-2-icon-flair {
-  height: 7vw;
+  height: 6vw;
 }
 
 * {

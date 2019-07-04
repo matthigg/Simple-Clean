@@ -1,23 +1,27 @@
 
+%background-fixed {
+  background-color: $quarternary-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 // Landing Page
 .landing-page-row {
   & .landing-page-background {
-    background-color: $quarternary-color;
     background-image: 
       linear-gradient(
         rgba(23, 104, 94, 0.5),
         rgba(23, 104, 94, 0.5)
       ),
       url('/static/img/house2.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     height: 100vh;
     left: 0;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: -1;
+    @extend %background-fixed;
   }
   & .landing-page-headline {
     color: $primary-color;
@@ -92,10 +96,26 @@
 // Section 2
 .section-2-row {
   background-color: $secondary-color-rgba;
-  height: 75vh;
+  height: 75vw;
   padding: 6vh 2vh;
   & .card {
-    width: 24vw;
+    height: 25vw;
+    width: 30vw;
+  }
+  & .card-background-house-washing {
+    background-image: url('/static/img/house1.jpg');
+    height: 20vw;
+    @extend %background-fixed;
+  }
+  & .card-background-patio-and-deck {
+    background-image: url('/static/img/patio.jpg');
+    height: 20vw;
+    @extend %background-fixed;
+  }
+  & .card-background-graffiti-removal {
+    background-image: url('/static/img/graffiti-removal.jpg');
+    height: 20vw;
+    @extend %background-fixed;
   }
   & .card-link {
 

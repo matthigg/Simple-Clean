@@ -60,9 +60,12 @@
 
     <!-- Section 2 -->
     <div class="row section-2-row">
-      <div class="col-12">
+      <div class="col-12 d-flex justify-content-around">
+
+        <!-- House Washing Card -->
         <div class="card">
-          <img class="card-img-top" src="{% static 'img/house1.jpg' %}" alt="House Washing">
+          <div class="card-background-house-washing"></div>
+          <card-body>House Washing</card-body>
           <div class="card-footer">
             <div class="card-link">
               <span>Learn More</span>
@@ -70,6 +73,31 @@
             </div>
           </div>
         </div>
+
+        <!-- Patio & Deck -->
+        <div class="card">
+          <div class="card-background-patio-and-deck"></div>
+          <card-body>Patio & Deck</card-body>
+          <div class="card-footer">
+            <div class="card-link">
+              <span>Learn More</span>
+              {% include "svg/arrow-right.svg" %}
+            </div>
+          </div>
+        </div>
+
+        <!-- Graffiti Removal -->
+        <div class="card">
+          <div class="card-background-graffiti-removal"></div>
+          <card-body>Graffiti Removal</card-body>
+          <div class="card-footer">
+            <div class="card-link">
+              <span>Learn More</span>
+              {% include "svg/arrow-right.svg" %}
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 

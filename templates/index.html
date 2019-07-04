@@ -31,7 +31,10 @@
         <img class="section-1-image" src="{% static 'img/pressure-washer-1.png' %}" alt="Pressure Washer">
       </div>
       <div class="col-6-md">
-        <h1 class="section-1-headline">We Believe <span class="section-1-headline-bold">Your Home</span> Wasn't Made To Be Covered In Algae</h1>
+        <h1 class="section-1-headline">
+          We Believe <span class="section-1-headline-bold">Your Home</span> 
+          Wasn't Made To Be Covered In Algae
+        </h1>
         <p class="section-1-paragraph">
           The moisture in the air from the lakes isn’t just hard on us, it’s also 
           quite tough on our homes. If you’ve observed that your driveways, 
@@ -48,7 +51,7 @@
           of your home. 
         </p>
         <p class="section-1-paragraph">
-          At <span class="section-1-paragraph-bold">Simple Clean</span>, we 
+          At <span class="section-1-paragraph-bold">SIMPLE CLEAN</span>, we 
           offer the best pressure washing  services in and around Waukesha. 
           Since we’ve been around for a while, almost all our customers can 
           vouch for our quick, reliable and incredible house cleaning 
@@ -115,14 +118,36 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
 
     <!-- Contact Form -->
-    <div class="row">
-      <div class="col-6-md contact-form-left"></div>
-      <div class="col-6-md contact-form-right"></div>
+    <div class="row contact-form-row">
+
+      <!-- Contact Form Left -->
+      <div class="col-6-md contact-form-left">
+        <h1 class="contact-form-headline">
+          Get a <span class="contact-form-headline-bold">FREE QUOTE</span> for 
+          Pressure Washing Services in Waukesha, WI and the Surrounding Area
+        </h1>
+        <p class="contact-form-paragraph">
+          It's quick & easy to request a FREE QUOTE! Send us a message using 
+          the Quick Quote Request Form, or call us at 
+          <span class="contact-form-paragraph-bold">(123) 456-7809</span> today!
+        </p>
+        <p class="contact-form-paragraph-urgent">
+          We look forward to hearing from you!
+        </p>
+        <p class="contact-form-paragraph-phone">
+          {% include 'svg/phone.svg' %}
+          (123) 456-7890
+        </p>
+      </div>
+
+      <!-- Contact Form Right -->
+      <div class="col-6-md contact-form-right">
+        
+      </div>
     </div>
   </div>
 {% endblock %}

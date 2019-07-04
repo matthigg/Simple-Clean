@@ -67,8 +67,8 @@
 // Section 1
 .section-1-row {
   background-color: $primary-color;
-  padding: 6vh 2vh;
-  & .section-1-paragraph {
+  padding: 6vh 4vh;
+  & .section-1-image{
     width: 46vw;
   }
   & .section-1-headline {
@@ -76,15 +76,21 @@
     font-size: 3vw;
     font-weight: 400;
     margin-bottom: 4vw;
+    text-align: center;
     width: 46vw;
-    &>.section-1-headline-bold {
+    & .section-1-headline-bold {
       color: $secondary-color;
       font-style: italic;
       font-weight: 600;
     }
   }
-  & .section-1-image{
+  & .section-1-paragraph {
     width: 46vw;
+    & .section-1-paragraph-bold {
+      color: $secondary-color;
+      font-style: italic;
+      font-weight: 700;
+    }
   }
 }
 
@@ -163,6 +169,51 @@
     padding-top: 4vw;
     & .section-2-icon-flair {
       height: 6vw;
+    }
+  }
+}
+
+// Contact Form
+.contact-form-row {
+  background-color: $primary-color;
+  color: $quarternary-color;
+  height: 200vh;
+  padding: 6vh 4vh;
+  text-align: center;
+  & .contact-form-headline {
+    font-size: 3vw;
+    font-weight: 400;
+    margin-bottom: 4vw;
+    width: 46vw;
+    & .contact-form-headline-bold {
+      color: $secondary-color;
+      font-style: italic;
+      font-weight: 600;
+    }
+  }
+  & .contact-form-paragraph {
+    font-size: 2vw;
+    width: 46vw;
+    & .contact-form-paragraph-bold {
+      color: $secondary-color;
+      font-style: italic;
+      font-weight: 700;
+    }
+  }
+  & .contact-form-paragraph-urgent {
+    font-size: 2.5vw;
+    font-style: italic;
+    font-weight: 700;
+    width: 46vw;
+  }
+  & .contact-form-paragraph-phone {
+    font-size: 3vw;
+    font-style: italic;
+    font-weight: 700;
+    margin-top: 6vw;
+    & .icon-phone {
+      fill: $quarternary-color;
+      height: 4vw;
     }
   }
 }

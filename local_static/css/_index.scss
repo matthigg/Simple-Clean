@@ -1,0 +1,12 @@
+.landing-page {
+  background-image: url('/static/img/house1.jpg');
+  background-color: $quarternary-color;
+  height: 100vh;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}

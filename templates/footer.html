@@ -1,0 +1,34 @@
+{% load static %}
+
+<div class="container">
+  <div class="row">
+
+    <!-- Brand -->
+    <div class="col-md-4">
+      <h1>SIMLE CLEAN</h1>
+      <h2>PRESSURE WASHING</h2>
+      <p>
+        Get in touch with us today for the <span class="strong">best</span>
+        pressure washing services in Waukesha!
+      </p>
+      <p>© 2019 Simple Clean Pressure Washing</p>
+    </div>
+
+    <!-- Phone -->
+    <div class="col-md-4">
+      <h1>Call us today for a FREE Quote:</h1>
+      <p>
+        {% include 'svg/phone.svg' %} (123) 456-7890
+      </p>
+      <p>^ Back To Top</p>
+    </div>
+
+    <!-- Flair -->
+    <div class="col-md-4">
+      <img src="{% static 'img/facebook.svg' %}" alt="Facebook">
+      <img src="{% static 'img/yelp.svg' %}" alt="Yelp">
+      <img src="{% static 'img/bbb.svg' %}" alt="Better Business Bureau">
+      <img src="{% static 'img/google.svg' %}" alt="Google">
+    </div>
+  </div>
+</div>

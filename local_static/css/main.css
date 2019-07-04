@@ -223,7 +223,7 @@
 }
 
 .section-2-row .card-link {
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 .section-2-row .card-link .card-link-text {
@@ -232,7 +232,7 @@
 
 .section-2-row .icon-arrow-right {
   fill: #17685E;
-  height: 3vw;
+  height: 2vw;
   stroke: white;
 }
 

@@ -1,34 +1,40 @@
 {% load static %}
 
-<div class="container">
-  <div class="row">
+<div class="container-fluid footer">
+  <div class="row d-flex">
 
     <!-- Brand -->
-    <div class="col-4 footer-brand red">
+    <div class="col-md-4 footer-brand">
       <h1 class="footer-brand-headline">SIMPLE CLEAN</h1>
       <h2 class="footer-brand-headline-sub">PRESSURE WASHING</h2>
       <p class="footer-brand-text">
-        Get in touch with us today for the <span class="strong">best</span>
+        Get in touch with us today for the <span class="footer-brand-text-strong">best</span>
         pressure washing services in Waukesha!
       </p>
-      <p class="footer-brand-copyright">© 2019 Simple Clean Pressure Washing</p>
     </div>
 
     <!-- Phone -->
-    <div class="col-4 footer-phone green">
+    <div class="col-md-4 footer-phone">
       <h1 class="footer-phone-headline">Call us today for a FREE Quote:</h1>
       <p class="footer-phone-text">
         {% include 'svg/phone.svg' %} (123) 456-7890
       </p>
-      <p class="footer-phone-back-to-top">^ Back To Top</p>
     </div>
 
     <!-- Flair -->
-    <div class="col-4 footer-flair blue">
+    <div class="col-md-4 footer-flair d-flex justify-content-around flex-wrap">
       <img class="footer-flair-icon" src="{% static 'img/facebook.svg' %}" alt="Facebook">
       <img class="footer-flair-icon" src="{% static 'img/yelp.svg' %}" alt="Yelp">
       <img class="footer-flair-icon" src="{% static 'img/bbb.svg' %}" alt="Better Business Bureau">
       <img class="footer-flair-icon" src="{% static 'img/google.svg' %}" alt="Google">
+  </div>
+  </div>
+
+  <!-- Back To Top & Copyright -->
+  <div class="row">
+    <div class="col-12 footer-back-to-top-and-copyright d-flex justify-content-between">
+      <p class="footer-copyright">© 2019 Simple Clean Pressure Washing</p>  
+      <p class="footer-back-to-top">^ Back To Top</p>
     </div>
   </div>
 </div>

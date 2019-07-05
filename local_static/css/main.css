@@ -359,61 +359,88 @@
   fill: white;
 }
 
-.footer-brand {
+.footer {
+  background-color: rgba(20, 211, 201, 0.8);
+}
+
+.footer .footer-brand {
   color: white;
-}
-
-.footer-brand .footer-brand-headline {
-  font-size: 3vw;
-}
-
-.footer-brand .footer-brand-headline-sub {
-  font-size: 2.5vw;
-}
-
-.footer-brand .footer-brand-text {
-  font-size: 1.5vw;
-}
-
-.footer-brand .footer-brand-copyright {
-  font-size: 1.25vw;
-}
-
-.footer-phone {
-  color: white;
+  margin: 2vw 0;
   text-align: center;
 }
 
-.footer-phone .footer-phone-headline {
+.footer .footer-brand .footer-brand-headline {
   font-size: 3vw;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.footer .footer-brand .footer-brand-headline-sub {
+  font-size: 2.3vw;
   font-style: italic;
   font-weight: 700;
 }
 
-.footer-phone .footer-phone-text {
-  font-size: 3.5vw;
+.footer .footer-brand .footer-brand-text {
+  font-size: 1.5vw;
+}
+
+.footer .footer-brand .footer-brand-text .footer-brand-text-strong {
+  font-weight: 600;
+}
+
+.footer .footer-phone {
+  color: white;
+  margin: 2vw 0;
+  text-align: center;
+}
+
+.footer .footer-phone .footer-phone-headline {
+  font-size: 2vw;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.footer .footer-phone .footer-phone-text {
+  font-size: 3vw;
   font-style: italic;
   font-weight: 800;
 }
 
-.footer-phone .footer-phone-back-to-top {
-  font-size: 2vw;
-}
-
-.footer-phone .icon-phone {
+.footer .footer-phone .icon-phone {
   height: 4vw;
 }
 
-.footer-phone .icon-phone circle {
+.footer .footer-phone .icon-phone circle {
   fill: white;
 }
 
-.footer-phone .icon-phone path {
-  fill: #17685E;
+.footer .footer-phone .icon-phone path {
+  fill: rgba(20, 211, 201, 0.8);
 }
 
-.footer-flair .footer-flair-icon {
-  height: 6vw;
+.footer .footer-flair {
+  margin: 2vw 0;
+}
+
+.footer .footer-flair .footer-flair-icon {
+  height: 5vw;
+  margin: 1vw;
+}
+
+.footer .footer-back-to-top-and-copyright {
+  color: white;
+  font-size: 1.5vw;
+}
+
+.footer .footer-back-to-top-and-copyright .footer-copyright {
+  bottom: 0;
+  font-size: 1.25vw;
+  position: relative;
+}
+
+.footer .footer-back-to-top-and-copyright .footer-back-to-top {
+  font-size: 1.5vw;
 }
 
 * {

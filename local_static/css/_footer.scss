@@ -1,48 +1,70 @@
-.footer-brand {
-  color: $primary-color;
-  & .footer-brand-headline {
-    font-size: 3vw;
+.footer {
+  background-color: $secondary-color-rgba;
+  .footer-brand {
+    color: $primary-color;
+    margin: 2vw 0;
+    text-align: center;
+    & .footer-brand-headline {
+      font-size: 3vw;
+      font-style: italic;
+      font-weight: 900;
+    }
+    & .footer-brand-headline-sub {
+      font-size: 2.3vw;
+      font-style: italic;
+      font-weight: 700;
+    }
+    & .footer-brand-text {
+      font-size: 1.5vw;
+      & .footer-brand-text-strong {
+        font-weight: 600;
+      }
+    }
   }
-  & .footer-brand-headline-sub {
-    font-size: 2.5vw;
+
+  .footer-phone {
+    color: $primary-color;
+    margin: 2vw 0;
+    text-align: center;
+    & .footer-phone-headline {
+      font-size: 2vw;
+      font-style: italic;
+      font-weight: 700;
+    }
+    & .footer-phone-text {
+      font-size: 3vw;
+      font-style: italic;
+      font-weight: 800;
+    }
+    & .icon-phone {
+      height: 4vw;
+      & circle {
+        fill: $primary-color;
+      }
+      & path {
+        fill: $secondary-color-rgba;
+      }
+    }
   }
-  & .footer-brand-text {
+
+  .footer-flair {
+    margin: 2vw 0;
+    & .footer-flair-icon {
+      height: 5vw;
+      margin: 1vw;
+    }
+  }
+
+  .footer-back-to-top-and-copyright {
+    color: $primary-color;
     font-size: 1.5vw;
-  }
-  & .footer-brand-copyright {
-    font-size: 1.25vw;
-  }
-}
-
-.footer-phone {
-  color: $primary-color;
-  text-align: center;
-  & .footer-phone-headline {
-    font-size: 3vw;
-    font-style: italic;
-    font-weight: 700;
-  }
-  & .footer-phone-text {
-    font-size: 3.5vw;
-    font-style: italic;
-    font-weight: 800;
-  }
-  & .footer-phone-back-to-top {
-    font-size: 2vw;
-  }
-  & .icon-phone {
-    height: 4vw;
-    & circle {
-      fill: $primary-color;
+    & .footer-copyright {
+      bottom: 0;
+      font-size: 1.25vw;
+      position: relative;
     }
-    & path {
-      fill: $quarternary-color;
+    & .footer-back-to-top {
+      font-size: 1.5vw;
     }
-  }
-}
-
-.footer-flair {
-  & .footer-flair-icon {
-    height: 6vw;
   }
 }

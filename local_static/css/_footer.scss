@@ -1,0 +1,48 @@
+.footer-brand {
+  color: $primary-color;
+  & .footer-brand-headline {
+    font-size: 3vw;
+  }
+  & .footer-brand-headline-sub {
+    font-size: 2.5vw;
+  }
+  & .footer-brand-text {
+    font-size: 1.5vw;
+  }
+  & .footer-brand-copyright {
+    font-size: 1.25vw;
+  }
+}
+
+.footer-phone {
+  color: $primary-color;
+  text-align: center;
+  & .footer-phone-headline {
+    font-size: 3vw;
+    font-style: italic;
+    font-weight: 700;
+  }
+  & .footer-phone-text {
+    font-size: 3.5vw;
+    font-style: italic;
+    font-weight: 800;
+  }
+  & .footer-phone-back-to-top {
+    font-size: 2vw;
+  }
+  & .icon-phone {
+    height: 4vw;
+    & circle {
+      fill: $primary-color;
+    }
+    & path {
+      fill: $quarternary-color;
+    }
+  }
+}
+
+.footer-flair {
+  & .footer-flair-icon {
+    height: 6vw;
+  }
+}

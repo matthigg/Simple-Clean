@@ -166,7 +166,8 @@
 
 .section-1-row {
   background-color: white;
-  padding: 6vh 4vh;
+  color: #17685E;
+  padding: 2vw;
 }
 
 .section-1-row .section-1-image {
@@ -174,7 +175,6 @@
 }
 
 .section-1-row .section-1-headline {
-  color: #17685E;
   font-size: 3vw;
   font-weight: 400;
   margin-bottom: 4vw;
@@ -189,6 +189,7 @@
 }
 
 .section-1-row .section-1-paragraph {
+  font-size: 2vw;
   width: 46vw;
 }
 
@@ -211,21 +212,45 @@
 
 .section-2-row .card {
   height: 25vw;
+  margin: 0 1vw;
   width: 30vw;
+}
+
+.section-2-row .card:hover {
+  cursor: pointer;
+}
+
+.section-2-row .card:hover .card-body {
+  color: #00F2A5;
+}
+
+.section-2-row .card:hover .card-link-text {
+  color: #00F2A5;
+}
+
+.section-2-row .card:hover .card-link-text::before {
+  width: 100%;
+}
+
+.section-2-row .card:hover .icon-arrow-right {
+  fill: #00F2A5;
 }
 
 .section-2-row .card-background-house-washing {
   background-image: url("/static/img/house1.jpg");
-  height: 20vw;
+  border-radius: 3px 3px 0 0;
+  height: 200px;
 }
 
 .section-2-row .card-background-patio-and-deck {
   background-image: url("/static/img/patio.jpg");
+  border-radius: 3px 3px 0 0;
   height: 20vw;
 }
 
 .section-2-row .card-background-graffiti-removal {
   background-image: url("/static/img/graffiti-removal.jpg");
+  border-radius: 3px 3px 0 0;
   height: 20vw;
 }
 
@@ -239,6 +264,7 @@
 
 .section-2-row .card-link {
   font-size: 1.5vw;
+  padding: 2vw;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -265,22 +291,6 @@
   fill: #17685E;
   height: 2vw;
   stroke: white;
-}
-
-.section-2-row .card-link:hover {
-  cursor: pointer;
-}
-
-.section-2-row .card-link:hover > .card-link-text {
-  color: #00F2A5;
-}
-
-.section-2-row .card-link:hover > .card-link-text::before {
-  width: 100%;
-}
-
-.section-2-row .card-link:hover > .icon-arrow-right {
-  fill: #00F2A5;
 }
 
 .section-2-row .section-2-row-flair {
@@ -338,8 +348,72 @@
 }
 
 .contact-form-row .contact-form-paragraph-phone .icon-phone {
-  fill: #17685E;
   height: 4vw;
+}
+
+.contact-form-row .contact-form-paragraph-phone .icon-phone circle {
+  fill: #17685E;
+}
+
+.contact-form-row .contact-form-paragraph-phone .icon-phone path {
+  fill: white;
+}
+
+.footer-brand {
+  color: white;
+}
+
+.footer-brand .footer-brand-headline {
+  font-size: 3vw;
+}
+
+.footer-brand .footer-brand-headline-sub {
+  font-size: 2.5vw;
+}
+
+.footer-brand .footer-brand-text {
+  font-size: 1.5vw;
+}
+
+.footer-brand .footer-brand-copyright {
+  font-size: 1.25vw;
+}
+
+.footer-phone {
+  color: white;
+  text-align: center;
+}
+
+.footer-phone .footer-phone-headline {
+  font-size: 3vw;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.footer-phone .footer-phone-text {
+  font-size: 3.5vw;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.footer-phone .footer-phone-back-to-top {
+  font-size: 2vw;
+}
+
+.footer-phone .icon-phone {
+  height: 4vw;
+}
+
+.footer-phone .icon-phone circle {
+  fill: white;
+}
+
+.footer-phone .icon-phone path {
+  fill: #17685E;
+}
+
+.footer-flair .footer-flair-icon {
+  height: 6vw;
 }
 
 * {

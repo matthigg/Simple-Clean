@@ -27,9 +27,10 @@
 
 .navbar .navbar-brand-subtitle {
   opacity: 0;
+  position: absolute;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navbar .navbar-brand-subtitle {
     color: white;
     font-size: 2.5vw;
@@ -38,6 +39,7 @@
     margin: 0 auto 0 0;
     opacity: 1;
     padding-left: 2vw;
+    position: static;
   }
 }
 

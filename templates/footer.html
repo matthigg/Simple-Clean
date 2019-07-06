@@ -3,30 +3,32 @@
 <div class="container-fluid footer">
   <div class="row d-flex">
 
-    <!-- Brand -->
-    <div class="col-md-4 footer-brand">
-      <h1 class="footer-brand-headline">SIMPLE CLEAN</h1>
-      <h2 class="footer-brand-headline-sub">PRESSURE WASHING</h2>
-      <p class="footer-brand-text">
-        Get in touch with us today for the <span class="footer-brand-text-strong">best</span>
-        pressure washing services in Waukesha!
-      </p>
-    </div>
-
-    <!-- Phone -->
-    <div class="col-md-4 footer-phone">
-      <h1 class="footer-phone-headline">Call us today for a FREE Quote:</h1>
-      <p class="footer-phone-text">
-        {% include 'svg/phone.svg' %} (123) 456-7890
-      </p>
-    </div>
+    <!-- Brand & Phone -->
+    <div class="col-6">
+      <div class="footer-brand">
+        <h1 class="footer-brand-headline">SIMPLE CLEAN</h1>
+        <h2 class="footer-brand-headline-sub">PRESSURE WASHING</h2>
+        <p class="footer-brand-text">
+          Find out why Homeowners, Business Owners, Property Managers across the
+          Waukeesha, WI area choose 
+          <span class="footer-brand-text-strong">SIMPLE CLEAN</span> for their 
+          Pressure Washing needs.
+        </p>
+      </div>
+      <div class="footer-phone">
+        <h1 class="footer-phone-headline">Call us today for your FREE Quote!</h1>
+        <p class="footer-phone-text">
+          {% include 'svg/phone.svg' %} (123) 456-7890
+        </p>
+      </div>
+    </div
 
     <!-- Flair -->
-    <div class="col-md-4 footer-flair d-flex justify-content-around flex-wrap">
+    <div class="col-6 footer-flair d-flex justify-content-around flex-wrap">
+      <img class="footer-flair-icon" src="{% static 'img/google.svg' %}" alt="Google">
       <img class="footer-flair-icon" src="{% static 'img/facebook.svg' %}" alt="Facebook">
       <img class="footer-flair-icon" src="{% static 'img/yelp.svg' %}" alt="Yelp">
       <img class="footer-flair-icon" src="{% static 'img/bbb.svg' %}" alt="Better Business Bureau">
-      <img class="footer-flair-icon" src="{% static 'img/google.svg' %}" alt="Google">
   </div>
   </div>
 

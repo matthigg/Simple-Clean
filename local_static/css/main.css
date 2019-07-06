@@ -371,7 +371,8 @@
 }
 
 .footer .footer-brand .footer-brand-text .footer-brand-text-strong {
-  font-weight: 600;
+  font-weight: 800;
+  font-style: italic;
 }
 
 .footer .footer-phone {
@@ -409,7 +410,7 @@
 }
 
 .footer .footer-flair .footer-flair-icon {
-  height: 5vw;
+  height: 10vw;
   margin: 1vw;
 }
 

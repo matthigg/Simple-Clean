@@ -115,9 +115,6 @@
       }
       & .card-link-text {
         color: $tertiary-color;
-        &::before {
-          width: 100%;
-        }
       }
       & .icon-arrow-right {
         fill: $tertiary-color;
@@ -151,21 +148,12 @@
   }
   & .card-link {
     font-size: 1.5vw;
-    padding: 2vw;
+    padding: 1vw;
     width: max-content;
     & .card-link-text {
       color: $quarternary-color;
       margin-right: 1vw;
       position: relative;
-      &::before {
-        background-color: $tertiary-color;
-        bottom: 0;
-        content: "";
-        height: 0.2vw;
-        position: absolute;
-        transition-duration: 0.2s;
-        width: 0;
-      }
     }
     & .icon-arrow-right {
       fill: $quarternary-color;

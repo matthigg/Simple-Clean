@@ -228,10 +228,6 @@
   color: #00F2A5;
 }
 
-.section-2-row .card:hover .card-link-text::before {
-  width: 100%;
-}
-
 .section-2-row .card:hover .icon-arrow-right {
   fill: #00F2A5;
 }
@@ -264,7 +260,7 @@
 
 .section-2-row .card-link {
   font-size: 1.5vw;
-  padding: 2vw;
+  padding: 1vw;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -274,17 +270,6 @@
   color: #17685E;
   margin-right: 1vw;
   position: relative;
-}
-
-.section-2-row .card-link .card-link-text::before {
-  background-color: #00F2A5;
-  bottom: 0;
-  content: "";
-  height: 0.2vw;
-  position: absolute;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
-  width: 0;
 }
 
 .section-2-row .card-link .icon-arrow-right {

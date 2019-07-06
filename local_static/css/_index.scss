@@ -67,6 +67,7 @@
 .section-1-row {
   background-color: $primary-color;
   color: $quarternary-color;
+  height: max-content;
   padding: 2vw;
   & .section-1-image{
     width: 46vw;
@@ -96,13 +97,13 @@
 
 .section-1-top-border {
   background-color: $secondary-color-rgba;
-  height: 1.5vw;
+  height: 3vw;
 }
 
 // Section 2
 .section-2-row {
   background-color: $secondary-color-rgba;
-  height: 50vw;
+  height: max-content;
   padding: 6vh 2vh;
   & .card {
     height: 25vw;
@@ -173,7 +174,7 @@
 .contact-form-row {
   background-color: $primary-color;
   color: $quarternary-color;
-  height: 100vh;
+  height: max-content;
   padding: 6vh 4vh;
   text-align: center;
   & .contact-form-headline {

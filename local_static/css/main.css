@@ -167,6 +167,9 @@
 .section-1-row {
   background-color: white;
   color: #17685E;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   padding: 2vw;
 }
 
@@ -201,12 +204,14 @@
 
 .section-1-top-border {
   background-color: rgba(20, 211, 201, 0.8);
-  height: 1.5vw;
+  height: 3vw;
 }
 
 .section-2-row {
   background-color: rgba(20, 211, 201, 0.8);
-  height: 50vw;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   padding: 6vh 2vh;
 }
 
@@ -289,7 +294,9 @@
 .contact-form-row {
   background-color: white;
   color: #17685E;
-  height: 100vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   padding: 6vh 4vh;
   text-align: center;
 }

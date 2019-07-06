@@ -1,29 +1,18 @@
 .navbar {
   background-color: $secondary-color-rgba;
   padding: 0 3vw;
-  top: 1vw;
+  position: absolute;
+  width: 100%;
   & .navbar-brand {
-    background: blue;
     color: $primary-color;
-    font-size: 3vw;
     font-style: italic;
     font-weight: 900;
     margin: 0;
-  }
-  & .navbar-brand-subtitle {
-    opacity: 0;
-    position: absolute;
-  }
-  @media (max-width: 767px) {
-    & .navbar-brand-subtitle {
-      color: $primary-color;
-      font-size: 2.5vw;
-      font-style: italic;
-      font-weight: 900;
-      margin: 0 auto 0 0;
-      opacity: 1;
-      padding-left: 2vw;
-      position: static;
+    @media (min-width: 768px) {
+      font-size: 3vw;
+    }
+    @media (max-width: 767px) {
+      font-size: 1.5rem;
     }
   }
   & .navbar-toggler {
@@ -38,7 +27,6 @@
   }
   & .nav-link {
     color: $primary-color;
-    font-size: 1.75vw;
     position: relative;
     margin: 0 auto;
     width: max-content;
@@ -73,21 +61,18 @@
         width: 50%;
       }
     }
-    // @media (max-width: 768px) {
-      // & .nav-item {
-      //   font-weight: 900;
-      //   text-align: center;
-      // }
-      // & .nav-link {
-      //   margin-left: 5vw;
-      //   width: 20vw;
-      // }
-    // }
+    @media (min-width: 768px) {
+      font-size: 1.5vw;
+    }
+  }
+  @media (min-width: 768px) {
+    font-size: 1.5vw;
+    top: 1vw;
   }
 }
 
-@media (min-width: 768px) {
-  .navbar-stripe {
+.navbar-stripe {
+  @media (min-width: 768px) {
     background-color: $secondary-color-rgba;
     height: 0.5vw;
     padding: 0 3vw;

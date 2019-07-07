@@ -70,8 +70,8 @@
   height: max-content;
   overflow: hidden;
   & .section-1-image{
+    width: 46vw;
     @media (max-width: 767px) {
-      left: -15px;
       opacity: 0.1;
       position: absolute;
       width: 100%;
@@ -81,7 +81,7 @@
   & .section-1-headline {
     font-size: 3vw;
     font-weight: 400;
-    margin-bottom: 4vw;
+    margin: 4vw 0;
     text-align: center;
     width: 100%;
     & .section-1-headline-bold {
@@ -91,7 +91,7 @@
     }
     @media (max-width: 767px) {
       font-size: 1.5rem;
-      margin-top: 2rem;
+      margin: 4rem 0;
     }
   }
   & .section-1-paragraph {
@@ -112,6 +112,9 @@
 .section-1-top-border {
   background-color: $secondary-color-rgba;
   height: 3vw;
+  @media (max-width: 767px) {
+    height: 2rem;
+  }
 }
 
 // Section 2

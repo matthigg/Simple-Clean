@@ -175,6 +175,8 @@ $padding-left-mobile: 0;
 }
 
 // Section 2
+$section-2-hover-transition-time: 0.25s;
+
 .section-2-row {
   background-color: $secondary-color-rgba;
   height: max-content;
@@ -186,12 +188,15 @@ $padding-left-mobile: 0;
       cursor: pointer;
       & .card-body {
         color: $tertiary-color;
+        transition: $section-2-hover-transition-time;
       }
       & .card-link-text {
         color: $tertiary-color;
+        transition: $section-2-hover-transition-time;
       }
       & .icon-arrow-right {
         fill: $tertiary-color;
+        transition: $section-2-hover-transition-time;
       }
     }
     @media (max-width: 769px) {

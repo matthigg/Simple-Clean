@@ -356,14 +356,20 @@
 
 .section-2-row .card:hover .card-body {
   color: #00F2A5;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 .section-2-row .card:hover .card-link-text {
   color: #00F2A5;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 .section-2-row .card:hover .icon-arrow-right {
   fill: #00F2A5;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 @media (max-width: 769px) {

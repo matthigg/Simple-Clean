@@ -190,21 +190,20 @@
 .section-1-row {
   background-color: white;
   color: #17685E;
-  overflow: hidden;
 }
 
 .section-1-row .section-1-image {
-  padding-left: 6vw;
+  padding-left: 8vw;
   width: 46vw;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .section-1-row .section-1-image {
     opacity: 0.1;
+    overflow: hidden;
     padding-left: 0;
     position: absolute;
     width: 100%;
-    z-index: 0;
   }
 }
 
@@ -212,6 +211,7 @@
   font-size: 3vw;
   font-weight: 400;
   margin: 4vw 0;
+  padding-right: 8vw;
   text-align: center;
   width: 100%;
 }
@@ -222,7 +222,7 @@
   font-weight: 600;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .section-1-row .section-1-headline {
     font-size: 1.5rem;
     margin: 4rem 0;
@@ -234,6 +234,7 @@
   font-size: 1.5vw;
   width: 46vw;
   margin-bottom: 4vw;
+  padding-right: 8vw;
 }
 
 .section-1-row .section-1-paragraph .section-1-paragraph-bold {
@@ -242,7 +243,7 @@
   font-weight: 700;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .section-1-row .section-1-paragraph {
     font-size: 1rem;
     padding-right: 0;
@@ -255,7 +256,7 @@
   height: 3vw;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .section-1-top-border {
     height: 2rem;
   }
@@ -266,11 +267,12 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  padding: 0 8vw;
 }
 
 .section-2-row .card {
   border: 0;
-  padding: 0;
+  margin: 4vw 0;
 }
 
 .section-2-row .card:hover {
@@ -289,9 +291,9 @@
   fill: #00F2A5;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .section-2-row .card {
-    margin: 1rem auto;
+    margin: 3rem auto 0 auto;
     width: 75%;
   }
 }
@@ -302,7 +304,7 @@
   height: 20vw;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .section-2-row .card-background-house-washing {
     height: 8rem;
   }
@@ -314,7 +316,7 @@
   height: 20vw;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .section-2-row .card-background-patio-and-deck {
     height: 8rem;
   }
@@ -326,7 +328,7 @@
   height: 20vw;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .section-2-row .card-background-graffiti-removal {
     height: 8rem;
   }
@@ -340,7 +342,7 @@
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .section-2-row .card-body {
     font-size: 1.5rem;
   }
@@ -350,7 +352,7 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  padding: 1vh 0;
+  padding-bottom: 1vw;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -363,7 +365,7 @@
   position: relative;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .section-2-row .card-link .card-link-text {
     font-size: 1rem;
   }
@@ -375,21 +377,21 @@
   stroke: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .section-2-row .card-link .icon-arrow-right {
     height: 1rem;
   }
 }
 
 .section-2-row .section-2-row-flair {
-  padding-top: 4vw;
+  padding-bottom: 4vw;
 }
 
 .section-2-row .section-2-row-flair .section-2-icon-flair {
   height: 6vw;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .section-2-row .section-2-row-flair .section-2-icon-flair {
     height: auto;
     width: 75%;
@@ -401,7 +403,7 @@
   height: 6vw;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .section-2-row .section-2-row-flair .section-2-icon-flair-yelp {
     height: auto;
     width: 50%;

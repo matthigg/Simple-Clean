@@ -97,7 +97,7 @@ $padding-left-mobile: 0;
     }
     @media (max-width: 769px) {
       font-size: 1.5rem;
-      margin: 4rem 0;
+      margin: 2rem 0;
       padding-right: $padding-right-mobile;
     }
   }
@@ -212,25 +212,24 @@ $padding-left-mobile: 0;
     }
   }
   & .section-2-row-flair {
-    padding-bottom: 4vw;
     & .section-2-icon-flair {
       height: 6vw;
       @media (max-width: 769px) {
         height: auto;
         margin: 0.75rem 0;
-        width: 75%;
+        width: 50%;
       }
     }
     & .section-2-icon-flair-yelp {
       height: 6vw;
       @media (max-width: 769px) {
         height: auto;
-        width: 50%;
+        width: 25%;
         margin: 0.75rem 0;
       }
     }
     @media (max-width: 769px) {
-      padding: 4rem 0;
+      padding: 2rem 0;
     }
   }
 }

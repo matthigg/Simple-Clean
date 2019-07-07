@@ -225,7 +225,7 @@
 @media (max-width: 769px) {
   .section-1-row .section-1-headline {
     font-size: 1.5rem;
-    margin: 4rem 0;
+    margin: 2rem 0;
     padding-right: 0;
   }
 }
@@ -383,10 +383,6 @@
   }
 }
 
-.section-2-row .section-2-row-flair {
-  padding-bottom: 4vw;
-}
-
 .section-2-row .section-2-row-flair .section-2-icon-flair {
   height: 6vw;
 }
@@ -395,7 +391,7 @@
   .section-2-row .section-2-row-flair .section-2-icon-flair {
     height: auto;
     margin: 0.75rem 0;
-    width: 75%;
+    width: 50%;
   }
 }
 
@@ -406,14 +402,14 @@
 @media (max-width: 769px) {
   .section-2-row .section-2-row-flair .section-2-icon-flair-yelp {
     height: auto;
-    width: 50%;
+    width: 25%;
     margin: 0.75rem 0;
   }
 }
 
 @media (max-width: 769px) {
   .section-2-row .section-2-row-flair {
-    padding: 4rem 0;
+    padding: 2rem 0;
   }
 }
 

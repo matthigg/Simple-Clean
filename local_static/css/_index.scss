@@ -67,7 +67,6 @@
 .section-1-row {
   background-color: $primary-color;
   color: $quarternary-color;
-  height: max-content;
   overflow: hidden;
   & .section-1-image{
     width: 46vw;
@@ -97,14 +96,15 @@
   & .section-1-paragraph {
     font-size: 2vw;
     width: 46vw;
-    @media (max-width: 767px) {
-      font-size: 1rem;
-      width: 100%;
-    }
+    margin-bottom: 4vw;
     & .section-1-paragraph-bold {
       color: $secondary-color;
       font-style: italic;
       font-weight: 700;
+    }
+    @media (max-width: 767px) {
+      font-size: 1rem;
+      width: 100%;
     }
   }
 }
@@ -121,11 +121,10 @@
 .section-2-row {
   background-color: $secondary-color-rgba;
   height: max-content;
-  padding: 6vh 2vh;
+  padding: 6vh 0;
   & .card {
     height: 25vw;
-    margin: 0 1vw;
-    width: 30vw;
+    padding: 0;
     &:hover {
       cursor: pointer;
       & .card-body {
@@ -137,6 +136,10 @@
       & .icon-arrow-right {
         fill: $tertiary-color;
       }
+    }
+    @media (max-width: 767px) {
+      // height: 20rem;
+      width: 100%;
     }
   }
   & .card-background-house-washing {

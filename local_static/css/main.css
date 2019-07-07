@@ -190,9 +190,6 @@
 .section-1-row {
   background-color: white;
   color: #17685E;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
   overflow: hidden;
 }
 
@@ -233,6 +230,13 @@
 .section-1-row .section-1-paragraph {
   font-size: 2vw;
   width: 46vw;
+  margin-bottom: 4vw;
+}
+
+.section-1-row .section-1-paragraph .section-1-paragraph-bold {
+  color: #14D3C9;
+  font-style: italic;
+  font-weight: 700;
 }
 
 @media (max-width: 767px) {
@@ -240,12 +244,6 @@
     font-size: 1rem;
     width: 100%;
   }
-}
-
-.section-1-row .section-1-paragraph .section-1-paragraph-bold {
-  color: #14D3C9;
-  font-style: italic;
-  font-weight: 700;
 }
 
 .section-1-top-border {
@@ -264,13 +262,12 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  padding: 6vh 2vh;
+  padding: 6vh 0;
 }
 
 .section-2-row .card {
   height: 25vw;
-  margin: 0 1vw;
-  width: 30vw;
+  padding: 0;
 }
 
 .section-2-row .card:hover {
@@ -287,6 +284,12 @@
 
 .section-2-row .card:hover .icon-arrow-right {
   fill: #00F2A5;
+}
+
+@media (max-width: 767px) {
+  .section-2-row .card {
+    width: 100%;
+  }
 }
 
 .section-2-row .card-background-house-washing {

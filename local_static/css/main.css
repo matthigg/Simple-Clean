@@ -148,22 +148,61 @@
   top: 60vh;
 }
 
-.landing-page-row .landing-page-headline > .lph-bold {
+.landing-page-row .landing-page-headline .lph-bold {
   font-weight: 500;
 }
 
-.landing-page-row .landing-page-headline > .lph-super-bold-alpha {
+@media (max-width: 769px) {
+  .landing-page-row .landing-page-headline .lph-bold {
+    display: block;
+    font-size: 1.5rem;
+    left: 1.5rem;
+    position: absolute;
+    top: 1.5rem;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+
+.landing-page-row .landing-page-headline .lph-super-bold-alpha {
   color: #14D3C9;
   font-weight: 900;
   font-style: italic;
 }
 
-.landing-page-row .landing-page-headline > .lph-dash-alpha {
+@media (max-width: 769px) {
+  .landing-page-row .landing-page-headline .lph-super-bold-alpha {
+    display: block;
+    font-size: 2.5rem;
+    left: 3rem;
+    position: absolute;
+    top: 2.75rem;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+
+.landing-page-row .landing-page-headline .lph-dash-alpha {
   position: relative;
   top: -2vw;
 }
 
-.landing-page-row .landing-page-headline > .lph-super-bold-omega {
+@media (max-width: 769px) {
+  .landing-page-row .landing-page-headline .lph-dash-alpha {
+    display: block;
+    font-size: 2.5rem;
+    left: 10.5rem;
+    position: absolute;
+    top: 1.65rem;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+
+.landing-page-row .landing-page-headline .lph-super-bold-omega {
   font-weight: 900;
   font-style: italic;
   left: 1.5vw;
@@ -171,15 +210,51 @@
   top: 3.5vw;
 }
 
-.landing-page-row .landing-page-headline > .lph-dash-omega {
+@media (max-width: 769px) {
+  .landing-page-row .landing-page-headline .lph-super-bold-omega {
+    display: block;
+    font-size: 2.5rem;
+    left: 7.5rem;
+    position: absolute;
+    top: 4.75rem;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+
+.landing-page-row .landing-page-headline .lph-dash-omega {
   color: #14D3C9;
   left: 1.5vw;
   position: relative;
   top: 1.5vw;
 }
 
-.landing-page-row .landing-page-headline > .lph-omega-spacer {
+@media (max-width: 769px) {
+  .landing-page-row .landing-page-headline .lph-dash-omega {
+    display: block;
+    font-size: 2.5rem;
+    left: 2.75rem;
+    position: absolute;
+    top: 3.5rem;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+
+.landing-page-row .landing-page-headline .lph-omega-spacer {
   opacity: 0;
+}
+
+@media (max-width: 769px) {
+  .landing-page-row .landing-page-headline {
+    display: block;
+    font-size: 1.3rem;
+    left: 2rem;
+    position: absolute;
+    top: 60vh;
+  }
 }
 
 .landing-page-row .landing-page-placeholder {

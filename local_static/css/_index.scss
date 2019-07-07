@@ -28,33 +28,80 @@
     left: 15vw;
     position: absolute;
     top: 60vh;
-    &>.lph-bold {
+    & .lph-bold {
       font-weight: 500;
+      @media (max-width: 769px) {
+        display: block;
+        font-size: 1.5rem;
+        left: 1.5rem;
+        position: absolute;
+        top: 1.5rem;
+        width: max-content;
+      }
     }
-    &>.lph-super-bold-alpha {
+    & .lph-super-bold-alpha {
       color: $secondary-color;
       font-weight: 900;
       font-style: italic;
+      @media (max-width: 769px) {
+        display: block;
+        font-size: 2.5rem;
+        left: 3rem;
+        position: absolute;
+        top: 2.75rem;
+        width: max-content;
+      }
     }
-    &>.lph-dash-alpha {
+    & .lph-dash-alpha {
       position: relative;
       top: -2vw;
+      @media (max-width: 769px) {
+        display: block;
+        font-size: 2.5rem;
+        left: 10.5rem;
+        position: absolute;
+        top: 1.65rem;
+        width: max-content;
+      }
     }
-    &>.lph-super-bold-omega {
+    & .lph-super-bold-omega {
       font-weight: 900;
       font-style: italic;
       left: 1.5vw;
       position: relative;
       top: 3.5vw;
+      @media (max-width: 769px) {
+        display: block;
+        font-size: 2.5rem;
+        left: 7.5rem;
+        position: absolute;
+        top: 4.75rem;
+        width: max-content;
+      }
     }
-    &>.lph-dash-omega {
+    & .lph-dash-omega {
       color: $secondary-color;
       left: 1.5vw;
       position: relative;
       top: 1.5vw;
+      @media (max-width: 769px) {
+        display: block;
+        font-size: 2.5rem;
+        left: 2.75rem;
+        position: absolute;
+        top: 3.5rem;
+        width: max-content;
+      }
     }
-    &>.lph-omega-spacer {
+    & .lph-omega-spacer {
       opacity: 0;
+    }
+    @media (max-width: 769px) {
+      display: block;
+      font-size: 1.3rem;
+      left: 2rem;
+      position: absolute;
+      top: 60vh;
     }
   }
   & .landing-page-placeholder {

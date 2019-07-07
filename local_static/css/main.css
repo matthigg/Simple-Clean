@@ -386,6 +386,26 @@
   height: 6vw;
 }
 
+@media (max-width: 768px) {
+  .section-2-row .section-2-row-flair .section-2-icon-flair {
+    height: auto;
+    width: 75%;
+    margin: 2rem 0;
+  }
+}
+
+.section-2-row .section-2-row-flair .section-2-icon-flair-yelp {
+  height: 6vw;
+}
+
+@media (max-width: 768px) {
+  .section-2-row .section-2-row-flair .section-2-icon-flair-yelp {
+    height: auto;
+    width: 50%;
+    margin: 2rem 0;
+  }
+}
+
 .contact-form-row {
   background-color: white;
   color: #17685E;

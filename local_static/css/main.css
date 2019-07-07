@@ -22,23 +22,19 @@
   font-style: italic;
   font-weight: 900;
   margin: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-@media (min-width: 768px) {
-  .navbar .navbar-brand {
-    font-size: 3vw;
-  }
-}
-
-@media (max-width: 767px) {
+@media (max-width: 769px) {
   .navbar .navbar-brand {
     font-size: 1.5rem;
   }
 }
 
 .navbar .navbar-toggler .icon-hamburger {
-  height: 3.3vh;
-  width: 3.3vh;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .navbar .navbar-toggler:focus {
@@ -89,16 +85,37 @@
   width: 50%;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 769px) {
   .navbar .nav-link {
-    font-size: 1.5vw;
+    font-size: 1rem;
   }
 }
 
 @media (min-width: 768px) {
   .navbar {
-    font-size: 1.5vw;
+    -webkit-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
+  }
+  .navbar.navbar-minimized-false {
     top: 1vw;
+  }
+  .navbar.navbar-minimized-false .navbar-brand {
+    font-size: 3vw;
+  }
+  .navbar.navbar-minimized-false .nav-link {
+    font-size: 1.5vw;
+  }
+  .navbar.navbar-minimized-true {
+    background-color: #14D3C9;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+  }
+  .navbar.navbar-minimized-true .navbar-brand {
+    font-size: 2vw;
+  }
+  .navbar.navbar-minimized-true .nav-link {
+    font-size: 1.25vw;
   }
 }
 

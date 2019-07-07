@@ -6,7 +6,7 @@
 
     <!-- Landing Page -->
     <div class="row landing-page-row">
-      <div class="landing-page-background"></div>
+      <!-- <div class="landing-page-background"></div> -->
       <div class="col-12">
         <div class="landing-page-headline">
           Increase
@@ -61,75 +61,70 @@
       </div>
     </div>
 
-    <!-- Section 2 -->
+    <!-- Section 2, Cards -->
     <div class="row section-2-row">
-      <div class="col-12 d-flex align-items-center ">
-        <div class="container-fluid">
 
-          <!-- Cards -->
-          <div class="row justify-content-around">
-
-            <!-- House Washing Card -->
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-background-house-washing"></div>
-                <div class="card-body">House Washing</div>
-                <div class="d-flex justify-content-center">
-                  <div class="card-link">
-                    <span class="card-link-text">Learn More</span>
-                    {% include "svg/arrow-right.svg" %}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Patio & Deck -->
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-background-patio-and-deck"></div>
-                <div class="card-body">Patio & Deck</div>
-                <div class="d-flex justify-content-center">
-                  <div class="card-link">
-                    <span class="card-link-text">Learn More</span>
-                    {% include "svg/arrow-right.svg" %}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Graffiti Removal -->
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-background-graffiti-removal"></div>
-                <div class="card-body">Graffiti Removal</div>
-                <div class="d-flex justify-content-center">
-                  <div class="card-link">
-                    <span class="card-link-text">Learn More</span>
-                    {% include "svg/arrow-right.svg" %}
-                  </div>
-                </div>
-              </div>
+      <!-- House Washing Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-background-house-washing"></div>
+          <div class="card-body">House Washing</div>
+          <div class="d-flex justify-content-center">
+            <div class="card-link">
+              <span class="card-link-text">Learn More</span>
+              {% include "svg/arrow-right.svg" %}
             </div>
           </div>
+        </div>
+      </div>
 
-          <!-- Flair -->
-          <div class="row section-2-row-flair">
-            <div class="col-sm-3 d-flex justify-content-around">
-              <img src="{% static 'img/google.svg' %}" alt="Simple Clean Google Reviews" class="section-2-icon-flair">
+      <!-- Patio & Deck -->
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-background-patio-and-deck"></div>
+          <div class="card-body">Patio & Deck</div>
+          <div class="d-flex justify-content-center">
+            <div class="card-link">
+              <span class="card-link-text">Learn More</span>
+              {% include "svg/arrow-right.svg" %}
             </div>
-            <div class="col-sm-3 d-flex justify-content-around">
-              <img src="{% static 'img/facebook.svg' %}" alt="Simple Clean Facebook Reviews" class="section-2-icon-flair">
-            </div>
-            <div class="col-sm-2 d-flex justify-content-around">
-              <img src="{% static 'img/yelp.svg' %}" alt="Simple Clean Yelp Reviews" class="section-2-icon-flair-yelp">
-            </div>
-            <div class="col-sm-4 d-flex justify-content-around">
-              <img src="{% static 'img/bbb.svg' %}" alt="Simple Clean Better Business Bureau Information" class="section-2-icon-flair">
+          </div>
+        </div>
+      </div>
+
+      <!-- Graffiti Removal -->
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-background-graffiti-removal"></div>
+          <div class="card-body">Graffiti Removal</div>
+          <div class="d-flex justify-content-center">
+            <div class="card-link">
+              <span class="card-link-text">Learn More</span>
+              {% include "svg/arrow-right.svg" %}
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Section 2, Flair -->
+    <div class="row section-2-row">
+      <div class="row section-2-row-flair">
+        <div class="col-sm-3 d-flex justify-content-around">
+          <img src="{% static 'img/google.svg' %}" alt="Simple Clean Google Reviews" class="section-2-icon-flair">
+        </div>
+        <div class="col-sm-3 d-flex justify-content-around">
+          <img src="{% static 'img/facebook.svg' %}" alt="Simple Clean Facebook Reviews" class="section-2-icon-flair">
+        </div>
+        <div class="col-sm-2 d-flex justify-content-around">
+          <img src="{% static 'img/yelp.svg' %}" alt="Simple Clean Yelp Reviews" class="section-2-icon-flair-yelp">
+        </div>
+        <div class="col-sm-4 d-flex justify-content-around">
+          <img src="{% static 'img/bbb.svg' %}" alt="Simple Clean Better Business Bureau Information" class="section-2-icon-flair">
+        </div>
+      </div>
+    </div>
+
 
     <!-- Contact Form -->
     <div class="row contact-form-row">

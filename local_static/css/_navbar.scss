@@ -1,3 +1,6 @@
+$navbar-transition: 0.1s ease-in;
+$navbar-stripe-transition: 0.35s ease-in;
+
 .navbar {
   background-color: $secondary-color-rgba;
   padding: 0 3vw;
@@ -27,11 +30,12 @@
     color: $primary-color;
     position: relative;
     margin: 0 auto;
+    transition: $navbar-transition;
     width: max-content;
     &::before,
     &::after {
       background-color: $primary-color;
-      bottom: 0;
+      bottom: 0.1vw;
       content: "";
       height: 0.3vw;
       position: absolute;
@@ -64,7 +68,7 @@
     }
   }
   @media (min-width: 768px) {
-    transition: 0.5s ease-in;
+    transition: $navbar-transition;
     &.navbar-minimized-false {
       top: 1vw;
       & .navbar-brand {
@@ -84,6 +88,11 @@
       }
       & .nav-link {
         font-size: 1.25vw;
+        &::before,
+        &::after {
+          bottom: 0.2vw;
+          height: 0.2vw;
+        }
       }
     }
   }
@@ -91,11 +100,11 @@
 
 .navbar-stripe {
   @media (min-width: 768px) {
+    transition: $navbar-stripe-transition;
     background-color: $secondary-color-rgba;
     height: 0.5vw;
     padding: 0 3vw;
     position: absolute;
-    top: 7.2vw;
     width: 100%;
     &::before {
       color: $primary-color;
@@ -105,6 +114,23 @@
       font-weight: 700;
       position: absolute;
       top: -1.3vw;
+      transition: $navbar-stripe-transition;
+
+    }
+    &.navbar-stripe-minimized-false {
+      top: 7.2vw;
+    }
+    &.navbar-stripe-minimized-true {
+      background-color: $secondary-color;
+      height: 0.25vw;
+      opacity: 0;
+      position: fixed;
+      top: 4.25vw;
+      z-index: 10;
+      &::before {
+        font-size: 1.25vw;
+        top: -0.75vw;
+      }
     }
   }
 }

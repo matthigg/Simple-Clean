@@ -47,6 +47,8 @@
   color: white;
   position: relative;
   margin: 0 auto;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -54,7 +56,7 @@
 
 .navbar .nav-link::before, .navbar .nav-link::after {
   background-color: white;
-  bottom: 0;
+  bottom: 0.1vw;
   content: "";
   height: 0.3vw;
   position: absolute;
@@ -93,8 +95,8 @@
 
 @media (min-width: 768px) {
   .navbar {
-    -webkit-transition: 0.5s ease-in;
-    transition: 0.5s ease-in;
+    -webkit-transition: 0.1s ease-in;
+    transition: 0.1s ease-in;
   }
   .navbar.navbar-minimized-false {
     top: 1vw;
@@ -117,15 +119,20 @@
   .navbar.navbar-minimized-true .nav-link {
     font-size: 1.25vw;
   }
+  .navbar.navbar-minimized-true .nav-link::before, .navbar.navbar-minimized-true .nav-link::after {
+    bottom: 0.2vw;
+    height: 0.2vw;
+  }
 }
 
 @media (min-width: 768px) {
   .navbar-stripe {
+    -webkit-transition: 0.35s ease-in;
+    transition: 0.35s ease-in;
     background-color: rgba(20, 211, 201, 0.8);
     height: 0.5vw;
     padding: 0 3vw;
     position: absolute;
-    top: 7.2vw;
     width: 100%;
   }
   .navbar-stripe::before {
@@ -136,6 +143,23 @@
     font-weight: 700;
     position: absolute;
     top: -1.3vw;
+    -webkit-transition: 0.35s ease-in;
+    transition: 0.35s ease-in;
+  }
+  .navbar-stripe.navbar-stripe-minimized-false {
+    top: 7.2vw;
+  }
+  .navbar-stripe.navbar-stripe-minimized-true {
+    background-color: #14D3C9;
+    height: 0.25vw;
+    opacity: 0;
+    position: fixed;
+    top: 4.25vw;
+    z-index: 10;
+  }
+  .navbar-stripe.navbar-stripe-minimized-true::before {
+    font-size: 1.25vw;
+    top: -0.75vw;
   }
 }
 

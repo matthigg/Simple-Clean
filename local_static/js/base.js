@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
       navbar.classList.remove('navbar-minimized-true');
       navbar_stripe.classList.add('navbar-stripe-minimized-false');
       navbar_stripe.classList.remove('navbar-stripe-minimized-true');
-
     }
   })
 })

@@ -458,6 +458,10 @@
   }
 }
 
+.section-2-row .section-2-row-flair {
+  margin-bottom: 4vw;
+}
+
 .section-2-row .section-2-row-flair .section-2-icon-flair {
   height: 6vw;
 }
@@ -484,7 +488,7 @@
 
 @media (max-width: 769px) {
   .section-2-row .section-2-row-flair {
-    padding: 2rem 0;
+    margin-bottom: 3rem;
   }
 }
 

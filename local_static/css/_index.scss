@@ -259,6 +259,7 @@ $padding-left-mobile: 0;
     }
   }
   & .section-2-row-flair {
+    margin-bottom: 4vw;
     & .section-2-icon-flair {
       height: 6vw;
       @media (max-width: 769px) {
@@ -276,7 +277,7 @@ $padding-left-mobile: 0;
       }
     }
     @media (max-width: 769px) {
-      padding: 2rem 0;
+      margin-bottom: 3rem;
     }
   }
 }

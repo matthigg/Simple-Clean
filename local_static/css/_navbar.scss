@@ -183,6 +183,10 @@ $navbar-call-phone-hover-transition: 0.15s ease-in;
     color: $secondary-color;
     transition: $navbar-free-quote-hover-transition;
   }
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
   @media (max-width: 769px) {
     opacity: 1;
   }

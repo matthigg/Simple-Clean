@@ -215,6 +215,12 @@
   transition: 0.15s ease-in;
 }
 
+.navbar-call-now:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 @media (max-width: 769px) {
   .navbar-call-now {
     opacity: 1;

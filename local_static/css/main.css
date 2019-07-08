@@ -156,14 +156,52 @@
 }
 
 .navbar-free-quote {
+  background-color: #14D3C9;
+  border: 2px solid white;
+  border-radius: 6px;
   color: white;
-  font-size: 1.5rem;
+  font-size: 2vw;
   font-style: italic;
   font-weight: 800;
+  padding: 0 1vw;
   position: fixed;
-  right: 10vw;
-  top: 10vw;
+  right: 3vw;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   z-index: 1;
+}
+
+.navbar-free-quote.navbar-free-quote-minimized-false {
+  top: 9vw;
+}
+
+.navbar-free-quote.navbar-free-quote-minimized-true {
+  top: 6vw;
+}
+
+.navbar-free-quote:hover {
+  background-color: white;
+  color: #14D3C9;
+  -webkit-transition: 0.15s ease-in;
+  transition: 0.15s ease-in;
+}
+
+.navbar-free-quote:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@media (max-width: 769px) {
+  .navbar-free-quote {
+    font-size: 1.3rem;
+    right: 1rem;
+    padding: 0 1rem;
+    top: 4rem;
+  }
 }
 
 .landing-page-row .landing-page-background, .section-2-row .card-background-house-washing, .section-2-row .card-background-patio-and-deck, .section-2-row .card-background-graffiti-removal {

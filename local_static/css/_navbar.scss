@@ -92,6 +92,12 @@ $navbar-call-phone-hover-transition: 0.15s ease-in;
           height: 0.2rem;
         }
       }
+      &:hover {
+        &::before,
+        &::after {
+          height: 0.2rem;
+        }
+      }
     }
   }
   @media (min-width: 768px) {

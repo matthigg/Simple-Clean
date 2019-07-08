@@ -113,6 +113,9 @@
   .navbar .nav-link.active::before, .navbar .nav-link.active::after {
     height: 0.2rem;
   }
+  .navbar .nav-link:hover::before, .navbar .nav-link:hover::after {
+    height: 0.2rem;
+  }
 }
 
 @media (min-width: 768px) {

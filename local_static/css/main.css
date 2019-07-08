@@ -108,9 +108,10 @@
 @media (max-width: 769px) {
   .navbar .nav-link {
     font-size: 1.2rem;
+    margin: 0.5rem auto;
   }
   .navbar .nav-link.active::before, .navbar .nav-link.active::after {
-    height: 0.1rem;
+    height: 0.2rem;
   }
 }
 

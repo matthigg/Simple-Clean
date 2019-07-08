@@ -155,6 +155,17 @@
   }
 }
 
+.navbar-free-quote {
+  color: white;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 800;
+  position: fixed;
+  right: 10vw;
+  top: 10vw;
+  z-index: 1;
+}
+
 .landing-page-row .landing-page-background, .section-2-row .card-background-house-washing, .section-2-row .card-background-patio-and-deck, .section-2-row .card-background-graffiti-removal {
   background-color: #17685E;
   background-repeat: no-repeat;

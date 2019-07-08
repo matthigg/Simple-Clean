@@ -74,12 +74,6 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-print('===========================', os.environ['SIMPLECLEAN_DATABASE_NAME'])
-print('===========================', os.environ['SIMPLECLEAN_DATABASE_USER'])
-print('===========================', os.environ['SIMPLECLEAN_DATABASE_PASSWORD'])
-print('===========================', os.environ['SIMPLECLEAN_DATABASE_HOST'])
-print('===========================', os.environ['SIMPLECLEAN_DATABASE_PORT'])
-
 DATABASES = {
 
   # Sqlite 3

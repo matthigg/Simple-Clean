@@ -205,6 +205,13 @@
   fill: #14D3C9;
 }
 
+.navbar-call-now:hover {
+  background-color: white;
+  color: #14D3C9;
+  -webkit-transition: 0.15s ease-in;
+  transition: 0.15s ease-in;
+}
+
 @media (max-width: 769px) {
   .navbar-call-now {
     opacity: 1;

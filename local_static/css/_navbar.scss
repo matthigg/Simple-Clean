@@ -2,6 +2,7 @@ $navbar-transition: 0.2s ease-in;
 $navbar-stripe-transition: 0.2s ease-in;
 $navbar-free-quote-transition: 0.2s ease-in;
 $navbar-free-quote-hover-transition: 0.15s ease-in;
+$navbar-call-phone-hover-transition: 0.15s ease-in;
 
 #navbar-simple-clean {
   width: 200px;
@@ -170,6 +171,11 @@ $navbar-free-quote-hover-transition: 0.15s ease-in;
     & path {
       fill: $secondary-color;
     }
+  }
+  &:hover {
+    background-color: $primary-color;
+    color: $secondary-color;
+    transition: $navbar-free-quote-hover-transition;
   }
   @media (max-width: 769px) {
     opacity: 1;

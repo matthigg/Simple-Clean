@@ -1,8 +1,8 @@
 {% load static %}
 
 <nav class="navbar navbar-expand-md navbar-minimized-false">
-  <h1 class="navbar-brand">
-    SIMPLE CLEAN
+  <h1 class="navbar-brand d-flex align-items-center">
+    SIMPLE CLEAN <span class="navbar-brand-phone">(123) 456-7890</span>
   </h1>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-simple-clean" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
     <img class="icon-hamburger" src="{% static 'img/icon-hamburger.svg' %}">
@@ -32,6 +32,11 @@
 <div class="navbar-stripe-wrapper">
   <div class="navbar-stripe navbar-stripe-minimized-false"></div>
 </div>
+
+<button class="navbar-call-now navbar-call-now-visible-false d-flex align-items-center">
+  {% include 'svg/phone.svg' %} &nbsp;
+  Call Now
+</button>
 
 <button class="navbar-free-quote navbar-free-quote-minimized-false">
   <span class="navbar-free-quote-large-text">FREE QUOTE</span>

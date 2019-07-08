@@ -62,14 +62,20 @@ $navbar-free-quote-hover-transition: 0.15s ease-in;
     &:hover {
       color: $primary-color;
       cursor: pointer;
-      &:before,
-      &:after {
+      &::before,
+      &::after {
         background-color: $primary-color;
         width: 50%;
       }
     }
     @media (max-width: 769px) {
       font-size: 1rem;
+      &.active {
+        &::before,
+        &::after {
+          height: 0.1rem;
+        }
+      }
     }
   }
   @media (min-width: 768px) {
@@ -140,26 +146,27 @@ $navbar-free-quote-hover-transition: 0.15s ease-in;
   transition: $navbar-free-quote-transition;
   width: max-content;
   z-index: 1;
-  &.navbar-free-quote-minimized-false {
-    top: 9vw;
-  }
-  &.navbar-free-quote-minimized-true {
-    top: 6vw;
-  }
   &:hover {
     background-color: $primary-color;
     color: $secondary-color;
     transition: $navbar-free-quote-hover-transition;
-    // top: 6vw;
   }
   &:focus {
     outline: none;
     box-shadow: none;
   }
+  @media (min-width: 768px) {
+    &.navbar-free-quote-minimized-false {
+      top: 9vw;
+    }
+    &.navbar-free-quote-minimized-true {
+      top: 6vw;
+    }
+  }
   @media (max-width: 769px) {
     font-size: 1.3rem;
     right: 1rem;
-    padding: 0 1rem;
+    padding: 0 0.75rem;
     top: 4rem;
   }
 }

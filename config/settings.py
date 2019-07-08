@@ -74,11 +74,29 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+print('===========================', os.environ['SIMPLECLEAN_DATABASE_NAME'])
+print('===========================', os.environ['SIMPLECLEAN_DATABASE_USER'])
+print('===========================', os.environ['SIMPLECLEAN_DATABASE_PASSWORD'])
+print('===========================', os.environ['SIMPLECLEAN_DATABASE_HOST'])
+print('===========================', os.environ['SIMPLECLEAN_DATABASE_PORT'])
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+
+  # Sqlite 3
+  # 'default': {
+  #   'ENGINE': 'django.db.backends.sqlite3',
+  #   'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+  # }
+
+  # Postgres
+  'default': {
+    'ENGINE':   'django.db.backends.postgresql',
+    'NAME':     os.environ['SIMPLECLEAN_DATABASE_NAME'],
+    'USER':     os.environ['SIMPLECLEAN_DATABASE_USER'],
+    'PASSWORD': os.environ['SIMPLECLEAN_DATABASE_PASSWORD'],
+    'HOST':     os.environ['SIMPLECLEAN_DATABASE_HOST'],
+    'PORT':     os.environ['SIMPLECLEAN_DATABASE_PORT'],
+  }
 }
 
 

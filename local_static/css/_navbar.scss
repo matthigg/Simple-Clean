@@ -4,10 +4,11 @@ $navbar-stripe-transition: 0.2s ease-in;
 .navbar {
   background-color: $secondary-color-rgba;
   padding: 0 3vw;
-  position: absolute;
+  position: fixed;
   width: 100%;
   & .navbar-brand {
     color: $primary-color;
+    font-size: 3vw;
     font-style: italic;
     font-weight: 900;
     margin: 0;
@@ -28,6 +29,7 @@ $navbar-stripe-transition: 0.2s ease-in;
   }
   & .nav-link {
     color: $primary-color;
+    font-size: 1.5vw;
     position: relative;
     margin: 0 auto;
     transition: $navbar-transition;
@@ -71,32 +73,28 @@ $navbar-stripe-transition: 0.2s ease-in;
     transition: $navbar-transition;
     &.navbar-minimized-false {
       top: 1vw;
-      & .navbar-brand {
-        font-size: 3vw;
-      }
-      & .nav-link {
-        font-size: 1.5vw;
-      }
+      // & .navbar-brand {
+      //   font-size: 3vw;
+      // }
+      // & .nav-link {
+      //   font-size: 1.5vw;
+      // }
     }
     &.navbar-minimized-true {
       background-color: $secondary-color;
       position: fixed;
       top: 0;
       z-index: 10;
-      & .navbar-brand {
-        font-size: 2vw;
-      }
-      & .nav-link {
-        font-size: 1.25vw;
-        &::before,
-        &::after {
-          bottom: 0.2vw;
-          height: 0.2vw;
-        }
-      }
+      // & .navbar-brand {
+      //   font-size: 3vw;
+      // }
+      // & .nav-link {
+      //   font-size: 1.5vw;
+      // }
     }
   }
 }
+
 
 .navbar-stripe-wrapper {
   position: relative;

@@ -13,12 +13,13 @@
 .navbar {
   background-color: rgba(20, 211, 201, 0.8);
   padding: 0 3vw;
-  position: absolute;
+  position: fixed;
   width: 100%;
 }
 
 .navbar .navbar-brand {
   color: white;
+  font-size: 3vw;
   font-style: italic;
   font-weight: 900;
   margin: 0;
@@ -45,6 +46,7 @@
 
 .navbar .nav-link {
   color: white;
+  font-size: 1.5vw;
   position: relative;
   margin: 0 auto;
   -webkit-transition: 0.2s ease-in;
@@ -101,27 +103,11 @@
   .navbar.navbar-minimized-false {
     top: 1vw;
   }
-  .navbar.navbar-minimized-false .navbar-brand {
-    font-size: 3vw;
-  }
-  .navbar.navbar-minimized-false .nav-link {
-    font-size: 1.5vw;
-  }
   .navbar.navbar-minimized-true {
     background-color: #14D3C9;
     position: fixed;
     top: 0;
     z-index: 10;
-  }
-  .navbar.navbar-minimized-true .navbar-brand {
-    font-size: 2vw;
-  }
-  .navbar.navbar-minimized-true .nav-link {
-    font-size: 1.25vw;
-  }
-  .navbar.navbar-minimized-true .nav-link::before, .navbar.navbar-minimized-true .nav-link::after {
-    bottom: 0.2vw;
-    height: 0.2vw;
   }
 }
 

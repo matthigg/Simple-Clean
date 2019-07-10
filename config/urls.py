@@ -19,6 +19,7 @@ from .views import contact, index, ourwork, reviews, services
 
 urlpatterns = [
     path('admin/',    admin.site.urls),
+    path('',          include('contact.urls', namespace='contact')),
     path('',          index,    name='index'),
     path('contact/',  contact,  name='contact'),
     path('ourwork/',  ourwork,  name='ourwork'),

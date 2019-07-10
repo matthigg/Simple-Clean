@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from contact import forms
 
 def index(request):
   context = {}
@@ -17,5 +18,8 @@ def reviews(request):
   return render(request, 'reviews.html', context)
 
 def contact(request):
-  context = {}
+  form = forms.CreateContactForm
+  context = {
+    'form': form,
+  }
   return render(request, 'contact.html', context)

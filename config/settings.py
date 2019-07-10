@@ -73,7 +73,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-DATABASES = {
+# DATABASES = {
 
   # Sqlite
   # 'default': {
@@ -82,15 +82,28 @@ DATABASES = {
   # }
 
   # Postgres
-  'default': {
-    'ENGINE':   'django.db.backends.postgresql',
-    'NAME':     os.environ['SIMPLECLEAN_DATABASE_NAME'],
-    'USER':     os.environ['SIMPLECLEAN_DATABASE_USER'],
-    'PASSWORD': os.environ['SIMPLECLEAN_DATABASE_PASSWORD'],
-    'HOST':     os.environ['SIMPLECLEAN_DATABASE_HOST'],
-    'PORT':     os.environ['SIMPLECLEAN_DATABASE_PORT'],
-  }
-}
+  # 'default': {
+  #   'ENGINE':   'django.db.backends.postgresql',
+  #   'NAME':     os.environ['SIMPLECLEAN_DATABASE_NAME'],
+  #   'USER':     os.environ['SIMPLECLEAN_DATABASE_USER'],
+  #   'PASSWORD': os.environ['SIMPLECLEAN_DATABASE_PASSWORD'],
+  #   'HOST':     os.environ['SIMPLECLEAN_DATABASE_HOST'],
+  #   'PORT':     os.environ['SIMPLECLEAN_DATABASE_PORT'],
+  # }
+  
+# }
+
+if 'RDS_HOSTNAME' in os.environ:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': os.environ['RDS_DB_NAME'],
+            'USER': os.environ['RDS_USERNAME'],
+            'PASSWORD': os.environ['RDS_PASSWORD'],
+            'HOST': os.environ['RDS_HOSTNAME'],
+            'PORT': os.environ['RDS_PORT'],
+        }
+    }
 
 
 # Password validation

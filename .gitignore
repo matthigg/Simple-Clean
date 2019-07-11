@@ -2,7 +2,7 @@ venv/
 *.pyc
 __pycache__/
 *.sqlite3
-static/
+/static/
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*

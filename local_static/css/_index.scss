@@ -115,29 +115,39 @@
 
   .landing-page-bottom-border {
     background-color: $secondary-color-rgba;
-    height: 3vw;
+    height: 1vw;
     @media (max-width: 769px) {
       height: 2rem;
     }
   }
 
   // Section 1
-  $padding-right-desktop: 8vw;
+  $padding-right-desktop: 0;
   $padding-right-mobile: 0;
-  $padding-left-desktop: 8vw;
+  $padding-left-desktop: 0;
   $padding-left-mobile: 0;
 
+  .img {
+    object-fit: cover;
+  }
   .section-1-row {
-    background-color: $primary-color;
+    // background-color: $primary-color;
     color: $quarternary-color;
+    height: 100%;
     overflow: hidden;
-    & .section-1-image{
-      padding-left: $padding-left-desktop;
+    & .section-1-image-wrapper {
+      height: 100%;
+    }
+    & .section-1-image {
+      object-fit: cover;
+      // padding-left: $padding-left-desktop;
+      height: 100%;
+      width: 300px;
       @media (max-width: 769px) {
         opacity: 0.1;
         padding-left: $padding-left-mobile;
         position: absolute;
-        top: 50vh;
+        top: 0;
         width: 100%;
       }
     }

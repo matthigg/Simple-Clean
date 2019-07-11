@@ -419,7 +419,7 @@
 
 .index-page .landing-page-bottom-border {
   background-color: rgba(20, 211, 201, 0.8);
-  height: 3vw;
+  height: 1vw;
 }
 
 @media (max-width: 769px) {
@@ -428,14 +428,26 @@
   }
 }
 
+.index-page .img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .index-page .section-1-row {
-  background-color: white;
   color: #17685E;
+  height: 100%;
   overflow: hidden;
 }
 
+.index-page .section-1-row .section-1-image-wrapper {
+  height: 100%;
+}
+
 .index-page .section-1-row .section-1-image {
-  padding-left: 8vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 300px;
 }
 
 @media (max-width: 769px) {
@@ -443,7 +455,7 @@
     opacity: 0.1;
     padding-left: 0;
     position: absolute;
-    top: 50vh;
+    top: 0;
     width: 100%;
   }
 }
@@ -452,7 +464,7 @@
   font-size: 3vw;
   font-weight: 400;
   margin: 4vw 0;
-  padding-right: 8vw;
+  padding-right: 0;
   text-align: center;
   width: 100%;
 }
@@ -475,7 +487,7 @@
   font-size: 1.5vw;
   width: 46vw;
   margin-bottom: 4vw;
-  padding-right: 8vw;
+  padding-right: 0;
 }
 
 .index-page .section-1-row .section-1-paragraph .section-1-paragraph-bold {

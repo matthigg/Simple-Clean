@@ -1,4 +1,37 @@
-.contact-page-row {
+%background-fixed {
   background-color: $quarternary-color;
-  height: 40vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+// Contact Page
+.contact-page-row {
+  & .contact-page-background {
+    background-image: 
+      linear-gradient(
+        rgba(23, 104, 94, 0.5),
+        rgba(23, 104, 94, 0.5)
+      ),
+      url('/static/img/house2.jpg');
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    @extend %background-fixed;
+  }
+  & .contact-page-placeholder {
+    height: 40vh;
+    width: 100%;
+  }
+}
+
+.contact-page-bottom-border {
+  background-color: $secondary-color-rgba;
+  height: 3vw;
+  @media (max-width: 769px) {
+    height: 2rem;
+  }
 }

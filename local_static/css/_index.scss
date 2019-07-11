@@ -110,6 +110,14 @@
   }
 }
 
+.landing-page-bottom-border {
+  background-color: $secondary-color-rgba;
+  height: 3vw;
+  @media (max-width: 769px) {
+    height: 2rem;
+  }
+}
+
 // Section 1
 $padding-right-desktop: 8vw;
 $padding-right-mobile: 0;
@@ -163,14 +171,6 @@ $padding-left-mobile: 0;
       padding-right: $padding-right-mobile;
       width: 100%;
     }
-  }
-}
-
-.section-1-top-border {
-  background-color: $secondary-color-rgba;
-  height: 3vw;
-  @media (max-width: 769px) {
-    height: 2rem;
   }
 }
 
@@ -263,7 +263,7 @@ $section-2-hover-transition-time: 0.25s;
       }
     }
   }
-  & .section-2-row-flair {
+  & .section-2-flair {
     margin-bottom: 4vw;
     & .section-2-icon-flair {
       height: 6vw;
@@ -287,20 +287,20 @@ $section-2-hover-transition-time: 0.25s;
   }
 }
 
-// Contact Form
-.contact-form-row {
+// Section 3
+.section-3-row {
   background-color: $primary-color;
   color: $quarternary-color;
   height: max-content;
   padding: 8vw;
   text-align: center;
-  & .contact-form-left {
+  & .section-3-text {
     width: 46vw;
-    & .contact-form-headline {
+    & .section-3-text-headline {
       font-size: 3vw;
       font-weight: 400;
       margin-bottom: 4vw;
-      & .contact-form-headline-bold {
+      & .section-3-text-headline-bold {
         color: $secondary-color;
         font-style: italic;
         font-weight: 600;
@@ -309,9 +309,9 @@ $section-2-hover-transition-time: 0.25s;
         font-size: 1.5rem;
       }
     }
-    & .contact-form-paragraph {
+    & .section-3-text-paragraph {
       font-size: 2vw;
-      & .contact-form-paragraph-bold {
+      & .section-3-text-paragraph-bold {
         color: $secondary-color;
         font-style: italic;
         font-weight: 700;
@@ -320,7 +320,7 @@ $section-2-hover-transition-time: 0.25s;
         font-size: 1rem;
       }
     }
-    & .contact-form-paragraph-urgent {
+    & .section-3-text-paragraph-urgent {
       font-size: 2.5vw;
       font-style: italic;
       font-weight: 700;
@@ -328,7 +328,7 @@ $section-2-hover-transition-time: 0.25s;
         font-size: 1.25rem;
       }
     }
-    & .contact-form-paragraph-phone {
+    & .section-3-text-paragraph-phone {
       font-size: 3vw;
       font-style: italic;
       font-weight: 700;

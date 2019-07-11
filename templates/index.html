@@ -23,9 +23,9 @@
       <div class="landing-page-placeholder"></div>
     </div>
 
-    <!-- Section 1 -->
-    <div class="row section-1-top-border"></div>
+    <div class="row landing-page-bottom-border"></div>
 
+    <!-- Section 1 -->
     <div class="row section-1-row">
       <div class="col-md-6 my-auto">
         <img class="section-1-image" src="{% static 'img/pressure-washer-1.png' %}" alt="Pressure Washer">
@@ -109,7 +109,7 @@
 
     <!-- Section 2, Flair -->
     <div class="row section-2-row justify-content-center">
-      <div class="row section-2-row-flair">
+      <div class="row section-2-flair">
         <div class="col-md-3 d-flex justify-content-around">
           <img src="{% static 'img/google.svg' %}" alt="Simple Clean Google Reviews" class="section-2-icon-flair">
         </div>
@@ -126,31 +126,31 @@
     </div>
 
 
-    <!-- Contact Form -->
-    <div class="row contact-form-row">
+    <!-- Section 3 -->
+    <div class="row section-3-row">
 
-      <!-- Contact Form Left -->
-      <div class="col-md-6 contact-form-left">
-        <h2 class="contact-form-headline">
-          Get a <span class="contact-form-headline-bold">FREE QUOTE</span> for 
+      <!-- Section 3 Text -->
+      <div class="col-md-6 section-3-text">
+        <h2 class="section-3-text-headline">
+          Get a <span class="section-3-text-headline-bold">FREE QUOTE</span> for 
           Pressure Washing Services in Waukesha, WI and the Surrounding Area
         </h2>
-        <p class="contact-form-paragraph">
+        <p class="section-3-text-paragraph">
           It's quick & easy to request a FREE QUOTE! Send us a message using 
           the Quote Request Form, or call us at 
-          <span class="contact-form-paragraph-bold">(123) 456-7809</span> today!
+          <span class="section-3-text-paragraph-bold">(123) 456-7809</span> today!
         </p>
-        <p class="contact-form-paragraph-urgent">
+        <p class="section-3-text-paragraph-urgent">
           We look forward to hearing from you!
         </p>
-        <p class="contact-form-paragraph-phone">
+        <p class="section-3-text-paragraph-phone">
           {% include 'svg/phone.svg' %}
           (123) 456-7890
         </p>
       </div>
 
-      <!-- Contact Form Right -->
-      <div class="col-md-6 contact-form-right">
+      <!-- Contact Form -->
+      <div class="col-md-6">
         {% include 'contact/contact-form.html' %}
       </div>
     </div>

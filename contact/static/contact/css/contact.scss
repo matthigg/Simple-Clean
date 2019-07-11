@@ -16,28 +16,25 @@ $quinary-color: #1B969E;
   width: 50%;
   & input {
     display: block;
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+  & textarea {
+    display: block;
+    &::placeholder {
+      opacity: 0;
+    }
   }
   & label {
     left: 0.5em;
     position: absolute;
     top: 0;
   }
-  // & #id_name {
-  //   display: block;
-  // }
-  // & #id_email {
-  //   display: block;
-  // }
-  // & #id_phone {
-  //   display: block;
-  // }
-  // & #id_message {
-  //   display: block;
-  // }
   & input:focus ~ label,
-  & input:not(:empty) ~ label,
+  & input:not(:placeholder-shown) ~ label,
   & textarea:focus ~ label,
-  & textarea:not(:empty) ~ label {
+  & textarea:not(:placeholder-shown) ~ label {
   color: green;
   font-size: 0.7rem;
   top: 0.2rem;

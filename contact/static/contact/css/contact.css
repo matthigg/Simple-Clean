@@ -7,6 +7,42 @@
   display: block;
 }
 
+.contact-form input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.contact-form input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.contact-form input::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.contact-form input::placeholder {
+  opacity: 0;
+}
+
+.contact-form textarea {
+  display: block;
+}
+
+.contact-form textarea::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.contact-form textarea:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.contact-form textarea::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.contact-form textarea::placeholder {
+  opacity: 0;
+}
+
 .contact-form label {
   left: 0.5em;
   position: absolute;
@@ -14,9 +50,9 @@
 }
 
 .contact-form input:focus ~ label,
-.contact-form input:not(:empty) ~ label,
+.contact-form input:not(:placeholder-shown) ~ label,
 .contact-form textarea:focus ~ label,
-.contact-form textarea:not(:empty) ~ label {
+.contact-form textarea:not(:placeholder-shown) ~ label {
   color: green;
   font-size: 0.7rem;
   top: 0.2rem;

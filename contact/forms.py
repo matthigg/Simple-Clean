@@ -1,7 +1,7 @@
-from django import forms
+from django.forms import ModelForm, TextInput, Textarea
 from . import models
 
-class CreateContactForm(forms.ModelForm):
+class CreateContactForm(ModelForm):
   class Meta:
     model = models.ContactForm
     fields = [
@@ -10,3 +10,9 @@ class CreateContactForm(forms.ModelForm):
       'phone',
       'message',
     ]
+    widgets = {
+      'name': TextInput(attrs={'placeholder': 'name'}),
+      'email': TextInput(attrs={'placeholder': 'email'}),
+      'phone': TextInput(attrs={'placeholder': 'phone'}),
+      'message': Textarea(attrs={'placeholder': 'message'}),
+    }

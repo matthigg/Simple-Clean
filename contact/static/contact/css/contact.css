@@ -1,4 +1,17 @@
-#id_message {
-  color: red;
+.contact-form #id_message {
+  border: 2px orange solid;
+}
+
+.contact-form #id_message ~ label[for="id_message"] {
+  color: blue;
+}
+
+.contact-form #id_message:focus ~ label[for="id_message"],
+.contact-form #id_message:not(:focus):valid ~ label[for="id_message"] {
+  color: green;
+  font-size: 0.7rem;
+  top: 0.2rem;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 /*# sourceMappingURL=contact.css.map */

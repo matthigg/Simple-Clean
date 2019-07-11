@@ -1,6 +1,11 @@
 <form class="contact-form" action="{% url 'contact:submit' %}" method="post">
   {% csrf_token %}
-  {{ form }}
+
+  {% for field in form %}
+    {{ field }}
+    {{ field.label_tag }}
+  {% endfor %}
+
   <input type="submit" value="Submit">
   {% if messages %}
     {% for message in messages %}

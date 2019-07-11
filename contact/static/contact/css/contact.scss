@@ -1,3 +1,25 @@
-#id_message {
-  color: red;
+// Colors
+$primary-color: #0A2425;
+$secondary-color: #FCFAED;
+$tertiary-color: #043546;
+$quarternary-color: #ECD4B0;
+$quinary-color: #1B969E;
+
+.contact-form {
+  & #id_message {
+    border: 2px orange solid;
+    // color: red;
+  }
+
+  & #id_message ~ label[for="id_message"] {
+    color: blue;
+  }
+
+  & #id_message:focus ~ label[for="id_message"],
+  & #id_message:not(:focus):valid ~ label[for="id_message"] {
+  color: green;
+  font-size: 0.7rem;
+  top: 0.2rem;
+  transition: 0.1s;
+  }
 }

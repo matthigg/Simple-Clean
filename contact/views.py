@@ -9,13 +9,11 @@ def contact_submit(request):
   if request.method == "POST":
     form = forms.CreateContactForm(request.POST)
     if form.is_valid():
-      # returned_instance = form.save()
-      # returned_instance = form.save(commit=False) # hesitate to commit
-      # person_who_clicked_submit = request.user
+      form.save()
       messages.add_message(request, messages.INFO, 'Your message has been sent!')
       return redirect('contact')
     
-    # Handle error with form submission
+    # Handle any potential errors with form submission
     else:
       form = forms.CreateContactForm()
     return render(request, 'contact', { 'form': form })

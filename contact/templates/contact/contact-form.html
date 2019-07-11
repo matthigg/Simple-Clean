@@ -10,7 +10,7 @@
     </div>
   {% endfor %}
 
-  <input type="submit" value="Submit">
+  <button type="submit" value="Submit">Submit</button>
   {% if messages %}
     {% for message in messages %}
       <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}" role="alert">{{ message }}</div>

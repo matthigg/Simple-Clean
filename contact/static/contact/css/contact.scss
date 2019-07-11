@@ -1,32 +1,42 @@
 // Colors
-$primary-color: #0A2425;
-$secondary-color: #FCFAED;
-$tertiary-color: #043546;
-$quarternary-color: #ECD4B0;
-$quinary-color: #1B969E;
-
-// .contact-form-wrapper {
-//   background: green;
-//   margin-top: 100px;
-//   position: relative;
-// }
+$primary-color: white;
+$secondary-color: #14D3C9;
+$tertiary-color: #00F2A5;
+$quarternary-color: #17685E;
+$quinary-color: #3F3F3F;
 
 .contact-form {
   margin: auto;
   width: 50%;
   & input {
+    border: 2px solid $secondary-color;
+    border-radius: 6px;
+    color: $quarternary-color;
     display: block;
+    height: calc(2em + 1vw);
+    padding: 1em 0 0 0.5em;
+    outline: none;
+    box-shadow: none;
     &::placeholder {
       opacity: 0;
     }
+    &:focus {
+      border: 2px solid $tertiary-color;
+    }
   }
   & textarea {
+    border: 2px solid $secondary-color;
+    border-radius: 6px;
     display: block;
+    padding: 1em 0 0 0.5em;
+    outline: none;
+    box-shadow: none;
     &::placeholder {
       opacity: 0;
     }
   }
   & label {
+    color: $quarternary-color;
     left: 0.5em;
     position: absolute;
     top: 0;
@@ -35,10 +45,10 @@ $quinary-color: #1B969E;
   & input:not(:placeholder-shown) ~ label,
   & textarea:focus ~ label,
   & textarea:not(:placeholder-shown) ~ label {
-  color: green;
-  font-size: 0.7rem;
-  top: 0.2rem;
-  transition: 0.1s;
+    color: $quarternary-color;
+    font-size: calc(0.25em + 1vw);
+    top: calc(-0.6em + 1vw);
+    transition: 0.1s;
   }
   & .contact-input {
     margin-bottom: 1rem;

@@ -2,8 +2,42 @@
 
 {% block main %}
 
-  <h1>Contact</h1>
+  <div class="container-fluid">
 
-  {% include 'contact/contact-form.html' %}
+    <!-- Contact Page -->
+    <div class="row contact-page-row">
+      <div class="contact-page-background"></div>
+      <div class="contact-page-placeholder"></div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="row contact-form-row">
+
+      <!-- Contact Form Left -->
+      <div class="col-md-6 contact-form-left">
+        <h2 class="contact-form-headline">
+          Get a <span class="contact-form-headline-bold">FREE QUOTE</span> for 
+          Pressure Washing Services in Waukesha, WI and the Surrounding Area
+        </h2>
+        <p class="contact-form-paragraph">
+          It's quick & easy to request a FREE QUOTE! Send us a message using 
+          the Quote Request Form, or call us at 
+          <span class="contact-form-paragraph-bold">(123) 456-7809</span> today!
+        </p>
+        <p class="contact-form-paragraph-urgent">
+          We look forward to hearing from you!
+        </p>
+        <p class="contact-form-paragraph-phone">
+          {% include 'svg/phone.svg' %}
+          (123) 456-7890
+        </p>
+      </div>
+
+      <!-- Contact Form Right -->
+      <div class="col-md-6 contact-form-right">
+        {% include 'contact/contact-form.html' %}
+      </div>
+    </div>
+  </div>
 
 {% endblock %}

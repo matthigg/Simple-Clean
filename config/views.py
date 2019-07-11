@@ -2,7 +2,10 @@ from django.shortcuts import render
 from contact import forms
 
 def index(request):
-  context = {}
+  form = forms.CreateContactForm
+  context = {
+    'form': form,
+  }
   return render(request, 'index.html', context)
 
 def services(request):

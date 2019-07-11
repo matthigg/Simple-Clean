@@ -1,0 +1,95 @@
+// Colors
+$primary-color: white;
+$secondary-color: #14D3C9;
+$tertiary-color: #00F2A5;
+$quarternary-color: #17685E;
+$quinary-color: #3F3F3F;
+
+.contact-form-heading {
+  background-color: $quarternary-color;
+  border-radius: 1em 1em 0 0;
+  padding: calc(0.5em + 0.25vw);
+  & h2 {
+    color: $primary-color;
+    font-size: calc(0.9em + 1vw);
+    font-weight: 900;
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+
+.contact-form {
+  background-color: $secondary-color;
+  border-radius: 0 0 1em 1em;
+  margin: auto;
+  padding: calc(1em + 1vw);
+  width: 100%;
+  & button {
+    background-color: $primary-color;
+    border: 2px solid $secondary-color;
+    border-radius: 6px;
+    color: $quarternary-color;
+    display: block;
+    font-weight: 700;
+    margin: auto;
+    padding: calc(0.25em + 0.5vw) calc(1em + 1vw);
+    &:hover {
+      background-color: $quarternary-color;
+      border: 2px solid $quarternary-color;
+      color: $primary-color;
+    }
+  }
+  & input {
+    border: 2px solid $secondary-color;
+    border-radius: 6px;
+    box-shadow: none;
+    color: $quarternary-color;
+    display: block;
+    height: calc(2.5em + 1vw);
+    outline: none;
+    padding: 1em 0 0 0.5em;
+    width: 100%;
+    &::placeholder {
+      opacity: 0;
+    }
+    &:focus {
+      border: 2px solid $quarternary-color;
+    }
+  }
+  & label {
+    color: $quarternary-color;
+    font-style: italic;
+    left: 0.5em;
+    position: absolute;
+    top: 0;
+  }
+  & textarea {
+    border: 2px solid $secondary-color;
+    border-radius: 10px;
+    box-shadow: none;
+    color: $quarternary-color;
+    display: block;
+    outline: none;
+    padding: 1em 0 0 0.5em;
+    width: 100%;
+    &::placeholder {
+      opacity: 0;
+    }
+    &:focus {
+      border: 2px solid $quarternary-color;
+    }
+  }
+  & input:focus ~ label,
+  & input:not(:placeholder-shown) ~ label,
+  & textarea:focus ~ label,
+  & textarea:not(:placeholder-shown) ~ label {
+    color: $quarternary-color;
+    font-size: calc(0.75em);
+    top: 0.1em;
+    transition: 0.1s;
+  }
+  & .contact-input {
+    margin-bottom: 1rem;
+    position: relative;
+  }
+}

@@ -1,21 +1,23 @@
-<div class="contact-form-wrapper">
-
-<form class="contact-form" action="{% url 'contact:submit' %}" method="post">
-  {% csrf_token %}
-
-  {% for field in form %}
-    <div class="contact-input">
-      {{ field }}
-      {{ field.label_tag }}
-    </div>
+<!-- Show any messages after a form submission (if any exist) -->
+{% if messages %}
+  {% for message in messages %}
+    <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}" role="alert">{{ message }}</div>
   {% endfor %}
+{% endif %}
 
-  <button type="submit" value="Submit">Submit</button>
-  {% if messages %}
-    {% for message in messages %}
-      <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}" role="alert">{{ message }}</div>
-    {% endfor %}
-  {% endif %}
-</form>
-
+<!-- Contact Form -->
+<div class="contact-form-heading">
+  <h2>QUOTE REQUEST FORM</h2>
 </div>
+<form class="contact-form" action="{% url 'contact:submit' %}" method="post">
+  <fieldset>
+    {% csrf_token %}
+    {% for field in form %}
+      <div class="contact-input">
+        {{ field }}
+        {{ field.label_tag }}
+      </div>
+    {% endfor %}
+    <button type="submit" value="Submit">Send Message</button>
+  </fieldset>
+</form>

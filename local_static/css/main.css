@@ -744,6 +744,11 @@
   }
 }
 
+.contact-page-row {
+  background-color: #17685E;
+  height: 40vh;
+}
+
 .footer {
   background-color: rgba(20, 211, 201, 0.8);
 }

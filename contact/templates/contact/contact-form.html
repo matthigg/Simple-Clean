@@ -1,9 +1,13 @@
+<div class="contact-form-wrapper">
+
 <form class="contact-form" action="{% url 'contact:submit' %}" method="post">
   {% csrf_token %}
 
   {% for field in form %}
-    {{ field }}
-    {{ field.label_tag }}
+    <div class="contact-input">
+      {{ field }}
+      {{ field.label_tag }}
+    </div>
   {% endfor %}
 
   <input type="submit" value="Submit">
@@ -13,3 +17,5 @@
     {% endfor %}
   {% endif %}
 </form>
+
+</div>

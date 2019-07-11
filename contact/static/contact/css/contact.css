@@ -1,17 +1,31 @@
-.contact-form #id_message {
-  border: 2px orange solid;
+.contact-form {
+  margin: auto;
+  width: 50%;
 }
 
-.contact-form #id_message ~ label[for="id_message"] {
-  color: blue;
+.contact-form input {
+  display: block;
 }
 
-.contact-form #id_message:focus ~ label[for="id_message"],
-.contact-form #id_message:not(:focus):valid ~ label[for="id_message"] {
+.contact-form label {
+  left: 0.5em;
+  position: absolute;
+  top: 0;
+}
+
+.contact-form input:focus ~ label,
+.contact-form input:not(:empty) ~ label,
+.contact-form textarea:focus ~ label,
+.contact-form textarea:not(:empty) ~ label {
   color: green;
   font-size: 0.7rem;
   top: 0.2rem;
   -webkit-transition: 0.1s;
   transition: 0.1s;
+}
+
+.contact-form .contact-input {
+  margin-bottom: 1rem;
+  position: relative;
 }
 /*# sourceMappingURL=contact.css.map */

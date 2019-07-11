@@ -2,9 +2,9 @@
 
 {% block main %}
 
-  <div class="container-fluid">
+  <div class="container-fluid contact-page">
 
-    <!-- Contact Page -->
+    <!-- Contact Splash Page -->
     <div class="row contact-page-row">
       <div class="contact-page-background"></div>
       <div class="contact-page-placeholder"></div>
@@ -13,31 +13,30 @@
     <div class="row contact-page-bottom-border"></div>
 
     <!-- Section 1 -->
-    <div class="row contact-form-row">
+    <div class="row section-1-row">
 
-      <!-- Contact Form Left -->
-      <div class="col-md-6 contact-form-form">
-        {% include 'contact/contact-form.html' %}
-      </div>
-
-      <!-- Contact Form Right -->
-      <div class="col-md-6 contact-form-text">
-        <h2 class="contact-form-headline">
-          Get a <span class="contact-form-headline-bold">FREE QUOTE</span> for 
-          Pressure Washing Services in Waukesha, WI and the Surrounding Area
+      <!-- Section 1 Text -->
+      <div class="col-md-6 section-1-text">
+        <h2 class="section-1-text-headline">
+          Find out why customers in Waukesha, WI and the surrounding area choose
+          SIMPLE CLEAN for their pressure washing needs
         </h2>
-        <p class="contact-form-paragraph">
+        <p class="section-1-text-paragraph">
           It's quick & easy to request a FREE QUOTE! Send us a message using 
           the Quote Request Form, or call us at 
-          <span class="contact-form-paragraph-bold">(123) 456-7809</span> today!
+          <span class="section-1-text-paragraph-bold">(123) 456-7809</span> today!
         </p>
-        <p class="contact-form-paragraph-urgent">
+        <p class="section-1-text-paragraph-urgent">
           We look forward to hearing from you!
         </p>
-        <p class="contact-form-paragraph-phone">
+        <p class="section-1-text-paragraph-phone">
           {% include 'svg/phone.svg' %}
           (123) 456-7890
         </p>
+      </div>
+
+      <div class="col-md-6">
+        {% include 'contact/contact-form.html' %}
       </div>
     </div>
   </div>

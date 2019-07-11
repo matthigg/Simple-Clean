@@ -6,32 +6,101 @@
 }
 
 // Contact Page
-.contact-page-row {
-  & .contact-page-background {
-    background-image: 
-      linear-gradient(
-        rgba(23, 104, 94, 0.5),
-        rgba(23, 104, 94, 0.5)
-      ),
-      url('/static/img/house2.jpg');
-    height: 100vh;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-    @extend %background-fixed;
-  }
-  & .contact-page-placeholder {
-    height: 40vh;
-    width: 100%;
-  }
-}
+.contact-page {
 
-.contact-page-bottom-border {
-  background-color: $secondary-color-rgba;
-  height: 3vw;
-  @media (max-width: 769px) {
-    height: 2rem;
+  // Contact Splash Page
+  .contact-page-row {
+    & .contact-page-background {
+      background-image: 
+        linear-gradient(
+          rgba(23, 104, 94, 0.5),
+          rgba(23, 104, 94, 0.5)
+        ),
+        url('/static/img/house2.jpg');
+      height: 100vh;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+      @extend %background-fixed;
+    }
+    & .contact-page-placeholder {
+      height: 40vh;
+      width: 100%;
+    }
+  }
+
+  .contact-page-bottom-border {
+    background-color: $secondary-color-rgba;
+    height: 3vw;
+    @media (max-width: 769px) {
+      height: 2rem;
+    }
+  }
+
+  // Section 1
+  .section-1-row {
+    background-color: $primary-color;
+    color: $quarternary-color;
+    height: max-content;
+    padding: 8vw;
+    text-align: center;
+    & .section-1-text {
+      width: 46vw;
+      & .section-1-text-headline {
+        font-size: 3vw;
+        font-weight: 400;
+        margin-bottom: 4vw;
+        & .section-1-text-headline-bold {
+          color: $secondary-color;
+          font-style: italic;
+          font-weight: 600;
+        }
+        @media (max-width: 769px) {
+          font-size: 1.5rem;
+        }
+      }
+      & .section-1-text-paragraph {
+        font-size: 2vw;
+        & .section-1-text-paragraph-bold {
+          color: $secondary-color;
+          font-style: italic;
+          font-weight: 700;
+        }
+        @media (max-width: 769px) {
+          font-size: 1rem;
+        }
+      }
+      & .section-1-text-paragraph-urgent {
+        font-size: 2.5vw;
+        font-style: italic;
+        font-weight: 700;
+        @media (max-width: 769px) {
+          font-size: 1.25rem;
+        }
+      }
+      & .section-1-text-paragraph-phone {
+        font-size: 3vw;
+        font-style: italic;
+        font-weight: 700;
+        margin-top: 6vw;
+        & .icon-phone {
+          height: 4vw;
+          & circle {
+            fill: $quarternary-color;
+          }
+          & path {
+            fill: $primary-color;
+          }
+        }
+        @media (max-width: 769px) {
+          font-size: 1.5rem;
+        }
+      }
+      @media (max-width: 769px) {
+        width: 100%;
+      }
+    }
   }
 }

@@ -129,6 +129,7 @@ $navbar-call-phone-hover-transition: 0.15s ease-in;
         color: $primary-color;
         content: 'PRESSURE WASHING';
         font-size: 2vw;
+        // font-size: (1rem + 1vw);
         font-style: italic;
         font-weight: 700;
         position: absolute;
@@ -136,17 +137,18 @@ $navbar-call-phone-hover-transition: 0.15s ease-in;
         transition: $navbar-stripe-transition;
       }
       &.navbar-stripe-minimized-false {
-        top: 7.4vw;
+        top: 7.5vw;
+        // top: calc(3rem + 2vw);
         opacity: 1;
       }
       &.navbar-stripe-minimized-true {
         background-color: $secondary-color;
         height: 0.25vw;
         opacity: 0;
-        top: 4.25vw;
+        top: 4vw; // determines where the stripe heads before disappearing
         z-index: 10;
         &::before {
-          font-size: 1.25vw;
+          font-size: 1vw; // shrinks stripe text while disappearing
           top: -0.75vw;
         }
       }

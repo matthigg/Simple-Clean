@@ -161,18 +161,18 @@
     transition: 0.2s ease-in;
   }
   .navbar-stripe-wrapper .navbar-stripe.navbar-stripe-minimized-false {
-    top: 7.4vw;
+    top: 7.5vw;
     opacity: 1;
   }
   .navbar-stripe-wrapper .navbar-stripe.navbar-stripe-minimized-true {
     background-color: #14D3C9;
     height: 0.25vw;
     opacity: 0;
-    top: 4.25vw;
+    top: 4vw;
     z-index: 10;
   }
   .navbar-stripe-wrapper .navbar-stripe.navbar-stripe-minimized-true::before {
-    font-size: 1.25vw;
+    font-size: 1vw;
     top: -0.75vw;
   }
 }

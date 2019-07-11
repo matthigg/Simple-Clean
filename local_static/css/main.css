@@ -284,6 +284,11 @@
   background-size: cover;
 }
 
+.index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal {
+  border-radius: calc(0.5rem + 0.5vw) calc(0.5rem + 0.5vw);
+  height: calc(10rem + 0.5vw);
+}
+
 .index-page .landing-page-row .landing-page-background {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(23, 104, 94, 0.5)), to(rgba(23, 104, 94, 0.5))), url("/static/img/house2.jpg");
   background-image: linear-gradient(rgba(23, 104, 94, 0.5), rgba(23, 104, 94, 0.5)), url("/static/img/house2.jpg");
@@ -428,18 +433,12 @@
   }
 }
 
-.index-page .img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .index-page .section-1-row {
   background-color: white;
   color: #17685E;
   height: 100%;
   overflow: hidden;
-  padding-left: calc(2rem + 0.5vw);
-  padding-right: calc(2rem + 0.5vw);
+  padding: calc(0.5rem + 3.5vw);
 }
 
 .index-page .section-1-row .section-1-image-background {
@@ -479,12 +478,13 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  padding: 0 8vw;
+  padding: 0 calc(3rem + 3vw);
 }
 
 .index-page .section-2-row .card {
   border: 0;
-  margin: 4vw 0;
+  border-radius: calc(0.5rem + 0.5vw) calc(0.5rem + 0.5vw);
+  margin: calc(2rem + 0.5vw) auto;
 }
 
 .index-page .section-2-row .card:hover {
@@ -509,68 +509,32 @@
   transition: 0.25s;
 }
 
-@media (max-width: 769px) {
-  .index-page .section-2-row .card {
-    margin: 3rem auto 0 auto;
-    width: 75%;
-  }
-}
-
 .index-page .section-2-row .card-background-house-washing {
   background-image: url("/static/img/house1.jpg");
-  border-radius: 3px 3px 0 0;
-  height: 20vw;
-}
-
-@media (max-width: 769px) {
-  .index-page .section-2-row .card-background-house-washing {
-    height: 8rem;
-  }
 }
 
 .index-page .section-2-row .card-background-patio-and-deck {
   background-image: url("/static/img/patio.jpg");
-  border-radius: 3px 3px 0 0;
-  height: 20vw;
-}
-
-@media (max-width: 769px) {
-  .index-page .section-2-row .card-background-patio-and-deck {
-    height: 8rem;
-  }
 }
 
 .index-page .section-2-row .card-background-graffiti-removal {
   background-image: url("/static/img/graffiti-removal.jpg");
-  border-radius: 3px 3px 0 0;
-  height: 20vw;
-}
-
-@media (max-width: 769px) {
-  .index-page .section-2-row .card-background-graffiti-removal {
-    height: 8rem;
-  }
 }
 
 .index-page .section-2-row .card-body {
   color: #17685E;
-  font-size: 2vw;
-  font-weight: 500;
-  padding: 1vh 0 0 0;
+  font-size: calc(1rem + 0.25vw);
+  font-style: italic;
+  font-weight: 700;
+  padding: calc(0.25rem + 0.25vw) 0 0 0;
   text-align: center;
-}
-
-@media (max-width: 769px) {
-  .index-page .section-2-row .card-body {
-    font-size: 1.5rem;
-  }
 }
 
 .index-page .section-2-row .card-link {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  padding-bottom: 1vw;
+  padding-bottom: calc(0.5rem + 0.25vw);
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -578,61 +542,39 @@
 
 .index-page .section-2-row .card-link .card-link-text {
   color: #17685E;
-  font-size: 1.5vw;
-  margin-right: 1vw;
+  font-size: calc(1rem + 0.25vw);
+  margin-right: calc(0.5rem + 0.5vw);
   position: relative;
-}
-
-@media (max-width: 769px) {
-  .index-page .section-2-row .card-link .card-link-text {
-    font-size: 1rem;
-  }
 }
 
 .index-page .section-2-row .card-link .icon-arrow-right {
   fill: #17685E;
-  height: 2vw;
+  height: calc(1rem + 0.25vw);
   stroke: white;
 }
 
-@media (max-width: 769px) {
-  .index-page .section-2-row .card-link .icon-arrow-right {
-    height: 1rem;
-  }
-}
-
 .index-page .section-2-row .section-2-flair {
-  margin-bottom: 4vw;
+  margin-bottom: calc(2rem + 1vw);
 }
 
-.index-page .section-2-row .section-2-flair .section-2-icon-flair {
-  height: 6vw;
+.index-page .section-2-row .section-2-flair img {
+  margin: calc(1rem + 0.5vw);
 }
 
-@media (max-width: 769px) {
-  .index-page .section-2-row .section-2-flair .section-2-icon-flair {
-    height: auto;
-    margin: 0.75rem 0;
-    width: 50%;
-  }
+.index-page .section-2-row .section-2-flair .section-2-icon-flair-google {
+  height: calc(3.5rem + 2.5vw);
+}
+
+.index-page .section-2-row .section-2-flair .section-2-icon-flair-facebook {
+  height: calc(3rem + 2.5vw);
 }
 
 .index-page .section-2-row .section-2-flair .section-2-icon-flair-yelp {
-  height: 6vw;
+  height: calc(4rem + 3.5vw);
 }
 
-@media (max-width: 769px) {
-  .index-page .section-2-row .section-2-flair .section-2-icon-flair-yelp {
-    height: auto;
-    width: 25%;
-    margin: 0.75rem 0;
-  }
-}
-
-@media (max-width: 769px) {
-  .index-page .section-2-row .section-2-flair {
-    margin-bottom: 2rem;
-  }
+.index-page .section-2-row .section-2-flair .section-2-icon-flair-bbb {
+  height: calc(2.7rem + 2vw);
 }
 
 .index-page .section-3-row {
@@ -641,34 +583,24 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  padding: 8vw;
+  padding: calc(0.5rem + 3.5vw);
   text-align: center;
 }
 
-.index-page .section-3-row .section-3-text {
-  width: 46vw;
-}
-
 .index-page .section-3-row .section-3-text .section-3-text-headline {
-  font-size: 3vw;
-  font-weight: 400;
-  margin-bottom: 4vw;
+  font-size: calc(1.5rem + 0.5vw);
+  font-weight: 700;
+  margin-bottom: calc(2rem + 0.5vw);
 }
 
 .index-page .section-3-row .section-3-text .section-3-text-headline .section-3-text-headline-bold {
   color: #14D3C9;
   font-style: italic;
-  font-weight: 600;
-}
-
-@media (max-width: 769px) {
-  .index-page .section-3-row .section-3-text .section-3-text-headline {
-    font-size: 1.5rem;
-  }
+  font-weight: 800;
 }
 
 .index-page .section-3-row .section-3-text .section-3-text-paragraph {
-  font-size: 2vw;
+  font-size: calc(1rem + 1vw);
 }
 
 .index-page .section-3-row .section-3-text .section-3-text-paragraph .section-3-text-paragraph-bold {
@@ -677,33 +609,21 @@
   font-weight: 700;
 }
 
-@media (max-width: 769px) {
-  .index-page .section-3-row .section-3-text .section-3-text-paragraph {
-    font-size: 1rem;
-  }
-}
-
 .index-page .section-3-row .section-3-text .section-3-text-paragraph-urgent {
-  font-size: 2.5vw;
+  font-size: calc(1.5rem + 0.5vw);
   font-style: italic;
   font-weight: 700;
-}
-
-@media (max-width: 769px) {
-  .index-page .section-3-row .section-3-text .section-3-text-paragraph-urgent {
-    font-size: 1.25rem;
-  }
 }
 
 .index-page .section-3-row .section-3-text .section-3-text-paragraph-phone {
-  font-size: 3vw;
+  font-size: calc(1.5rem + 0.5vw);
   font-style: italic;
   font-weight: 700;
-  margin-top: 6vw;
+  margin-top: calc(1rem + 1vw);
 }
 
 .index-page .section-3-row .section-3-text .section-3-text-paragraph-phone .icon-phone {
-  height: 4vw;
+  height: calc(1.5rem + 0.5vw);
 }
 
 .index-page .section-3-row .section-3-text .section-3-text-paragraph-phone .icon-phone circle {
@@ -712,24 +632,6 @@
 
 .index-page .section-3-row .section-3-text .section-3-text-paragraph-phone .icon-phone path {
   fill: white;
-}
-
-@media (max-width: 769px) {
-  .index-page .section-3-row .section-3-text .section-3-text-paragraph-phone .icon-phone {
-    height: 1.5rem;
-  }
-}
-
-@media (max-width: 769px) {
-  .index-page .section-3-row .section-3-text .section-3-text-paragraph-phone {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 769px) {
-  .index-page .section-3-row .section-3-text {
-    width: 100%;
-  }
 }
 
 .index-page .landing-page-row .landing-page-background, .index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal, .contact-page .contact-page-row .contact-page-background {

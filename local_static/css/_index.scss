@@ -5,6 +5,11 @@
   background-size: cover;
 }
 
+%card-background {
+  border-radius: calc(0.5rem + 0.5vw) calc(0.5rem + 0.5vw);
+  height: calc(10rem + 0.5vw);
+}
+
 // Index Page
 .index-page {
 
@@ -121,22 +126,12 @@
     }
   }
 
-  // Section 1
-  $padding-right-desktop: calc(2rem + 0.5vw);
-  $padding-right-mobile: 0;
-  $padding-left-desktop: calc(2rem + 0.5vw);
-  $padding-left-mobile: 0;
-
-  .img {
-    object-fit: cover;
-  }
   .section-1-row {
     background-color: $primary-color;
     color: $quarternary-color;
     height: 100%;
     overflow: hidden;
-    padding-left: $padding-left-desktop;
-    padding-right: $padding-right-desktop;
+    padding: calc(0.5rem + 3.5vw);
     & .section-1-image-background {
       background-image: url('/static/img/pressure-washer-1.png');
       background-repeat: no-repeat;
@@ -172,10 +167,11 @@
   .section-2-row {
     background-color: $secondary-color-rgba;
     height: max-content;
-    padding: 0 8vw;
+    padding: 0 calc(3rem + 3vw);
     & .card {
       border: 0;
-      margin: 4vw 0;
+      border-radius: calc(0.5rem + 0.5vw) calc(0.5rem + 0.5vw);
+      margin: calc(2rem + 0.5vw) auto;
       &:hover {
         cursor: pointer;
         & .card-body {
@@ -191,90 +187,62 @@
           transition: $section-2-hover-transition-time;
         }
       }
-      @media (max-width: 769px) {
-        margin: 3rem auto 0 auto;
-        width: 75%;
-      }
     }
     & .card-background-house-washing {
       background-image: url('/static/img/house1.jpg');
-      border-radius: 3px 3px 0 0;
-      height: 20vw;
+      @extend %card-background;
       @extend %background-fixed;
-      @media (max-width: 769px) {
-        height: 8rem;
-      }
     }
     & .card-background-patio-and-deck {
       background-image: url('/static/img/patio.jpg');
-      border-radius: 3px 3px 0 0;
-      height: 20vw;
+      @extend %card-background;
       @extend %background-fixed;
-      @media (max-width: 769px) {
-        height: 8rem;
-      }
     }
     & .card-background-graffiti-removal {
       background-image: url('/static/img/graffiti-removal.jpg');
-      border-radius: 3px 3px 0 0;
-      height: 20vw;
+      @extend %card-background;
       @extend %background-fixed;
-      @media (max-width: 769px) {
-        height: 8rem;
-      }
     }
     & .card-body {
       color: $quarternary-color;
-      font-size: 2vw;
-      font-weight: 500;
-      padding: 1vh 0 0 0;
+      font-size: calc(1rem + 0.25vw);
+      font-style: italic;
+      font-weight: 700;
+      padding: calc(0.25rem + 0.25vw) 0 0 0;  // padding: 20px by default
       text-align: center;
-      @media (max-width: 769px) {
-        font-size: 1.5rem;
-      }
     }
     & .card-link {
       height: max-content;
-      padding-bottom: 1vw;
+      padding-bottom: calc(0.5rem + 0.25vw);
       width: max-content;
       & .card-link-text {
         color: $quarternary-color;
-        font-size: 1.5vw;
-        margin-right: 1vw;
+        font-size: calc(1rem + 0.25vw);
+        margin-right: calc(0.5rem + 0.5vw);
         position: relative;
-        @media (max-width: 769px) {
-          font-size: 1rem;
-        }
       }
       & .icon-arrow-right {
         fill: $quarternary-color;
-        height: 2vw;
+        height: calc(1rem + 0.25vw);
         stroke: $primary-color;
-        @media (max-width: 769px) {
-          height: 1rem;
-        }
       }
     }
     & .section-2-flair {
-      margin-bottom: 4vw;
-      & .section-2-icon-flair {
-        height: 6vw;
-        @media (max-width: 769px) {
-          height: auto;
-          margin: 0.75rem 0;
-          width: 50%;
-        }
+      margin-bottom: calc(2rem + 1vw);
+      & img {
+        margin: calc(1rem + 0.5vw);
+      }
+      & .section-2-icon-flair-google {
+        height: calc(3.5rem + 2.5vw);
+      }
+      & .section-2-icon-flair-facebook {
+        height: calc(3rem + 2.5vw);
       }
       & .section-2-icon-flair-yelp {
-        height: 6vw;
-        @media (max-width: 769px) {
-          height: auto;
-          width: 25%;
-          margin: 0.75rem 0;
-        }
+        height: calc(4rem + 3.5vw);
       }
-      @media (max-width: 769px) {
-        margin-bottom: 2rem;
+      & .section-2-icon-flair-bbb {
+        height: calc(2.7rem + 2vw);
       }
     }
   }
@@ -284,65 +252,46 @@
     background-color: $primary-color;
     color: $quarternary-color;
     height: max-content;
-    padding: 8vw;
+    padding: calc(0.5rem + 3.5vw);
     text-align: center;
     & .section-3-text {
-      width: 46vw;
       & .section-3-text-headline {
-        font-size: 3vw;
-        font-weight: 400;
-        margin-bottom: 4vw;
+        font-size: calc(1.5rem + 0.5vw);
+        font-weight: 700;
+        margin-bottom: calc(2rem + 0.5vw);
         & .section-3-text-headline-bold {
           color: $secondary-color;
           font-style: italic;
-          font-weight: 600;
-        }
-        @media (max-width: 769px) {
-          font-size: 1.5rem;
+          font-weight: 800;
         }
       }
       & .section-3-text-paragraph {
-        font-size: 2vw;
+        font-size: calc(1rem + 1vw);
         & .section-3-text-paragraph-bold {
           color: $secondary-color;
           font-style: italic;
           font-weight: 700;
         }
-        @media (max-width: 769px) {
-          font-size: 1rem;
-        }
       }
       & .section-3-text-paragraph-urgent {
-        font-size: 2.5vw;
+        font-size: calc(1.5rem + 0.5vw);
         font-style: italic;
         font-weight: 700;
-        @media (max-width: 769px) {
-          font-size: 1.25rem;
-        }
       }
       & .section-3-text-paragraph-phone {
-        font-size: 3vw;
+        font-size: calc(1.5rem + 0.5vw);
         font-style: italic;
         font-weight: 700;
-        margin-top: 6vw;
+        margin-top: calc(1rem + 1vw);
         & .icon-phone {
-          height: 4vw;
+          height: calc(1.5rem + 0.5vw);
           & circle {
             fill: $quarternary-color;
           }
           & path {
             fill: $primary-color;
           }
-          @media (max-width: 769px) {
-            height: 1.5rem;
-          }
         }
-        @media (max-width: 769px) {
-          font-size: 1.5rem;
-        }
-      }
-      @media (max-width: 769px) {
-        width: 100%;
       }
     }
   }

@@ -161,7 +161,7 @@
     transition: 0.2s ease-in;
   }
   .navbar-stripe-wrapper .navbar-stripe.navbar-stripe-minimized-false {
-    top: 7.2vw;
+    top: 7.4vw;
     opacity: 1;
   }
   .navbar-stripe-wrapper .navbar-stripe.navbar-stripe-minimized-true {

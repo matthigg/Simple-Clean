@@ -122,67 +122,46 @@
   }
 
   // Section 1
-  $padding-right-desktop: 0;
+  $padding-right-desktop: calc(2rem + 0.5vw);
   $padding-right-mobile: 0;
-  $padding-left-desktop: 0;
+  $padding-left-desktop: calc(2rem + 0.5vw);
   $padding-left-mobile: 0;
 
   .img {
     object-fit: cover;
   }
   .section-1-row {
-    // background-color: $primary-color;
+    background-color: $primary-color;
     color: $quarternary-color;
     height: 100%;
     overflow: hidden;
-    & .section-1-image-wrapper {
-      height: 100%;
-    }
-    & .section-1-image {
-      object-fit: cover;
-      // padding-left: $padding-left-desktop;
-      height: 100%;
-      width: 300px;
-      @media (max-width: 769px) {
-        opacity: 0.1;
-        padding-left: $padding-left-mobile;
-        position: absolute;
-        top: 0;
-        width: 100%;
-      }
+    padding-left: $padding-left-desktop;
+    padding-right: $padding-right-desktop;
+    & .section-1-image-background {
+      background-image: url('/static/img/pressure-washer-1.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
     & .section-1-headline {
-      font-size: 3vw;
-      font-weight: 400;
-      margin: 4vw 0;
-      padding-right: $padding-right-desktop;
+      font-size: calc(2rem + 0.5vw);
+      font-weight: 700;
+      margin: calc(1rem + 0.5vw) 0;
       text-align: center;
       width: 100%;
       & .section-1-headline-bold {
         color: $secondary-color;
         font-style: italic;
-        font-weight: 600;
-      }
-      @media (max-width: 769px) {
-        font-size: 1.5rem;
-        margin: 2rem 0;
-        padding-right: $padding-right-mobile;
+        font-weight: 900;
       }
     }
     & .section-1-paragraph {
-      font-size: 1.5vw;
-      width: 46vw;
-      margin-bottom: 4vw;
-      padding-right: $padding-right-desktop;
+      font-size: calc(1rem + 0.5vw);
+      margin-bottom: calc(1rem + 0.5vw);
       & .section-1-paragraph-bold {
         color: $secondary-color;
         font-style: italic;
         font-weight: 700;
-      }
-      @media (max-width: 769px) {
-        font-size: 1rem;
-        padding-right: $padding-right-mobile;
-        width: 100%;
       }
     }
   }

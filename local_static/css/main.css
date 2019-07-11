@@ -733,6 +733,12 @@
 }
 
 @media (max-width: 769px) {
+  .index-page .section-3-row .section-3-text .section-3-text-paragraph-phone .icon-phone {
+    height: 1.5rem;
+  }
+}
+
+@media (max-width: 769px) {
   .index-page .section-3-row .section-3-text .section-3-text-paragraph-phone {
     font-size: 1.5rem;
   }

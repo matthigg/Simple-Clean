@@ -344,6 +344,9 @@
           & path {
             fill: $primary-color;
           }
+          @media (max-width: 769px) {
+            height: 1.5rem;
+          }
         }
         @media (max-width: 769px) {
           font-size: 1.5rem;

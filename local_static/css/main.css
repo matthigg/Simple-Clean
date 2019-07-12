@@ -263,7 +263,7 @@
 }
 
 .index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal {
-  border-radius: calc(0.5rem + 0.5vw) calc(0.5rem + 0.5vw);
+  border-radius: calc(0.5rem + 0.5vw) calc(0.5rem + 0.5vw) 0 0;
   height: calc(10rem + 0.5vw);
 }
 

@@ -318,7 +318,7 @@
 
 .index-page .landing-page-row .landing-page-headline .lph-alpha-dash {
   position: relative;
-  top: calc(-1rem - 1vw);
+  top: calc(-0.5rem - 1.5vw);
 }
 
 .index-page .landing-page-row .landing-page-headline .lph-omega-bold {
@@ -329,7 +329,18 @@
 .index-page .landing-page-row .landing-page-headline .lph-omega-dash {
   color: #14D3C9;
   position: relative;
-  top: calc(-1rem - 1vw);
+  top: calc(-0.5rem - 1.5vw);
+}
+
+@media (max-width: 769px) {
+  .index-page .landing-page-row .landing-page-headline .lph-line-2 {
+    left: calc(8rem + 1vw);
+    top: calc(1.5rem + 1vw);
+  }
+  .index-page .landing-page-row .landing-page-headline .lph-line-3 {
+    left: calc(8rem + 1vw);
+    top: calc(3rem + 2vw);
+  }
 }
 
 .index-page .landing-page-row .landing-page-placeholder {

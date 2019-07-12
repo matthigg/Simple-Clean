@@ -60,7 +60,7 @@
       }
       & .lph-alpha-dash {
         position: relative;
-        top: calc(-1rem - 1vw);
+        top: calc(-0.5rem - 1.5vw);
       }
       & .lph-omega-bold {
         font-weight: 900;
@@ -69,10 +69,17 @@
       & .lph-omega-dash {
         color: $secondary-color;
         position: relative;
-        top: calc(-1rem - 1vw);
+        top: calc(-0.5rem - 1.5vw);
       }
       @media (max-width: 769px) {
-
+        & .lph-line-2 {
+          left: calc(8rem + 1vw);
+          top: calc(1.5rem + 1vw);
+        }
+        & .lph-line-3 {
+          left: calc(8rem + 1vw);
+          top: calc(3rem + 2vw);
+        }
       }
     }
     & .landing-page-placeholder {

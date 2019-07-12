@@ -267,6 +267,10 @@
   height: calc(10rem + 0.5vw);
 }
 
+.index-page .landing-page-row {
+  position: relative;
+}
+
 .index-page .landing-page-row .landing-page-background {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(23, 104, 94, 0.5)), to(rgba(23, 104, 94, 0.5))), url("/static/img/house2.jpg");
   background-image: linear-gradient(rgba(23, 104, 94, 0.5), rgba(23, 104, 94, 0.5)), url("/static/img/house2.jpg");
@@ -280,119 +284,52 @@
 
 .index-page .landing-page-row .landing-page-headline {
   color: white;
-  font-size: 4.3vw;
-  left: 15vw;
+  font-size: calc(1rem + 3vw);
+  left: 5vw;
   position: absolute;
   top: 75vh;
+  white-space: nowrap;
+}
+
+.index-page .landing-page-row .landing-page-headline .lph-line-1 {
+  position: absolute;
+}
+
+.index-page .landing-page-row .landing-page-headline .lph-line-2 {
+  left: calc(10rem + 30vw);
+  position: absolute;
+}
+
+.index-page .landing-page-row .landing-page-headline .lph-line-3 {
+  left: calc(10rem + 30vw);
+  position: absolute;
+  top: calc(2rem + 1vw);
 }
 
 .index-page .landing-page-row .landing-page-headline .lph-bold {
-  font-weight: 500;
+  font-weight: 600;
 }
 
-@media (max-width: 769px) {
-  .index-page .landing-page-row .landing-page-headline .lph-bold {
-    display: block;
-    font-size: 1.5rem;
-    left: 1.5rem;
-    position: absolute;
-    top: 1.5rem;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-  }
-}
-
-.index-page .landing-page-row .landing-page-headline .lph-super-bold-alpha {
+.index-page .landing-page-row .landing-page-headline .lph-alpha-bold {
   color: #14D3C9;
   font-weight: 900;
   font-style: italic;
 }
 
-@media (max-width: 769px) {
-  .index-page .landing-page-row .landing-page-headline .lph-super-bold-alpha {
-    display: block;
-    font-size: 2.5rem;
-    left: 3rem;
-    position: absolute;
-    top: 2.75rem;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-  }
-}
-
-.index-page .landing-page-row .landing-page-headline .lph-dash-alpha {
+.index-page .landing-page-row .landing-page-headline .lph-alpha-dash {
   position: relative;
-  top: -2vw;
+  top: calc(-1rem - 1vw);
 }
 
-@media (max-width: 769px) {
-  .index-page .landing-page-row .landing-page-headline .lph-dash-alpha {
-    display: block;
-    font-size: 2.5rem;
-    left: 10.5rem;
-    position: absolute;
-    top: 1.65rem;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-  }
-}
-
-.index-page .landing-page-row .landing-page-headline .lph-super-bold-omega {
+.index-page .landing-page-row .landing-page-headline .lph-omega-bold {
   font-weight: 900;
   font-style: italic;
-  left: 1.5vw;
-  position: relative;
-  top: 3.5vw;
 }
 
-@media (max-width: 769px) {
-  .index-page .landing-page-row .landing-page-headline .lph-super-bold-omega {
-    display: block;
-    font-size: 2.5rem;
-    left: 7.5rem;
-    position: absolute;
-    top: 4.75rem;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-  }
-}
-
-.index-page .landing-page-row .landing-page-headline .lph-dash-omega {
+.index-page .landing-page-row .landing-page-headline .lph-omega-dash {
   color: #14D3C9;
-  left: 1.5vw;
   position: relative;
-  top: 1.5vw;
-}
-
-@media (max-width: 769px) {
-  .index-page .landing-page-row .landing-page-headline .lph-dash-omega {
-    display: block;
-    font-size: 2.5rem;
-    left: 2.75rem;
-    position: absolute;
-    top: 3.5rem;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-  }
-}
-
-.index-page .landing-page-row .landing-page-headline .lph-omega-spacer {
-  opacity: 0;
-}
-
-@media (max-width: 769px) {
-  .index-page .landing-page-row .landing-page-headline {
-    display: block;
-    font-size: 1.3rem;
-    left: 2rem;
-    position: absolute;
-    top: 70vh;
-  }
+  top: calc(-1rem - 1vw);
 }
 
 .index-page .landing-page-row .landing-page-placeholder {

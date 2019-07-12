@@ -15,6 +15,7 @@
 
   // Landing Page
   .landing-page-row {
+    position: relative;
     & .landing-page-background {
       background-image: 
         linear-gradient(
@@ -32,84 +33,46 @@
     }
     & .landing-page-headline {
       color: $primary-color;
-      font-size: 4.3vw;
-      left: 15vw;
+      font-size: calc(1rem + 3vw);
+      left: 5vw;
       position: absolute;
       top: 75vh;
+      white-space: nowrap;  // prevent line breaks in text w/position: absolute
+      & .lph-line-1 {
+        position: absolute;
+      }
+      & .lph-line-2 {
+        left: calc(10rem + 30vw);
+        position: absolute;
+      }
+      & .lph-line-3 {
+        left: calc(10rem + 30vw);
+        position: absolute;
+        top: calc(2rem + 1vw);
+      }
       & .lph-bold {
-        font-weight: 500;
-        @media (max-width: 769px) {
-          display: block;
-          font-size: 1.5rem;
-          left: 1.5rem;
-          position: absolute;
-          top: 1.5rem;
-          width: max-content;
-        }
+        font-weight: 600;
       }
-      & .lph-super-bold-alpha {
+      & .lph-alpha-bold {
         color: $secondary-color;
         font-weight: 900;
         font-style: italic;
-        @media (max-width: 769px) {
-          display: block;
-          font-size: 2.5rem;
-          left: 3rem;
-          position: absolute;
-          top: 2.75rem;
-          width: max-content;
-        }
       }
-      & .lph-dash-alpha {
+      & .lph-alpha-dash {
         position: relative;
-        top: -2vw;
-        @media (max-width: 769px) {
-          display: block;
-          font-size: 2.5rem;
-          left: 10.5rem;
-          position: absolute;
-          top: 1.65rem;
-          width: max-content;
-        }
+        top: calc(-1rem - 1vw);
       }
-      & .lph-super-bold-omega {
+      & .lph-omega-bold {
         font-weight: 900;
         font-style: italic;
-        left: 1.5vw;
-        position: relative;
-        top: 3.5vw;
-        @media (max-width: 769px) {
-          display: block;
-          font-size: 2.5rem;
-          left: 7.5rem;
-          position: absolute;
-          top: 4.75rem;
-          width: max-content;
-        }
       }
-      & .lph-dash-omega {
+      & .lph-omega-dash {
         color: $secondary-color;
-        left: 1.5vw;
         position: relative;
-        top: 1.5vw;
-        @media (max-width: 769px) {
-          display: block;
-          font-size: 2.5rem;
-          left: 2.75rem;
-          position: absolute;
-          top: 3.5rem;
-          width: max-content;
-        }
-      }
-      & .lph-omega-spacer {
-        opacity: 0;
+        top: calc(-1rem - 1vw);
       }
       @media (max-width: 769px) {
-        display: block;
-        font-size: 1.3rem;
-        left: 2rem;
-        position: absolute;
-        top: 70vh;
+
       }
     }
     & .landing-page-placeholder {

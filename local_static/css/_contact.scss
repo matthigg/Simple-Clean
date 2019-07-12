@@ -43,64 +43,59 @@
   .section-1-row {
     background-color: $primary-color;
     color: $quarternary-color;
-    height: max-content;
-    padding: 8vw;
-    text-align: center;
-    & .section-1-text {
-      width: 46vw;
-      & .section-1-text-headline {
-        font-size: 3vw;
-        font-weight: 400;
-        margin-bottom: 4vw;
-        & .section-1-text-headline-bold {
-          color: $secondary-color;
-          font-style: italic;
-          font-weight: 600;
-        }
-        @media (max-width: 769px) {
-          font-size: 1.5rem;
-        }
-      }
-      & .section-1-text-paragraph {
-        font-size: 2vw;
-        & .section-1-text-paragraph-bold {
-          color: $secondary-color;
-          font-style: italic;
-          font-weight: 700;
-        }
-        @media (max-width: 769px) {
-          font-size: 1rem;
-        }
-      }
-      & .section-1-text-paragraph-urgent {
-        font-size: 2.5vw;
+    padding: calc(1rem + 7vw);
+    & .section-1-text-headline {
+      font-size: calc(1.5rem + 0.5vw);
+      font-weight: 600;
+      margin-bottom: calc(1rem + 1vw);
+      & .section-1-text-headline-bold {
+        color: $secondary-color;
         font-style: italic;
         font-weight: 700;
-        @media (max-width: 769px) {
-          font-size: 1.25rem;
-        }
       }
-      & .section-1-text-paragraph-phone {
-        font-size: 3vw;
+    }
+    & .section-1-text-paragraph {
+      font-size: calc(1rem + 0.5vw);
+      margin-bottom: calc(1rem + 1vw);
+      & .section-1-text-paragraph-bold {
+        color: $secondary-color;
         font-style: italic;
         font-weight: 700;
-        margin-top: 6vw;
-        & .icon-phone {
-          height: 4vw;
-          & circle {
-            fill: $quarternary-color;
-          }
-          & path {
-            fill: $primary-color;
-          }
+      }
+    }
+    & .section-1-text-paragraph-email {
+      font-size: calc(1rem + 1vw);
+      font-style: italic;
+      font-weight: 700;
+      & .icon-email {
+        height: calc(1.5rem + 1vw);
+        & circle {
+          fill: $quarternary-color;
         }
-        @media (max-width: 769px) {
-          font-size: 1.5rem;
+        & path {
+          fill: $primary-color;
         }
       }
-      @media (max-width: 769px) {
-        width: 100%;
+    }
+    & .section-1-text-paragraph-phone {
+      font-size: calc(1rem + 1vw);
+      font-style: italic;
+      font-weight: 700;
+      margin-bottom: calc(1rem + 1vw);
+      & .icon-phone {
+        height: calc(1.5rem + 1vw);
+        & circle {
+          fill: $quarternary-color;
+        }
+        & path {
+          fill: $primary-color;
+        }
       }
+    }
+    & .section-1-text-paragraph-urgent {
+      font-size: calc(1rem + 0.5vw);
+      font-style: italic;
+      font-weight: 700;
     }
   }
 }

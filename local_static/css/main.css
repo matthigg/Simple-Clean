@@ -643,92 +643,73 @@
 .contact-page .section-1-row {
   background-color: white;
   color: #17685E;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  padding: 8vw;
-  text-align: center;
+  padding: calc(1rem + 7vw);
 }
 
-.contact-page .section-1-row .section-1-text {
-  width: 46vw;
-}
-
-.contact-page .section-1-row .section-1-text .section-1-text-headline {
-  font-size: 3vw;
-  font-weight: 400;
-  margin-bottom: 4vw;
-}
-
-.contact-page .section-1-row .section-1-text .section-1-text-headline .section-1-text-headline-bold {
-  color: #14D3C9;
-  font-style: italic;
+.contact-page .section-1-row .section-1-text-headline {
+  font-size: calc(1.5rem + 0.5vw);
   font-weight: 600;
+  margin-bottom: calc(1rem + 1vw);
 }
 
-@media (max-width: 769px) {
-  .contact-page .section-1-row .section-1-text .section-1-text-headline {
-    font-size: 1.5rem;
-  }
-}
-
-.contact-page .section-1-row .section-1-text .section-1-text-paragraph {
-  font-size: 2vw;
-}
-
-.contact-page .section-1-row .section-1-text .section-1-text-paragraph .section-1-text-paragraph-bold {
+.contact-page .section-1-row .section-1-text-headline .section-1-text-headline-bold {
   color: #14D3C9;
   font-style: italic;
   font-weight: 700;
 }
 
-@media (max-width: 769px) {
-  .contact-page .section-1-row .section-1-text .section-1-text-paragraph {
-    font-size: 1rem;
-  }
+.contact-page .section-1-row .section-1-text-paragraph {
+  font-size: calc(1rem + 0.5vw);
+  margin-bottom: calc(1rem + 1vw);
 }
 
-.contact-page .section-1-row .section-1-text .section-1-text-paragraph-urgent {
-  font-size: 2.5vw;
+.contact-page .section-1-row .section-1-text-paragraph .section-1-text-paragraph-bold {
+  color: #14D3C9;
   font-style: italic;
   font-weight: 700;
 }
 
-@media (max-width: 769px) {
-  .contact-page .section-1-row .section-1-text .section-1-text-paragraph-urgent {
-    font-size: 1.25rem;
-  }
-}
-
-.contact-page .section-1-row .section-1-text .section-1-text-paragraph-phone {
-  font-size: 3vw;
+.contact-page .section-1-row .section-1-text-paragraph-email {
+  font-size: calc(1rem + 1vw);
   font-style: italic;
   font-weight: 700;
-  margin-top: 6vw;
 }
 
-.contact-page .section-1-row .section-1-text .section-1-text-paragraph-phone .icon-phone {
-  height: 4vw;
+.contact-page .section-1-row .section-1-text-paragraph-email .icon-email {
+  height: calc(1.5rem + 1vw);
 }
 
-.contact-page .section-1-row .section-1-text .section-1-text-paragraph-phone .icon-phone circle {
+.contact-page .section-1-row .section-1-text-paragraph-email .icon-email circle {
   fill: #17685E;
 }
 
-.contact-page .section-1-row .section-1-text .section-1-text-paragraph-phone .icon-phone path {
+.contact-page .section-1-row .section-1-text-paragraph-email .icon-email path {
   fill: white;
 }
 
-@media (max-width: 769px) {
-  .contact-page .section-1-row .section-1-text .section-1-text-paragraph-phone {
-    font-size: 1.5rem;
-  }
+.contact-page .section-1-row .section-1-text-paragraph-phone {
+  font-size: calc(1rem + 1vw);
+  font-style: italic;
+  font-weight: 700;
+  margin-bottom: calc(1rem + 1vw);
 }
 
-@media (max-width: 769px) {
-  .contact-page .section-1-row .section-1-text {
-    width: 100%;
-  }
+.contact-page .section-1-row .section-1-text-paragraph-phone .icon-phone {
+  height: calc(1.5rem + 1vw);
+}
+
+.contact-page .section-1-row .section-1-text-paragraph-phone .icon-phone circle {
+  fill: #17685E;
+}
+
+.contact-page .section-1-row .section-1-text-paragraph-phone .icon-phone path {
+  fill: white;
+}
+
+.contact-page .section-1-row .section-1-text-paragraph-urgent {
+  font-size: calc(1rem + 0.5vw);
+  font-style: italic;
+  font-weight: 700;
 }
 
 .footer {

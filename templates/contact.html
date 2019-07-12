@@ -15,28 +15,32 @@
     <!-- Section 1 -->
     <div class="row section-1-row">
 
+      <!-- Contact Form -->
+      <div class="col-md-6">
+        {% include 'contact/contact-form.html' %}
+      </div>
+
       <!-- Section 1 Text -->
-      <div class="col-md-6 section-1-text">
+      <div class="col-md-6">
         <h2 class="section-1-text-headline">
-          Find out why customers in Waukesha, WI and the surrounding area choose
-          SIMPLE CLEAN for their pressure washing needs
+          Get a <span class="section-1-text-headline-bold">FREE QUOTE</span> for 
+          Pressure Washing Services in the Waukesha, WI Area
         </h2>
         <p class="section-1-text-paragraph">
-          It's quick & easy to request a FREE QUOTE! Send us a message using 
-          the Quote Request Form, or call us at 
+          Send us a message through the Quote Request Form, send us an email, or call us at 
           <span class="section-1-text-paragraph-bold">(123) 456-7809</span> today!
         </p>
-        <p class="section-1-text-paragraph-urgent">
-          We look forward to hearing from you!
+        <p class="section-1-text-paragraph-email">
+          {% include 'svg/email.svg' %}
+          email@email.com
         </p>
         <p class="section-1-text-paragraph-phone">
           {% include 'svg/phone.svg' %}
           (123) 456-7890
         </p>
-      </div>
-
-      <div class="col-md-6">
-        {% include 'contact/contact-form.html' %}
+        <p class="section-1-text-paragraph-urgent">
+          We look forward to hearing from you!
+        </p>
       </div>
     </div>
   </div>

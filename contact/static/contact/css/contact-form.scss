@@ -7,11 +7,11 @@ $quinary-color: #3F3F3F;
 
 .contact-form-heading {
   background-color: $quarternary-color;
-  border-radius: 1em 1em 0 0;
-  padding: calc(0.5em + 0.25vw);
+  border-radius: calc(1rem + 0.1vw) calc(1rem + 0.1vw) 0 0;
+  padding: calc(0.5rem + 0.25vw);
   & h2 {
     color: $primary-color;
-    font-size: calc(0.9em + 1vw);
+    font-size: calc(1rem + 1vw);
     font-weight: 900;
     margin-bottom: 0;
     text-align: center;
@@ -20,34 +20,34 @@ $quinary-color: #3F3F3F;
 
 .contact-form {
   background-color: $secondary-color;
-  border-radius: 0 0 1em 1em;
+  border-radius: 0 0 calc(1rem + 0.1vw) calc(1rem + 0.1vw);
   margin: auto;
-  padding: calc(1em + 1vw);
+  padding: calc(1rem + 1vw);
   width: 100%;
   & button {
     background-color: $primary-color;
-    border: 2px solid $secondary-color;
-    border-radius: 6px;
+    border: none;
+    border-radius: calc(0.5rem + 0.1vw);
     color: $quarternary-color;
     display: block;
     font-weight: 700;
+    font-size: calc(1rem + 0.25vw);
     margin: auto;
-    padding: calc(0.25em + 0.5vw) calc(1em + 1vw);
+    padding: calc(0.25rem + 0.5vw) calc(1rem + 1vw);
     &:hover {
       background-color: $quarternary-color;
-      border: 2px solid $quarternary-color;
       color: $primary-color;
     }
   }
   & input {
     border: 2px solid $secondary-color;
-    border-radius: 6px;
+    border-radius: calc(0.5rem + 0.1vw);
     box-shadow: none;
     color: $quarternary-color;
     display: block;
-    height: calc(2.5em + 1vw);
+    height: calc(2.5rem + 1vw);
     outline: none;
-    padding: 1em 0 0 0.5em;
+    padding: calc(1rem + 0.1vw) 0 0 calc(0.5rem + 0.1vw);
     width: 100%;
     &::placeholder {
       opacity: 0;
@@ -58,19 +58,20 @@ $quinary-color: #3F3F3F;
   }
   & label {
     color: $quarternary-color;
+    font-size: calc(1rem + 0.25vw);
     font-style: italic;
-    left: 0.5em;
+    left: calc(0.5rem + 0.1vw);
     position: absolute;
     top: 0;
   }
   & textarea {
     border: 2px solid $secondary-color;
-    border-radius: 10px;
+    border-radius: calc(0.5rem + 0.1vw);
     box-shadow: none;
     color: $quarternary-color;
     display: block;
     outline: none;
-    padding: 1em 0 0 0.5em;
+    padding: calc(1rem + 0.1vw) 0 0 calc(0.5rem + 0.1vw);
     width: 100%;
     &::placeholder {
       opacity: 0;
@@ -84,12 +85,12 @@ $quinary-color: #3F3F3F;
   & textarea:focus ~ label,
   & textarea:not(:placeholder-shown) ~ label {
     color: $quarternary-color;
-    font-size: calc(0.75em);
-    top: 0.1em;
+    font-size: calc(0.75rem + 0.1vw);
+    top: calc(0.05rem + 0.05vw);
     transition: 0.1s;
   }
   & .contact-form-input {
-    margin-bottom: 1rem;
+    margin-bottom: calc(1rem + 0.5vw);
     position: relative;
   }
 }

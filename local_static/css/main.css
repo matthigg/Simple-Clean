@@ -296,11 +296,16 @@
 }
 
 .index-page .landing-page-row .landing-page-headline .lph-line-2 {
-  left: calc(10rem + 30vw);
+  left: calc(4rem + 12vw);
   position: absolute;
 }
 
 .index-page .landing-page-row .landing-page-headline .lph-line-3 {
+  left: calc(10rem + 30vw);
+  position: absolute;
+}
+
+.index-page .landing-page-row .landing-page-headline .lph-line-4 {
   left: calc(10rem + 30vw);
   position: absolute;
   top: calc(2rem + 1vw);
@@ -333,19 +338,35 @@
 }
 
 @media (max-width: 769px) {
+  .index-page .landing-page-row .landing-page-headline {
+    top: 70vh;
+  }
   .index-page .landing-page-row .landing-page-headline .lph-line-2 {
-    left: calc(8rem + 1vw);
+    left: calc(1rem + 0.1vw);
     top: calc(1.5rem + 1vw);
   }
   .index-page .landing-page-row .landing-page-headline .lph-line-3 {
-    left: calc(8rem + 1vw);
+    left: calc(6rem + 0.75vw);
     top: calc(3rem + 2vw);
+  }
+  .index-page .landing-page-row .landing-page-headline .lph-line-4 {
+    left: calc(6rem + 0.75vw);
+    top: calc(4.5rem + 3vw);
   }
 }
 
 .index-page .landing-page-row .landing-page-placeholder {
   height: 100vh;
   width: 100%;
+}
+
+@media (max-width: 769px) {
+  .index-page .landing-page-subheading {
+    color: white;
+    font-size: calc(1rem + 1vw);
+    font-style: italic;
+    margin: auto;
+  }
 }
 
 .index-page .landing-page-bottom-border {

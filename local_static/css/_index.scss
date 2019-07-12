@@ -42,10 +42,14 @@
         position: absolute;
       }
       & .lph-line-2 {
-        left: calc(10rem + 30vw);
+        left: calc(4rem + 12vw);
         position: absolute;
       }
       & .lph-line-3 {
+        left: calc(10rem + 30vw);
+        position: absolute;
+      }
+      & .lph-line-4 {
         left: calc(10rem + 30vw);
         position: absolute;
         top: calc(2rem + 1vw);
@@ -72,19 +76,36 @@
         top: calc(-0.5rem - 1.5vw);
       }
       @media (max-width: 769px) {
+        top: 70vh;
         & .lph-line-2 {
-          left: calc(8rem + 1vw);
+          left: calc(1rem + 0.1vw);
           top: calc(1.5rem + 1vw);
         }
         & .lph-line-3 {
-          left: calc(8rem + 1vw);
+          left: calc(6rem + 0.75vw);
           top: calc(3rem + 2vw);
+        }
+        & .lph-line-4 {
+          left: calc(6rem + 0.75vw);
+          top: calc(4.5rem + 3vw);
         }
       }
     }
     & .landing-page-placeholder {
       height: 100vh;
       width: 100%;
+    }
+  }
+
+  .landing-page-subheading {
+    @media (max-width: 769px) {
+      // bottom: 0;
+      color: $primary-color;
+      font-size: calc(1rem + 1vw);
+      font-style: italic;
+      position: static;
+      // margin: auto;
+      text-align: center;
     }
   }
 

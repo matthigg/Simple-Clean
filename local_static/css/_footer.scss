@@ -1,103 +1,88 @@
 .footer {
   background-color: $secondary-color-rgba;
+
+  // Brand
   .footer-brand {
     color: $primary-color;
-    margin: 2vw 0;
+    margin: calc(1rem + 1vw) 0;
     text-align: center;
     & .footer-brand-headline {
-      font-size: 3vw;
+      font-size: calc(2rem + 1vw);
       font-style: italic;
       font-weight: 900;
-      @media (max-width: 769px) {
-        font-size: 2rem;
-      }
     }
     & .footer-brand-headline-sub {
-      font-size: 2.3vw;
+      font-size: calc(1.5rem + 1vw);
       font-style: italic;
       font-weight: 700;
-      @media (max-width: 769px) {
-        font-size: 1.5rem;
-      }
     }
     & .footer-brand-text {
-      font-size: 1.5vw;
-      padding: 0 3vw;
+      font-size: calc(1rem + 0.5vw);
+      padding: 0 calc(1rem + 1vw);
       & .footer-brand-text-strong {
         font-weight: 800;
         font-style: italic;
       }
-      @media (max-width: 769px) {
-        font-size: 1rem;
-        padding: 0 4rem;
-      }
     }
   }
 
+  // Phone
   .footer-phone {
     color: $primary-color;
-    margin: 2vw 0;
+    margin: calc(1rem + 1vw) 0;
     text-align: center;
     & .footer-phone-headline {
-      font-size: 2vw;
+      font-size: calc(1rem + 1vw);
       font-style: italic;
       font-weight: 700;
-      @media (max-width: 769px) {
-        font-size: 1.5rem;
-      }
     }
     & .footer-phone-text {
-      font-size: 3vw;
+      font-size: calc(1.5rem + 1vw);
       font-style: italic;
       font-weight: 800;
-      @media (max-width: 769px) {
-        font-size: 2rem;
-      }
     }
     & .icon-phone {
-      height: 4vw;
+      height: calc(2rem + 1vw);
       & circle {
         fill: $primary-color;
       }
       & path {
         fill: $secondary-color-rgba;
       }
-      @media (max-width: 769px) {
-        height: 2rem;
-      }
     }
   }
 
+  // Flair
   .footer-flair {
-    margin: 2vw 0;
-    & .footer-flair-icon {
-      height: 10vw;
-      margin: 1vw;
-      @media (max-width: 769px) {
-        height: 4rem;
-      }
+    margin: calc(1rem + 1vw) 0;
+    & img {
+      margin: calc(0.1rem + 0.1vw);
+    }
+    & .footer-icon-flair-google {
+      height: calc(3.5rem + 2.5vw);
+    }
+    & .footer-icon-flair-facebook {
+      height: calc(3rem + 2.5vw);
+    }
+    & .footer-icon-flair-yelp {
+      height: calc(4rem + 3.5vw);
+    }
+    & .footer-icon-flair-bbb {
+      height: calc(2.7rem + 2vw);
     }
   }
 
+  // Back-To-Top Link & Copyright
   .footer-back-to-top-and-copyright {
     color: $primary-color;
-    font-size: 1.5vw;
-    padding: 0 4vw;
+    font-size: calc(1rem + 0.5vw);
+    padding: 0 calc(2rem + 2vw);
     & .footer-copyright {
-      bottom: 0;
-      font-size: 1.25vw;
-      position: relative;
-      @media (max-width: 769px) {
-        margin-top: 2rem;
-        font-size: 0.75rem;
-      }
+      font-size: calc(0.75rem + 0.5vw);
     }
     & .footer-back-to-top {
-      font-size: 1.5vw;
-      @media (max-width: 769px) {
-        margin-top: 2rem;
-        font-size: 0.75rem;
-      }
+      font-size: calc(1rem + 0.25vw);
+      text-align: center;
     }
   }
 }

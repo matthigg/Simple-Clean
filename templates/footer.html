@@ -3,8 +3,8 @@
 <div class="container-fluid footer">
   <div class="row">
 
-    <!-- Brand & Phone -->
-    <div class="col-md-6">
+    <!-- Brand -->
+    <div class="col-md-4">
       <div class="footer-brand">
         <h1 class="footer-brand-headline">SIMPLE CLEAN</h1>
         <h2 class="footer-brand-headline-sub">PRESSURE WASHING</h2>
@@ -14,6 +14,10 @@
           your home and property to its former glory.
         </p>
       </div>
+    </div>
+
+    <!-- Phone -->
+    <div class="col-md-4">
       <div class="footer-phone">
         <h1 class="footer-phone-headline">Call us today for your FREE Quote!</h1>
         <p class="footer-phone-text">
@@ -23,19 +27,22 @@
     </div>
 
     <!-- Flair -->
-    <div class="col-md-6 footer-flair d-flex justify-content-around flex-wrap">
-      <img class="footer-flair-icon" src="{% static 'img/google.svg' %}" alt="Simple Clean Google Reviews">
-      <img class="footer-flair-icon" src="{% static 'img/facebook.svg' %}" alt="Simple Clean Facebook Reviews">
-      <img class="footer-flair-icon" src="{% static 'img/yelp.svg' %}" alt="Simple Clean Yelp Reviews">
-      <img class="footer-flair-icon" src="{% static 'img/bbb.svg' %}" alt="Simple Clean Better Business Bureau Reviews">
+    <div class="col-md-4 footer-flair d-flex justify-content-around flex-wrap">
+      <img class="footer-icon-flair-google" src="{% static 'img/google.svg' %}" alt="Simple Clean Google Reviews">
+      <img class="footer-icon-flair-facebook" src="{% static 'img/facebook.svg' %}" alt="Simple Clean Facebook Reviews">
+      <img class="footer-icon-flair-yelp" src="{% static 'img/yelp.svg' %}" alt="Simple Clean Yelp Reviews">
+      <img class="footer-icon-flair-bbb" src="{% static 'img/bbb.svg' %}" alt="Simple Clean Better Business Bureau Reviews">
     </div>
   </div>
 
   <!-- Back To Top & Copyright -->
-  <div class="row">
-    <div class="col-12 footer-back-to-top-and-copyright d-flex justify-content-between">
-      <p class="footer-copyright">© 2019 Simple Clean Pressure Washing</p>  
+  <div class="row footer-back-to-top-and-copyright">
+    <div class="col-md-4">
+      <p class="footer-copyright">© 2019 Simple Clean Pressure Washing</p>
+    </div>
+    <div class="col-md-4">
       <p class="footer-back-to-top">^ Back To Top</p>
     </div>
+    <div class="col-md-4"></div>
   </div>
 </div>

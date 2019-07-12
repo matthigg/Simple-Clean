@@ -120,10 +120,7 @@
 
   .landing-page-bottom-border {
     background-color: $secondary-color-rgba;
-    height: 1vw;
-    @media (max-width: 769px) {
-      height: 2rem;
-    }
+    height: calc(1rem + 1vw);
   }
 
   .section-1-row {

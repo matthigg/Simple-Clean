@@ -10,35 +10,35 @@ $navbar-call-phone-hover-transition: 0.15s ease-in;
 
 .navbar {
   background-color: $secondary-color;
-  padding: 0 3vw;
+  padding: 0 calc(1rem + 1vw);
   position: fixed;
   width: 100%;
   z-index: 10;
   & .navbar-brand {
     color: $primary-color;
-    font-size: 3vw;
+    font-size: calc(1.5rem + 1vw);
     font-style: italic;
     font-weight: 900;
     margin: 0;
     transition: $navbar-transition;
     & .navbar-brand-phone {
       display: block;
-      font-size: 2vw;
-      left: 4vw;
+      font-size: calc(1rem + 0.5vw);
+      left: calc(1.5rem + 1vw);
       opacity: 1;
       position: relative;
     }
-    @media (max-width: 769px) {
-      font-size: 1.5rem;
+    @media (max-width: 900px) {
       & .navbar-brand-phone {
         opacity: 0;
+        position: absolute; // this is here to remove it from the DOM
       }
     }
   }
   & .navbar-toggler {
     & .icon-hamburger {
-      height: 1.5rem;
-      width: 1.5rem;
+      height: calc(1rem + 0.5vw);
+      width: calc(1rem + 0.5vw);
     }
     &:focus {
       outline: none;
@@ -47,7 +47,7 @@ $navbar-call-phone-hover-transition: 0.15s ease-in;
   }
   & .nav-link {
     color: $primary-color;
-    font-size: 1.5vw;
+    font-size: calc(0.5rem + 1vw);
     position: relative;
     margin: 0 auto;
     transition: $navbar-transition;
@@ -55,9 +55,9 @@ $navbar-call-phone-hover-transition: 0.15s ease-in;
     &::before,
     &::after {
       background-color: $primary-color;
-      bottom: 0.1vw;
+      bottom: calc(0.05rem + 0.05vw);
       content: "";
-      height: 0.3vw;
+      height: calc(0.1rem + 0.1vw);
       position: absolute;
       transition-duration: 0.15s;
       width: 0;
@@ -83,28 +83,13 @@ $navbar-call-phone-hover-transition: 0.15s ease-in;
         width: 50%;
       }
     }
-    @media (max-width: 769px) {
-      font-size: 1.2rem;
-      margin: 0.5rem auto;
-      &.active {
-        &::before,
-        &::after {
-          height: 0.2rem;
-        }
-      }
-      &:hover {
-        &::before,
-        &::after {
-          height: 0.2rem;
-        }
-      }
-    }
   }
   @media (min-width: 768px) {
     background-color: $secondary-color-rgba;
     transition: $navbar-transition;
     &.navbar-minimized-false {
-      top: 1vw;
+      top: calc(0.25rem + 0.25vw);
+      // top: 500px;
     }
     &.navbar-minimized-true {
       background-color: $secondary-color;
@@ -121,15 +106,15 @@ $navbar-call-phone-hover-transition: 0.15s ease-in;
     @media (min-width: 768px) {
       transition: $navbar-stripe-transition;
       background-color: $secondary-color-rgba;
-      height: 0.5vw;
-      padding: 0 3vw;
+      height: calc(0.25rem + 0.25vw);
+      padding: 0 calc(0.5rem + 0.5vw);
       position: fixed;
       width: 100%;
       &::before {
         color: $primary-color;
         content: 'PRESSURE WASHING';
-        font-size: 2vw;
-        // font-size: (1rem + 1vw);
+        // font-size: 2vw;
+        font-size: (1rem + 1vw);
         font-style: italic;
         font-weight: 700;
         position: absolute;

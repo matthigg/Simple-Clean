@@ -60,9 +60,9 @@
 
 .navbar .nav-link {
   color: white;
-  font-size: calc(0.5rem + 1vw);
+  font-size: calc(1rem + 0.1vw);
   position: relative;
-  margin: 0 auto;
+  margin: calc(0.5rem + 0.1vw) auto;
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
   width: -webkit-max-content;
@@ -106,6 +106,7 @@
 @media (min-width: 768px) {
   .navbar {
     background-color: rgba(20, 211, 201, 0.8);
+    margin: 0;
     -webkit-transition: 0.2s ease-in;
     transition: 0.2s ease-in;
   }
@@ -167,10 +168,10 @@
   border: 2px solid white;
   border-radius: calc(0.5rem + 0.1vw);
   color: white;
-  font-size: calc(1.5rem + 0.25vw);
+  font-size: calc(1rem + 0.25vw);
   font-style: italic;
   font-weight: 800;
-  padding: 0 calc(0.5rem + 0.25vw);
+  padding: calc(0.25rem + 0.25vw) calc(0.5rem + 0.25vw);
   opacity: 0;
   position: fixed;
   left: calc(1rem + 0.5vw);
@@ -217,10 +218,10 @@
   border: 2px solid white;
   border-radius: calc(0.5rem + 0.1vw);
   color: white;
-  font-size: calc(1.5rem + 0.25vw);
+  font-size: calc(1rem + 0.25vw);
   font-style: italic;
   font-weight: 800;
-  padding: 0 calc(0.5rem + 0.25vw);
+  padding: calc(0.25rem + 0.25vw) calc(0.5rem + 0.25vw);
   position: fixed;
   right: calc(1rem + 0.5vw);
   top: calc(4.5rem + 0.5vw);
@@ -571,7 +572,7 @@
 }
 
 .index-page .section-3-row .section-3-text .section-3-text-paragraph {
-  font-size: calc(1rem + 1vw);
+  font-size: calc(1rem + 0.5vw);
 }
 
 .index-page .section-3-row .section-3-text .section-3-text-paragraph .section-3-text-paragraph-bold {

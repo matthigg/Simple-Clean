@@ -76,13 +76,36 @@
   .footer-back-to-top-and-copyright {
     color: $primary-color;
     font-size: calc(1rem + 0.5vw);
-    padding: 0 calc(2rem + 2vw);
+    padding: 0 calc(2rem + 2vw) calc(2rem + 2vw) calc(2rem + 2vw);
     & .footer-copyright {
       font-size: calc(0.75rem + 0.5vw);
     }
-    & .footer-back-to-top {
-      font-size: calc(1rem + 0.25vw);
-      text-align: center;
+    & button {
+      background-color: rgba(0, 0, 0, 0);
+      border: 0;
+      border-radius: 50%;
+      display: block;
+      padding: calc(0.25rem + 0.25vw);
+      position: relative;
+      margin: auto;
+      height: 3rem;
+      width: 3rem;
+
+      // https://css-tricks.com/snippets/css/css-triangle/
+      & .arrow-up {
+        width: 0; 
+        height: 0; 
+        border-left: 1rem solid transparent;
+        border-right: 1rem solid transparent;
+        border-bottom: 1rem solid $primary-color;
+      }
+      &:hover {
+        background-color: $primary-color;
+        & .arrow-up {
+          border-bottom: 1rem solid $secondary-color;
+          transition: 0.2s;
+        }
+      }
     }
   }
 }

@@ -20,11 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
       
       // Minimize the navbar stripe
       navbar_stripe.classList.add('navbar-stripe-minimized-true');
-      navbar_stripe.classList.remove('navbar-stripe-minimized-false');
+      // navbar_stripe.classList.remove('navbar-stripe-minimized-false');
       
       // Minimize the navbar stripe text
       navbar_stripe_text.classList.add('navbar-stripe-minimized-true');
-      navbar_stripe_text.classList.remove('navbar-stripe-minimized-false');
+      // navbar_stripe_text.classList.remove('navbar-stripe-minimized-false');
 
       // "Minimize" the 'free quote' button
       navbar_free_quote.classList.add('navbar-free-quote-minimized-true');
@@ -40,11 +40,11 @@ document.addEventListener('DOMContentLoaded', () => {
       navbar_stripe_wrapper.classList.remove('navbar-stripe-minimized-true');
       
       // Maximize the navbar stripe
-      navbar_stripe.classList.add('navbar-stripe-minimized-false');
+      // navbar_stripe.classList.add('navbar-stripe-minimized-false');
       navbar_stripe.classList.remove('navbar-stripe-minimized-true');
       
       // Maximize the navbar stripe text
-      navbar_stripe_text.classList.add('navbar-stripe-minimized-false');
+      // navbar_stripe_text.classList.add('navbar-stripe-minimized-false');
       navbar_stripe_text.classList.remove('navbar-stripe-minimized-true');
 
       // "Maximize" the 'free quote' button

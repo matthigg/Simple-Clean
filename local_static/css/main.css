@@ -312,7 +312,7 @@
 }
 
 .index-page .landing-page-row .landing-page-headline .lph-line-2 {
-  left: calc(4rem + 11vw);
+  left: calc(4rem + 11.5vw);
   position: absolute;
 }
 
@@ -730,22 +730,22 @@
 }
 
 .services-page .services-splash-page-row .services-splash-page-headline .ssph-line-2 {
-  left: calc(8rem + 12vw);
+  left: calc(2rem + 8vw);
   position: absolute;
-  top: calc(2.25rem + 1vw);
+  top: calc(2.5rem + 1vw);
 }
 
 .services-page .services-splash-page-row .services-splash-page-headline .ssph-line-3 {
-  left: calc(8rem + 12vw);
+  left: calc(2rem + 8vw);
   position: absolute;
-  top: calc(4.5rem + 2vw);
+  top: calc(5rem + 2vw);
 }
 
 .services-page .services-splash-page-row .services-splash-page-headline .ssph-line-4 {
   font-weight: 100;
-  left: calc(10rem + 20vw);
+  left: calc(2rem + 20vw);
   position: absolute;
-  top: calc(6.75rem + 3vw);
+  top: calc(7.5rem + 3vw);
 }
 
 .services-page .services-splash-page-row .services-splash-page-headline .ssph-bold {
@@ -779,16 +779,16 @@
     top: 70vh;
   }
   .services-page .services-splash-page-row .services-splash-page-headline .ssph-line-2 {
-    left: 0;
-    top: calc(1.5rem + 1vw);
+    left: calc(4.5rem + 1vw);
+    top: calc(1.75rem + 1vw);
   }
   .services-page .services-splash-page-row .services-splash-page-headline .ssph-line-3 {
-    left: calc(6rem + 0.75vw);
-    top: calc(3rem + 2vw);
+    left: calc(4.25rem + 1vw);
+    top: calc(3.25rem + 2vw);
   }
   .services-page .services-splash-page-row .services-splash-page-headline .ssph-line-4 {
     left: calc(6rem + 0.75vw);
-    top: calc(4.5rem + 3vw);
+    top: calc(5rem + 3vw);
   }
 }
 

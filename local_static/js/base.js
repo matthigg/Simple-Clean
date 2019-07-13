@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   const navbar = document.querySelector('.navbar');
+  const navbar_stripe_wrapper= document.querySelector('.navbar-stripe-wrapper');
   const navbar_stripe = document.querySelector('.navbar-stripe');
+  const navbar_stripe_text = document.querySelector('.navbar-stripe-text');
   const navbar_free_quote = document.querySelector('.navbar-free-quote');
   const navbar_offsetTop_initial = navbar.offsetTop;
 
@@ -12,9 +14,17 @@ document.addEventListener('DOMContentLoaded', () => {
       navbar.classList.add('navbar-minimized-true');
       navbar.classList.remove('navbar-minimized-false');
 
+      // Minimize the navbar stripe wrapper
+      navbar_stripe_wrapper.classList.add('navbar-stripe-minimized-true');
+      navbar_stripe_wrapper.classList.remove('navbar-stripe-minimized-false');
+      
       // Minimize the navbar stripe
       navbar_stripe.classList.add('navbar-stripe-minimized-true');
       navbar_stripe.classList.remove('navbar-stripe-minimized-false');
+      
+      // Minimize the navbar stripe text
+      navbar_stripe_text.classList.add('navbar-stripe-minimized-true');
+      navbar_stripe_text.classList.remove('navbar-stripe-minimized-false');
 
       // "Minimize" the 'free quote' button
       navbar_free_quote.classList.add('navbar-free-quote-minimized-true');
@@ -25,9 +35,17 @@ document.addEventListener('DOMContentLoaded', () => {
       navbar.classList.add('navbar-minimized-false');
       navbar.classList.remove('navbar-minimized-true');
 
+      // Maximize the navbar stripe wrapper
+      navbar_stripe_wrapper.classList.add('navbar-stripe-minimized-false');
+      navbar_stripe_wrapper.classList.remove('navbar-stripe-minimized-true');
+      
       // Maximize the navbar stripe
       navbar_stripe.classList.add('navbar-stripe-minimized-false');
       navbar_stripe.classList.remove('navbar-stripe-minimized-true');
+      
+      // Maximize the navbar stripe text
+      navbar_stripe_text.classList.add('navbar-stripe-minimized-false');
+      navbar_stripe_text.classList.remove('navbar-stripe-minimized-true');
 
       // "Maximize" the 'free quote' button
       navbar_free_quote.classList.add('navbar-free-quote-minimized-false');

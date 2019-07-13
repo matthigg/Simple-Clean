@@ -78,7 +78,8 @@
       @media (max-width: 769px) {
         top: 70vh;
         & .lph-line-2 {
-          left: calc(1rem + 0.1vw);
+          // left: calc(1rem + 0.1vw);
+          left: 0;
           top: calc(1.5rem + 1vw);
         }
         & .lph-line-3 {
@@ -97,17 +98,15 @@
     }
   }
 
-  .landing-page-subheading {
-    @media (max-width: 769px) {
-      // bottom: 0;
-      color: $primary-color;
-      font-size: calc(1rem + 1vw);
-      font-style: italic;
-      position: static;
-      // margin: auto;
-      text-align: center;
-    }
-  }
+  // .landing-page-subheading {
+  //   @media (max-width: 769px) {
+  //     color: $primary-color;
+  //     font-size: calc(1rem + 1vw);
+  //     font-style: italic;
+  //     position: static;
+  //     text-align: center;
+  //   }
+  // }
 
   .landing-page-bottom-border {
     background-color: $secondary-color-rgba;

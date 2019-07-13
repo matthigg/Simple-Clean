@@ -1,5 +1,6 @@
 $navbar-transition: 0.2s ease-in;
 $navbar-stripe-transition: 0.2s ease-in;
+$navbar-stripe-text-transition: 0.2s ease-in;
 $navbar-free-quote-transition: 0.2s ease-in;
 $navbar-free-quote-hover-transition: 0.15s ease-in;
 $navbar-call-phone-hover-transition: 0.15s ease-in;
@@ -10,25 +11,25 @@ $navbar-call-phone-hover-transition: 0.15s ease-in;
 
 .navbar {
   background-color: $secondary-color;
-  padding: 0 calc(1rem + 1vw);
+  padding: calc(0.5rem + 0.25vw);
   position: fixed;
   width: 100%;
   z-index: 10;
   & .navbar-brand {
     color: $primary-color;
-    font-size: calc(1.5rem + 1vw);
+    font-size: calc(1.5rem + 2vw);
     font-style: italic;
     font-weight: 900;
-    margin: 0;
+    line-height: 0;
     transition: $navbar-transition;
     & .navbar-brand-phone {
       display: block;
-      font-size: calc(1rem + 0.5vw);
+      font-size: calc(1.25rem + 0.5vw);
       left: calc(1.5rem + 1vw);
       opacity: 1;
       position: relative;
     }
-    @media (max-width: 900px) {
+    @media (max-width: 1080px) {
       & .navbar-brand-phone {
         opacity: 0;
         position: absolute; // this is here to remove it from the DOM
@@ -36,6 +37,10 @@ $navbar-call-phone-hover-transition: 0.15s ease-in;
     }
   }
   & .navbar-toggler {
+    @media (max-width: 768px) {
+      display: inline-flex;
+      align-items: center;
+    }
     & .icon-hamburger {
       height: calc(1rem + 0.5vw);
       width: calc(1rem + 0.5vw);
@@ -47,15 +52,16 @@ $navbar-call-phone-hover-transition: 0.15s ease-in;
   }
   & .nav-link {
     color: $primary-color;
-    font-size: calc(1rem + 0.1vw);
+    font-size: calc(1rem + 0.5vw);
+    margin: calc(1rem + 0.5vw) auto;
+    padding: 0;
     position: relative;
-    margin: calc(0.5rem + 0.1vw) auto;
     transition: $navbar-transition;
     width: max-content;
     &::before,
     &::after {
       background-color: $primary-color;
-      bottom: calc(0.05rem + 0.05vw);
+      bottom: calc(-0.1rem - 0.1vw);
       content: "";
       height: calc(0.1rem + 0.1vw);
       position: absolute;
@@ -87,6 +93,7 @@ $navbar-call-phone-hover-transition: 0.15s ease-in;
   @media (min-width: 768px) {
     background-color: $secondary-color-rgba;
     margin: 0;
+    padding: 0 calc(1rem + 1vw);
     transition: $navbar-transition;
     &.navbar-minimized-false {
       top: calc(0.25rem + 0.25vw);
@@ -101,40 +108,40 @@ $navbar-call-phone-hover-transition: 0.15s ease-in;
 }
 
 .navbar-stripe-wrapper {
-  position: relative;
-  .navbar-stripe {
-    @media (min-width: 768px) {
-      transition: $navbar-stripe-transition;
+  background: blue;
+  opacity: 0;
+  position: absoute;  // remove nav stripe from DOM on small screens
+  @media (min-width: 768px) {
+    position: absolute;
+    transition: $navbar-stripe-transition;
+    width: 100%;
+    &.navbar-stripe-minimized-false {
+      opacity: 1;
+      top: calc(4rem + 2.5vw);
+    }
+    &.navbar-stripe-minimized-true {
+      opacity: 0;
+      top: 0;
+    }
+    & .navbar-stripe {
       background-color: $secondary-color-rgba;
-      height: calc(0.25rem + 0.25vw);
-      padding: 0 calc(0.5rem + 0.5vw);
-      position: fixed;
+      height: calc(0.5rem + 0.5vw);
+      position: absolute;
       width: 100%;
-      &::before {
-        color: $primary-color;
-        content: 'PRESSURE WASHING';
-        // font-size: 2vw;
-        font-size: calc(1rem + 1vw);
-        font-style: italic;
-        font-weight: 700;
-        position: absolute;
-        top: calc(-0.5rem - 0.75vw);
-        transition: $navbar-stripe-transition;
-      }
-      &.navbar-stripe-minimized-false {
-        top: calc(3rem + 3vw);
-        opacity: 1;
-      }
       &.navbar-stripe-minimized-true {
-        background-color: $secondary-color;
-        height: calc(0.1rem 0.1vw);
-        opacity: 0;
-        top: calc(1rem + 1vw); // determines where the stripe heads before disappearing
-        z-index: 10;
-        &::before {
-          font-size: calc(0.5rem + 0.5vw); // shrinks stripe text while disappearing
-          top: calc(0.1rem + 0.1vw);
-        }
+        height: 0;
+      }
+    }
+    & .navbar-stripe-text {
+      color: $primary-color;
+      font-size: calc(1rem + 1.25vw);
+      font-style: italic;
+      font-weight: 500;
+      left: calc(1.5rem + 1.25vw);
+      position: absolute;
+      top: calc(-0.5rem - 0.75vw);
+      &.navbar-stripe-minimized-true {
+        font-size: 0;
       }
     }
   }
@@ -204,10 +211,10 @@ $navbar-call-phone-hover-transition: 0.15s ease-in;
   }
   @media (min-width: 768px) {
     &.navbar-free-quote-minimized-false {
-      top: calc(4rem + 3vw);
+      top: calc(5rem + 3vw);
     }
     &.navbar-free-quote-minimized-true {
-      top: calc(3rem + 2vw);
+      top: calc(4rem + 2vw);
     }
   }
 }

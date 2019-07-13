@@ -307,11 +307,12 @@
 }
 
 .index-page .landing-page-row .landing-page-headline .lph-line-1 {
+  font-weight: 100;
   position: absolute;
 }
 
 .index-page .landing-page-row .landing-page-headline .lph-line-2 {
-  left: calc(4rem + 12vw);
+  left: calc(4rem + 11vw);
   position: absolute;
 }
 

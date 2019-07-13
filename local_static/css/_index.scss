@@ -39,10 +39,11 @@
       top: 75vh;
       white-space: nowrap;  // prevent line breaks in text w/position: absolute
       & .lph-line-1 {
+        font-weight: 100;
         position: absolute;
       }
       & .lph-line-2 {
-        left: calc(4rem + 12vw);
+        left: calc(4rem + 11vw);
         position: absolute;
       }
       & .lph-line-3 {
@@ -78,7 +79,6 @@
       @media (max-width: 769px) {
         top: 70vh;
         & .lph-line-2 {
-          // left: calc(1rem + 0.1vw);
           left: 0;
           top: calc(1.5rem + 1vw);
         }
@@ -97,16 +97,6 @@
       width: 100%;
     }
   }
-
-  // .landing-page-subheading {
-  //   @media (max-width: 769px) {
-  //     color: $primary-color;
-  //     font-size: calc(1rem + 1vw);
-  //     font-style: italic;
-  //     position: static;
-  //     text-align: center;
-  //   }
-  // }
 
   .landing-page-bottom-border {
     background-color: $secondary-color-rgba;

@@ -14,8 +14,9 @@
 .services-page {
 
   // Services Splash Page
-  .services-page-row {
-    & .services-page-background {
+  .services-splash-page-row {
+    position: relative;
+    & .services-splash-page-background {
       background-image: 
         linear-gradient(
           rgba(23, 104, 94, 0.5),
@@ -30,267 +31,248 @@
       z-index: -1;
       @extend %background-fixed;
     }
-    & .services-page-headline {
+    & .services-splash-page-headline {
       color: $primary-color;
-      font-size: 4.3vw;
-      left: 15vw;
+      font-size: calc(1rem + 3vw);
+      left: 5vw;
       position: absolute;
-      top: 75vh;
-      & .lph-bold {
-        font-weight: 500;
-        @media (max-width: 769px) {
-          display: block;
-          font-size: 1.5rem;
-          left: 1.5rem;
-          position: absolute;
-          top: 1.5rem;
-          width: max-content;
-        }
+      top: 60vh;
+      white-space: nowrap;  // prevent line breaks in text w/position: absolute
+      & .ssph-line-1 {
+        font-weight: 100;
+        position: absolute;
       }
-      & .lph-super-bold-alpha {
+      & .ssph-line-2 {
+        left: calc(8rem + 12vw);
+        position: absolute;
+        top: calc(2.25rem + 1vw);
+      }
+      & .ssph-line-3 {
+        left: calc(8rem + 12vw);
+        position: absolute;
+        top: calc(4.5rem + 2vw);
+      }
+      & .ssph-line-4 {
+        font-weight: 100;
+        left: calc(10rem + 20vw);
+        position: absolute;
+        top: calc(6.75rem + 3vw);
+      }
+      & .ssph-bold {
+        font-weight: 600;
+      }
+      & .ssph-alpha-bold {
         color: $secondary-color;
         font-weight: 900;
         font-style: italic;
-        @media (max-width: 769px) {
-          display: block;
-          font-size: 2.5rem;
-          left: 3rem;
-          position: absolute;
-          top: 2.75rem;
-          width: max-content;
-        }
       }
-      & .lph-dash-alpha {
+      & .ssph-alpha-dash {
         position: relative;
-        top: -2vw;
-        @media (max-width: 769px) {
-          display: block;
-          font-size: 2.5rem;
-          left: 10.5rem;
-          position: absolute;
-          top: 1.65rem;
-          width: max-content;
-        }
+        top: calc(-0.5rem - 1.5vw);
       }
-      & .lph-super-bold-omega {
+      & .ssph-omega-bold {
         font-weight: 900;
         font-style: italic;
-        left: 1.5vw;
-        position: relative;
-        top: 3.5vw;
-        @media (max-width: 769px) {
-          display: block;
-          font-size: 2.5rem;
-          left: 7.5rem;
-          position: absolute;
-          top: 4.75rem;
-          width: max-content;
-        }
       }
-      & .lph-dash-omega {
+      & .ssph-omega-dash {
         color: $secondary-color;
-        left: 1.5vw;
         position: relative;
-        top: 1.5vw;
-        @media (max-width: 769px) {
-          display: block;
-          font-size: 2.5rem;
-          left: 2.75rem;
-          position: absolute;
-          top: 3.5rem;
-          width: max-content;
-        }
-      }
-      & .lph-omega-spacer {
-        opacity: 0;
+        top: calc(-0.5rem - 1.5vw);
       }
       @media (max-width: 769px) {
-        display: block;
-        font-size: 1.3rem;
-        left: 2rem;
-        position: absolute;
         top: 70vh;
+        & .ssph-line-2 {
+          left: 0;
+          top: calc(1.5rem + 1vw);
+        }
+        & .ssph-line-3 {
+          left: calc(6rem + 0.75vw);
+          top: calc(3rem + 2vw);
+        }
+        & .ssph-line-4 {
+          left: calc(6rem + 0.75vw);
+          top: calc(4.5rem + 3vw);
+        }
       }
     }
-    & .services-page-placeholder {
+    & .services-splash-page-placeholder {
       height: 100vh;
       width: 100%;
     }
   }
 
-  .services-page-bottom-border {
+  .services-splash-page-bottom-border {
     background-color: $secondary-color-rgba;
     height: calc(1rem + 1vw);
   }
+
+  .section-1-row {
+    background-color: $primary-color;
+    color: $quarternary-color;
+    height: 100%;
+    overflow: hidden;
+    padding: calc(0.5rem + 3.5vw);
+    & .section-1-image-background {
+      background-image: url('/static/img/pressure-washer-1.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    & .section-1-headline {
+      font-size: calc(2rem + 0.5vw);
+      font-weight: 700;
+      margin: calc(1rem + 0.5vw) 0;
+      text-align: center;
+      width: 100%;
+      & .section-1-headline-bold {
+        color: $secondary-color;
+        font-style: italic;
+        font-weight: 900;
+      }
+    }
+    & .section-1-paragraph {
+      font-size: calc(1rem + 0.5vw);
+      margin-bottom: calc(1rem + 0.5vw);
+      & .section-1-paragraph-bold {
+        color: $secondary-color;
+        font-style: italic;
+        font-weight: 700;
+      }
+    }
+  }
+
+  // Section 2
+  $section-2-hover-transition-time: 0.25s;
+
+  .section-2-row {
+    background-color: $secondary-color-rgba;
+    height: max-content;
+    padding: 0 calc(3rem + 3vw);
+    & .card {
+      border: 0;
+      border-radius: calc(0.5rem + 0.5vw) calc(0.5rem + 0.5vw);
+      margin: calc(2rem + 0.5vw) auto;
+      &:hover {
+        cursor: pointer;
+        & .card-body {
+          color: $tertiary-color;
+          transition: $section-2-hover-transition-time;
+        }
+        & .card-link-text {
+          color: $tertiary-color;
+          transition: $section-2-hover-transition-time;
+        }
+        & .icon-arrow-right {
+          fill: $tertiary-color;
+          transition: $section-2-hover-transition-time;
+        }
+      }
+    }
+    & .card-background-house-washing {
+      background-image: url('/static/img/house1.jpg');
+      @extend %card-background;
+      @extend %background-fixed;
+    }
+    & .card-background-patio-and-deck {
+      background-image: url('/static/img/patio.jpg');
+      @extend %card-background;
+      @extend %background-fixed;
+    }
+    & .card-background-graffiti-removal {
+      background-image: url('/static/img/graffiti-removal.jpg');
+      @extend %card-background;
+      @extend %background-fixed;
+    }
+    & .card-body {
+      color: $quarternary-color;
+      font-size: calc(1rem + 0.25vw);
+      font-style: italic;
+      font-weight: 700;
+      padding: calc(0.25rem + 0.25vw) 0 0 0;  // padding: 20px by default
+      text-align: center;
+    }
+    & .card-link {
+      height: max-content;
+      padding-bottom: calc(0.5rem + 0.25vw);
+      width: max-content;
+      & .card-link-text {
+        color: $quarternary-color;
+        font-size: calc(1rem + 0.25vw);
+        margin-right: calc(0.5rem + 0.5vw);
+        position: relative;
+      }
+      & .icon-arrow-right {
+        fill: $quarternary-color;
+        height: calc(1rem + 0.25vw);
+        stroke: $primary-color;
+      }
+    }
+    & .section-2-flair {
+      margin-bottom: calc(2rem + 1vw);
+      & img {
+        margin: calc(1rem + 0.5vw);
+      }
+      & .section-2-icon-flair-google {
+        height: calc(3.5rem + 2.5vw);
+      }
+      & .section-2-icon-flair-facebook {
+        height: calc(3rem + 2.5vw);
+      }
+      & .section-2-icon-flair-yelp {
+        height: calc(4rem + 3.5vw);
+      }
+      & .section-2-icon-flair-bbb {
+        height: calc(2.7rem + 2vw);
+      }
+    }
+  }
+
+  // Section 3
+  .section-3-row {
+    background-color: $primary-color;
+    color: $quarternary-color;
+    height: max-content;
+    padding: calc(0.5rem + 3.5vw);
+    text-align: center;
+    & .section-3-text {
+      & .section-3-text-headline {
+        font-size: calc(1.5rem + 0.5vw);
+        font-weight: 700;
+        margin-bottom: calc(2rem + 0.5vw);
+        & .section-3-text-headline-bold {
+          color: $secondary-color;
+          font-style: italic;
+          font-weight: 800;
+        }
+      }
+      & .section-3-text-paragraph {
+        font-size: calc(1rem + 0.5vw);
+        & .section-3-text-paragraph-bold {
+          color: $secondary-color;
+          font-style: italic;
+          font-weight: 700;
+        }
+      }
+      & .section-3-text-paragraph-urgent {
+        font-size: calc(1.5rem + 0.5vw);
+        font-style: italic;
+        font-weight: 700;
+      }
+      & .section-3-text-paragraph-phone {
+        font-size: calc(1.5rem + 0.5vw);
+        font-style: italic;
+        font-weight: 700;
+        margin-top: calc(1rem + 1vw);
+        & .icon-phone {
+          height: calc(1.5rem + 0.5vw);
+          & circle {
+            fill: $quarternary-color;
+          }
+          & path {
+            fill: $primary-color;
+          }
+        }
+      }
+    }
+  }
 }
-
-//   .section-1-row {
-//     background-color: $primary-color;
-//     color: $quarternary-color;
-//     height: 100%;
-//     overflow: hidden;
-//     padding: calc(0.5rem + 3.5vw);
-//     & .section-1-image-background {
-//       background-image: url('/static/img/pressure-washer-1.png');
-//       background-repeat: no-repeat;
-//       background-position: center;
-//       background-size: cover;
-//     }
-//     & .section-1-headline {
-//       font-size: calc(2rem + 0.5vw);
-//       font-weight: 700;
-//       margin: calc(1rem + 0.5vw) 0;
-//       text-align: center;
-//       width: 100%;
-//       & .section-1-headline-bold {
-//         color: $secondary-color;
-//         font-style: italic;
-//         font-weight: 900;
-//       }
-//     }
-//     & .section-1-paragraph {
-//       font-size: calc(1rem + 0.5vw);
-//       margin-bottom: calc(1rem + 0.5vw);
-//       & .section-1-paragraph-bold {
-//         color: $secondary-color;
-//         font-style: italic;
-//         font-weight: 700;
-//       }
-//     }
-//   }
-
-//   // Section 2
-//   $section-2-hover-transition-time: 0.25s;
-
-//   .section-2-row {
-//     background-color: $secondary-color-rgba;
-//     height: max-content;
-//     padding: 0 calc(3rem + 3vw);
-//     & .card {
-//       border: 0;
-//       border-radius: calc(0.5rem + 0.5vw) calc(0.5rem + 0.5vw);
-//       margin: calc(2rem + 0.5vw) auto;
-//       &:hover {
-//         cursor: pointer;
-//         & .card-body {
-//           color: $tertiary-color;
-//           transition: $section-2-hover-transition-time;
-//         }
-//         & .card-link-text {
-//           color: $tertiary-color;
-//           transition: $section-2-hover-transition-time;
-//         }
-//         & .icon-arrow-right {
-//           fill: $tertiary-color;
-//           transition: $section-2-hover-transition-time;
-//         }
-//       }
-//     }
-//     & .card-background-house-washing {
-//       background-image: url('/static/img/house1.jpg');
-//       @extend %card-background;
-//       @extend %background-fixed;
-//     }
-//     & .card-background-patio-and-deck {
-//       background-image: url('/static/img/patio.jpg');
-//       @extend %card-background;
-//       @extend %background-fixed;
-//     }
-//     & .card-background-graffiti-removal {
-//       background-image: url('/static/img/graffiti-removal.jpg');
-//       @extend %card-background;
-//       @extend %background-fixed;
-//     }
-//     & .card-body {
-//       color: $quarternary-color;
-//       font-size: calc(1rem + 0.25vw);
-//       font-style: italic;
-//       font-weight: 700;
-//       padding: calc(0.25rem + 0.25vw) 0 0 0;  // padding: 20px by default
-//       text-align: center;
-//     }
-//     & .card-link {
-//       height: max-content;
-//       padding-bottom: calc(0.5rem + 0.25vw);
-//       width: max-content;
-//       & .card-link-text {
-//         color: $quarternary-color;
-//         font-size: calc(1rem + 0.25vw);
-//         margin-right: calc(0.5rem + 0.5vw);
-//         position: relative;
-//       }
-//       & .icon-arrow-right {
-//         fill: $quarternary-color;
-//         height: calc(1rem + 0.25vw);
-//         stroke: $primary-color;
-//       }
-//     }
-//     & .section-2-flair {
-//       margin-bottom: calc(2rem + 1vw);
-//       & img {
-//         margin: calc(1rem + 0.5vw);
-//       }
-//       & .section-2-icon-flair-google {
-//         height: calc(3.5rem + 2.5vw);
-//       }
-//       & .section-2-icon-flair-facebook {
-//         height: calc(3rem + 2.5vw);
-//       }
-//       & .section-2-icon-flair-yelp {
-//         height: calc(4rem + 3.5vw);
-//       }
-//       & .section-2-icon-flair-bbb {
-//         height: calc(2.7rem + 2vw);
-//       }
-//     }
-//   }
-
-//   // Section 3
-//   .section-3-row {
-//     background-color: $primary-color;
-//     color: $quarternary-color;
-//     height: max-content;
-//     padding: calc(0.5rem + 3.5vw);
-//     text-align: center;
-//     & .section-3-text {
-//       & .section-3-text-headline {
-//         font-size: calc(1.5rem + 0.5vw);
-//         font-weight: 700;
-//         margin-bottom: calc(2rem + 0.5vw);
-//         & .section-3-text-headline-bold {
-//           color: $secondary-color;
-//           font-style: italic;
-//           font-weight: 800;
-//         }
-//       }
-//       & .section-3-text-paragraph {
-//         font-size: calc(1rem + 0.5vw);
-//         & .section-3-text-paragraph-bold {
-//           color: $secondary-color;
-//           font-style: italic;
-//           font-weight: 700;
-//         }
-//       }
-//       & .section-3-text-paragraph-urgent {
-//         font-size: calc(1.5rem + 0.5vw);
-//         font-style: italic;
-//         font-weight: 700;
-//       }
-//       & .section-3-text-paragraph-phone {
-//         font-size: calc(1.5rem + 0.5vw);
-//         font-style: italic;
-//         font-weight: 700;
-//         margin-top: calc(1rem + 1vw);
-//         & .icon-phone {
-//           height: calc(1.5rem + 0.5vw);
-//           & circle {
-//             fill: $quarternary-color;
-//           }
-//           & path {
-//             fill: $primary-color;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }

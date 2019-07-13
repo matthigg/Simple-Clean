@@ -270,14 +270,14 @@
   }
 }
 
-.index-page .landing-page-row .landing-page-background, .index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal, .contact-page .contact-page-row .contact-page-background, .services-page .services-page-row .services-page-background {
+.index-page .landing-page-row .landing-page-background, .index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal, .contact-page .contact-page-row .contact-page-background, .services-page .services-splash-page-row .services-splash-page-background, .services-page .section-2-row .card-background-house-washing, .services-page .section-2-row .card-background-patio-and-deck, .services-page .section-2-row .card-background-graffiti-removal {
   background-color: #17685E;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal {
+.index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal, .services-page .section-2-row .card-background-house-washing, .services-page .section-2-row .card-background-patio-and-deck, .services-page .section-2-row .card-background-graffiti-removal {
   border-radius: calc(0.5rem + 0.5vw) calc(0.5rem + 0.5vw) 0 0;
   height: calc(10rem + 0.5vw);
 }
@@ -581,7 +581,7 @@
   fill: white;
 }
 
-.index-page .landing-page-row .landing-page-background, .index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal, .contact-page .contact-page-row .contact-page-background, .services-page .services-page-row .services-page-background {
+.index-page .landing-page-row .landing-page-background, .index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal, .contact-page .contact-page-row .contact-page-background, .services-page .services-splash-page-row .services-splash-page-background, .services-page .section-2-row .card-background-house-washing, .services-page .section-2-row .card-background-patio-and-deck, .services-page .section-2-row .card-background-graffiti-removal {
   background-color: #17685E;
   background-repeat: no-repeat;
   background-position: center;
@@ -687,19 +687,23 @@
   font-weight: 700;
 }
 
-.index-page .landing-page-row .landing-page-background, .index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal, .contact-page .contact-page-row .contact-page-background, .services-page .services-page-row .services-page-background {
+.index-page .landing-page-row .landing-page-background, .index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal, .contact-page .contact-page-row .contact-page-background, .services-page .services-splash-page-row .services-splash-page-background, .services-page .section-2-row .card-background-house-washing, .services-page .section-2-row .card-background-patio-and-deck, .services-page .section-2-row .card-background-graffiti-removal {
   background-color: #17685E;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal {
+.index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal, .services-page .section-2-row .card-background-house-washing, .services-page .section-2-row .card-background-patio-and-deck, .services-page .section-2-row .card-background-graffiti-removal {
   border-radius: calc(0.5rem + 0.5vw) calc(0.5rem + 0.5vw) 0 0;
   height: calc(10rem + 0.5vw);
 }
 
-.services-page .services-page-row .services-page-background {
+.services-page .services-splash-page-row {
+  position: relative;
+}
+
+.services-page .services-splash-page-row .services-splash-page-background {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(23, 104, 94, 0.5)), to(rgba(23, 104, 94, 0.5))), url("/static/img/house1.jpg");
   background-image: linear-gradient(rgba(23, 104, 94, 0.5), rgba(23, 104, 94, 0.5)), url("/static/img/house1.jpg");
   height: 100vh;
@@ -710,131 +714,292 @@
   z-index: -1;
 }
 
-.services-page .services-page-row .services-page-headline {
+.services-page .services-splash-page-row .services-splash-page-headline {
   color: white;
-  font-size: 4.3vw;
-  left: 15vw;
+  font-size: calc(1rem + 3vw);
+  left: 5vw;
   position: absolute;
-  top: 75vh;
+  top: 60vh;
+  white-space: nowrap;
 }
 
-.services-page .services-page-row .services-page-headline .lph-bold {
-  font-weight: 500;
+.services-page .services-splash-page-row .services-splash-page-headline .ssph-line-1 {
+  font-weight: 100;
+  position: absolute;
 }
 
-@media (max-width: 769px) {
-  .services-page .services-page-row .services-page-headline .lph-bold {
-    display: block;
-    font-size: 1.5rem;
-    left: 1.5rem;
-    position: absolute;
-    top: 1.5rem;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-  }
+.services-page .services-splash-page-row .services-splash-page-headline .ssph-line-2 {
+  left: calc(8rem + 12vw);
+  position: absolute;
+  top: calc(2.25rem + 1vw);
 }
 
-.services-page .services-page-row .services-page-headline .lph-super-bold-alpha {
+.services-page .services-splash-page-row .services-splash-page-headline .ssph-line-3 {
+  left: calc(8rem + 12vw);
+  position: absolute;
+  top: calc(4.5rem + 2vw);
+}
+
+.services-page .services-splash-page-row .services-splash-page-headline .ssph-line-4 {
+  font-weight: 100;
+  left: calc(10rem + 20vw);
+  position: absolute;
+  top: calc(6.75rem + 3vw);
+}
+
+.services-page .services-splash-page-row .services-splash-page-headline .ssph-bold {
+  font-weight: 600;
+}
+
+.services-page .services-splash-page-row .services-splash-page-headline .ssph-alpha-bold {
   color: #14D3C9;
   font-weight: 900;
   font-style: italic;
 }
 
-@media (max-width: 769px) {
-  .services-page .services-page-row .services-page-headline .lph-super-bold-alpha {
-    display: block;
-    font-size: 2.5rem;
-    left: 3rem;
-    position: absolute;
-    top: 2.75rem;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-  }
-}
-
-.services-page .services-page-row .services-page-headline .lph-dash-alpha {
+.services-page .services-splash-page-row .services-splash-page-headline .ssph-alpha-dash {
   position: relative;
-  top: -2vw;
+  top: calc(-0.5rem - 1.5vw);
 }
 
-@media (max-width: 769px) {
-  .services-page .services-page-row .services-page-headline .lph-dash-alpha {
-    display: block;
-    font-size: 2.5rem;
-    left: 10.5rem;
-    position: absolute;
-    top: 1.65rem;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-  }
-}
-
-.services-page .services-page-row .services-page-headline .lph-super-bold-omega {
+.services-page .services-splash-page-row .services-splash-page-headline .ssph-omega-bold {
   font-weight: 900;
   font-style: italic;
-  left: 1.5vw;
-  position: relative;
-  top: 3.5vw;
 }
 
-@media (max-width: 769px) {
-  .services-page .services-page-row .services-page-headline .lph-super-bold-omega {
-    display: block;
-    font-size: 2.5rem;
-    left: 7.5rem;
-    position: absolute;
-    top: 4.75rem;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-  }
-}
-
-.services-page .services-page-row .services-page-headline .lph-dash-omega {
+.services-page .services-splash-page-row .services-splash-page-headline .ssph-omega-dash {
   color: #14D3C9;
-  left: 1.5vw;
   position: relative;
-  top: 1.5vw;
+  top: calc(-0.5rem - 1.5vw);
 }
 
 @media (max-width: 769px) {
-  .services-page .services-page-row .services-page-headline .lph-dash-omega {
-    display: block;
-    font-size: 2.5rem;
-    left: 2.75rem;
-    position: absolute;
-    top: 3.5rem;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-  }
-}
-
-.services-page .services-page-row .services-page-headline .lph-omega-spacer {
-  opacity: 0;
-}
-
-@media (max-width: 769px) {
-  .services-page .services-page-row .services-page-headline {
-    display: block;
-    font-size: 1.3rem;
-    left: 2rem;
-    position: absolute;
+  .services-page .services-splash-page-row .services-splash-page-headline {
     top: 70vh;
   }
+  .services-page .services-splash-page-row .services-splash-page-headline .ssph-line-2 {
+    left: 0;
+    top: calc(1.5rem + 1vw);
+  }
+  .services-page .services-splash-page-row .services-splash-page-headline .ssph-line-3 {
+    left: calc(6rem + 0.75vw);
+    top: calc(3rem + 2vw);
+  }
+  .services-page .services-splash-page-row .services-splash-page-headline .ssph-line-4 {
+    left: calc(6rem + 0.75vw);
+    top: calc(4.5rem + 3vw);
+  }
 }
 
-.services-page .services-page-row .services-page-placeholder {
+.services-page .services-splash-page-row .services-splash-page-placeholder {
   height: 100vh;
   width: 100%;
 }
 
-.services-page .services-page-bottom-border {
+.services-page .services-splash-page-bottom-border {
   background-color: rgba(20, 211, 201, 0.8);
   height: calc(1rem + 1vw);
+}
+
+.services-page .section-1-row {
+  background-color: white;
+  color: #17685E;
+  height: 100%;
+  overflow: hidden;
+  padding: calc(0.5rem + 3.5vw);
+}
+
+.services-page .section-1-row .section-1-image-background {
+  background-image: url("/static/img/pressure-washer-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.services-page .section-1-row .section-1-headline {
+  font-size: calc(2rem + 0.5vw);
+  font-weight: 700;
+  margin: calc(1rem + 0.5vw) 0;
+  text-align: center;
+  width: 100%;
+}
+
+.services-page .section-1-row .section-1-headline .section-1-headline-bold {
+  color: #14D3C9;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.services-page .section-1-row .section-1-paragraph {
+  font-size: calc(1rem + 0.5vw);
+  margin-bottom: calc(1rem + 0.5vw);
+}
+
+.services-page .section-1-row .section-1-paragraph .section-1-paragraph-bold {
+  color: #14D3C9;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.services-page .section-2-row {
+  background-color: rgba(20, 211, 201, 0.8);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 0 calc(3rem + 3vw);
+}
+
+.services-page .section-2-row .card {
+  border: 0;
+  border-radius: calc(0.5rem + 0.5vw) calc(0.5rem + 0.5vw);
+  margin: calc(2rem + 0.5vw) auto;
+}
+
+.services-page .section-2-row .card:hover {
+  cursor: pointer;
+}
+
+.services-page .section-2-row .card:hover .card-body {
+  color: #00F2A5;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.services-page .section-2-row .card:hover .card-link-text {
+  color: #00F2A5;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.services-page .section-2-row .card:hover .icon-arrow-right {
+  fill: #00F2A5;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.services-page .section-2-row .card-background-house-washing {
+  background-image: url("/static/img/house1.jpg");
+}
+
+.services-page .section-2-row .card-background-patio-and-deck {
+  background-image: url("/static/img/patio.jpg");
+}
+
+.services-page .section-2-row .card-background-graffiti-removal {
+  background-image: url("/static/img/graffiti-removal.jpg");
+}
+
+.services-page .section-2-row .card-body {
+  color: #17685E;
+  font-size: calc(1rem + 0.25vw);
+  font-style: italic;
+  font-weight: 700;
+  padding: calc(0.25rem + 0.25vw) 0 0 0;
+  text-align: center;
+}
+
+.services-page .section-2-row .card-link {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-bottom: calc(0.5rem + 0.25vw);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.services-page .section-2-row .card-link .card-link-text {
+  color: #17685E;
+  font-size: calc(1rem + 0.25vw);
+  margin-right: calc(0.5rem + 0.5vw);
+  position: relative;
+}
+
+.services-page .section-2-row .card-link .icon-arrow-right {
+  fill: #17685E;
+  height: calc(1rem + 0.25vw);
+  stroke: white;
+}
+
+.services-page .section-2-row .section-2-flair {
+  margin-bottom: calc(2rem + 1vw);
+}
+
+.services-page .section-2-row .section-2-flair img {
+  margin: calc(1rem + 0.5vw);
+}
+
+.services-page .section-2-row .section-2-flair .section-2-icon-flair-google {
+  height: calc(3.5rem + 2.5vw);
+}
+
+.services-page .section-2-row .section-2-flair .section-2-icon-flair-facebook {
+  height: calc(3rem + 2.5vw);
+}
+
+.services-page .section-2-row .section-2-flair .section-2-icon-flair-yelp {
+  height: calc(4rem + 3.5vw);
+}
+
+.services-page .section-2-row .section-2-flair .section-2-icon-flair-bbb {
+  height: calc(2.7rem + 2vw);
+}
+
+.services-page .section-3-row {
+  background-color: white;
+  color: #17685E;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: calc(0.5rem + 3.5vw);
+  text-align: center;
+}
+
+.services-page .section-3-row .section-3-text .section-3-text-headline {
+  font-size: calc(1.5rem + 0.5vw);
+  font-weight: 700;
+  margin-bottom: calc(2rem + 0.5vw);
+}
+
+.services-page .section-3-row .section-3-text .section-3-text-headline .section-3-text-headline-bold {
+  color: #14D3C9;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.services-page .section-3-row .section-3-text .section-3-text-paragraph {
+  font-size: calc(1rem + 0.5vw);
+}
+
+.services-page .section-3-row .section-3-text .section-3-text-paragraph .section-3-text-paragraph-bold {
+  color: #14D3C9;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.services-page .section-3-row .section-3-text .section-3-text-paragraph-urgent {
+  font-size: calc(1.5rem + 0.5vw);
+  font-style: italic;
+  font-weight: 700;
+}
+
+.services-page .section-3-row .section-3-text .section-3-text-paragraph-phone {
+  font-size: calc(1.5rem + 0.5vw);
+  font-style: italic;
+  font-weight: 700;
+  margin-top: calc(1rem + 1vw);
+}
+
+.services-page .section-3-row .section-3-text .section-3-text-paragraph-phone .icon-phone {
+  height: calc(1.5rem + 0.5vw);
+}
+
+.services-page .section-3-row .section-3-text .section-3-text-paragraph-phone .icon-phone circle {
+  fill: #17685E;
+}
+
+.services-page .section-3-row .section-3-text .section-3-text-paragraph-phone .icon-phone path {
+  fill: white;
 }
 
 .footer {

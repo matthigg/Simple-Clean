@@ -2,40 +2,44 @@
 {% load static %}
 
 {% block title %}
-  <title>Our Pressure Washing Services | Simple Clean</title>
+  <title>Pressure Washing Services in Waukesha, WI | Simple Clean</title>
 {% endblock %}
 
 {% block main %}
   <div class="container-fluid services-page">
 
     <!-- Services Splash Page -->
-    <div class="row services-page-row">
-      <div class="services-page-background"></div>
+    <div class="row services-splash-page-row">
+      <div class="services-splash-page-background"></div>
       <div class="col-12">
-        <div class="services-page-headline">
-          Experience
-          <span class="lph-bold">The Best</span>
+
+        <!-- Services Splash Page Headline (ssph) -->
+        <div class="services-splash-page-headline">
+          <div class="ssph-line-1">
+            Experience
+            <span class="ssph-bold">The Best</span>
+          </div>
+          <div class="ssph-line-2">
+            <span class="ssph-alpha-bold">HOUSE</span>
+            <span class="ssph-alpha-dash">_______</span>
+          </div>
+          <div class="ssph-line-3">
+            <span class="ssph-omega-dash">___</span>
+            <span class="ssph-omega-bold">WASHING</span>
+          </div>
+          <div class="ssph-line-4">
+            <span class="ssph-bold">Solutions</span>
+            in Lake Country
         </div>
-        <div class="services-page-headline">
-          <span class="lph-super-bold-alpha">HOUSE</span>
-          <span class="lph-dash-alpha">_______</span>
-        </div>
-        <div class="services-page-headline">
-          <span class="lph-dash-omega">____</span>
-          <span class="lph-super-bold-omega">WASHING</span>
-        </div>
-        <div class="services-page-headline">
-          <span class="lph-bold">Solutions</span>
-          in Lake Country
-        </div>
+
       </div>
-      <div class="services-page-placeholder"></div>
+      <div class="services-splash-page-placeholder"></div>
     </div>
 
-    <div class="row services-page-bottom-border"></div>
+    <div class="row services-splash-page-bottom-border"></div>
 
     <!-- Section 1 -->
-    <!-- <div class="row section-1-row">
+    <div class="row section-1-row">
       <div class="col-md-6 section-1-image-background"></div>
       <div class="col-md-6">
         <h2 class="section-1-headline">
@@ -66,13 +70,13 @@
           pressure wash away that dirty Wisconsin grime!
         </p>
       </div>
-    </div> -->
+    </div>
 
     <!-- Section 2, Cards -->
-    <!-- <div class="row section-2-row"> -->
+    <div class="row section-2-row">
 
       <!-- House Washing Card -->
-      <!-- <div class="col-md-4">
+      <div class="col-md-4">
         <div class="card card-first">
           <div class="card-background-house-washing"></div>
           <div class="card-body">HOUSE WASHING</div>
@@ -83,10 +87,10 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
 
       <!-- Patio & Deck -->
-      <!-- <div class="col-md-4">
+      <div class="col-md-4">
         <div class="card">
           <div class="card-background-patio-and-deck"></div>
           <div class="card-body">PATIO & DECK</div>
@@ -97,10 +101,10 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
 
       <!-- Graffiti Removal -->
-      <!-- <div class="col-md-4">
+      <div class="col-md-4">
         <div class="card">
           <div class="card-background-graffiti-removal"></div>
           <div class="card-body">GRAFFITI REMOVAL</div>
@@ -112,14 +116,32 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
+
+    <!-- Section 2, Flair -->
+    <div class="row section-2-row justify-content-center">
+      <div class="row section-2-flair">
+        <div class="col-md-3 d-flex justify-content-around align-items-center">
+          <img src="{% static 'img/google.svg' %}" alt="Simple Clean Google Reviews" class="section-2-icon-flair-google">
+        </div>
+        <div class="col-md-3 d-flex justify-content-around align-items-center">
+          <img src="{% static 'img/facebook.svg' %}" alt="Simple Clean Facebook Reviews" class="section-2-icon-flair-facebook">
+        </div>
+        <div class="col-md-2 d-flex justify-content-around align-items-center">
+          <img src="{% static 'img/yelp.svg' %}" alt="Simple Clean Yelp Reviews" class="section-2-icon-flair-yelp">
+        </div>
+        <div class="col-md-4 d-flex justify-content-around align-items-center">
+          <img src="{% static 'img/bbb.svg' %}" alt="Simple Clean Better Business Bureau Information" class="section-2-icon-flair-bbb">
+        </div>
+      </div>
+    </div>
 
 
     <!-- Section 3 -->
-    <!-- <div class="row section-3-row"> -->
+    <div class="row section-3-row">
 
       <!-- Section 3 Text -->
-      <!-- <div class="col-md-6 section-3-text">
+      <div class="col-md-6 section-3-text">
         <h2 class="section-3-text-headline">
           Get a <span class="section-3-text-headline-bold">FREE QUOTE</span> for 
           Pressure Washing Services in Waukesha, WI and the Surrounding Area
@@ -136,8 +158,12 @@
           {% include 'svg/phone.svg' %}
           (123) 456-7890
         </p>
-      </div> -->
+      </div>
 
-    <!-- </div> -->
+      <!-- Contact Form -->
+      <div class="col-md-6">
+        {% include 'contact/contact-form.html' %}
+      </div>
+    </div>
   </div>
 {% endblock %}

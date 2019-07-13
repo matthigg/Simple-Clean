@@ -1,7 +1,6 @@
 $navbar-transition: 0.2s ease-in;
 $navbar-stripe-transition: 0.2s ease-in;
-$navbar-stripe-text-transition: 0.2s ease-in;
-$navbar-free-quote-transition: 0.2s ease-in;
+$navbar-free-quote-minimize-transition: 0.2s ease-in;
 $navbar-free-quote-hover-transition: 0.15s ease-in;
 $navbar-call-phone-hover-transition: 0.15s ease-in;
 
@@ -197,7 +196,7 @@ $navbar-call-phone-hover-transition: 0.15s ease-in;
   position: fixed;
   right: calc(1rem + 0.5vw);
   top: calc(4.5rem + 0.5vw);
-  transition: $navbar-free-quote-transition;
+  transition: $navbar-free-quote-minimize-transition;
   width: max-content;
   z-index: 1;
   &:hover {

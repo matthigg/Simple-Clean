@@ -270,14 +270,14 @@
   }
 }
 
-.index-page .landing-page-row .landing-page-background, .index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal, .contact-page .contact-page-row .contact-page-background, .services-page .services-splash-page-row .services-splash-page-background, .services-page .section-2-row .card-background-house-washing, .services-page .section-2-row .card-background-patio-and-deck, .services-page .section-2-row .card-background-graffiti-removal {
+.index-page .landing-page-row .landing-page-background, .index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal, .contact-page .contact-page-row .contact-page-background, .services-page .services-splash-page-row .services-splash-page-background {
   background-color: #17685E;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal, .services-page .section-2-row .card-background-house-washing, .services-page .section-2-row .card-background-patio-and-deck, .services-page .section-2-row .card-background-graffiti-removal {
+.index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal {
   border-radius: calc(0.5rem + 0.5vw) calc(0.5rem + 0.5vw) 0 0;
   height: calc(10rem + 0.5vw);
 }
@@ -582,7 +582,7 @@
   fill: white;
 }
 
-.index-page .landing-page-row .landing-page-background, .index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal, .contact-page .contact-page-row .contact-page-background, .services-page .services-splash-page-row .services-splash-page-background, .services-page .section-2-row .card-background-house-washing, .services-page .section-2-row .card-background-patio-and-deck, .services-page .section-2-row .card-background-graffiti-removal {
+.index-page .landing-page-row .landing-page-background, .index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal, .contact-page .contact-page-row .contact-page-background, .services-page .services-splash-page-row .services-splash-page-background {
   background-color: #17685E;
   background-repeat: no-repeat;
   background-position: center;
@@ -688,14 +688,14 @@
   font-weight: 700;
 }
 
-.index-page .landing-page-row .landing-page-background, .index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal, .contact-page .contact-page-row .contact-page-background, .services-page .services-splash-page-row .services-splash-page-background, .services-page .section-2-row .card-background-house-washing, .services-page .section-2-row .card-background-patio-and-deck, .services-page .section-2-row .card-background-graffiti-removal {
+.index-page .landing-page-row .landing-page-background, .index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal, .contact-page .contact-page-row .contact-page-background, .services-page .services-splash-page-row .services-splash-page-background {
   background-color: #17685E;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal, .services-page .section-2-row .card-background-house-washing, .services-page .section-2-row .card-background-patio-and-deck, .services-page .section-2-row .card-background-graffiti-removal {
+.index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal {
   border-radius: calc(0.5rem + 0.5vw) calc(0.5rem + 0.5vw) 0 0;
   height: calc(10rem + 0.5vw);
 }
@@ -720,7 +720,7 @@
   font-size: calc(1rem + 3vw);
   left: 5vw;
   position: absolute;
-  top: 60vh;
+  top: 55vh;
   white-space: nowrap;
 }
 
@@ -811,7 +811,7 @@
 }
 
 .services-page .section-1-row .section-1-image-background {
-  background-image: url("/static/img/pressure-washer-1.png");
+  background-image: url("/static/img/pressure-washer-2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -842,165 +842,38 @@
   font-weight: 700;
 }
 
-.services-page .section-2-row {
+.services-page .section-2-headline {
   background-color: rgba(20, 211, 201, 0.8);
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  color: white;
+  font-size: calc(2rem + 1vw);
+  font-weight: 700;
+  padding: calc(1rem + 1vw);
+  width: 100%;
+}
+
+.services-page .section-2-billboards {
+  background-color: rgba(20, 211, 201, 0.8);
+  font-size: calc(1rem + 1vw);
   padding: 0 calc(3rem + 3vw);
-}
-
-.services-page .section-2-row .card {
-  border: 0;
-  border-radius: calc(0.5rem + 0.5vw) calc(0.5rem + 0.5vw);
-  margin: calc(2rem + 0.5vw) auto;
-}
-
-.services-page .section-2-row .card:hover {
-  cursor: pointer;
-}
-
-.services-page .section-2-row .card:hover .card-body {
-  color: #00F2A5;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-
-.services-page .section-2-row .card:hover .card-link-text {
-  color: #00F2A5;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-
-.services-page .section-2-row .card:hover .icon-arrow-right {
-  fill: #00F2A5;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-
-.services-page .section-2-row .card-background-house-washing {
-  background-image: url("/static/img/house1.jpg");
-}
-
-.services-page .section-2-row .card-background-patio-and-deck {
-  background-image: url("/static/img/patio.jpg");
-}
-
-.services-page .section-2-row .card-background-graffiti-removal {
-  background-image: url("/static/img/graffiti-removal.jpg");
-}
-
-.services-page .section-2-row .card-body {
-  color: #17685E;
-  font-size: calc(1rem + 0.25vw);
-  font-style: italic;
-  font-weight: 700;
-  padding: calc(0.25rem + 0.25vw) 0 0 0;
   text-align: center;
 }
 
-.services-page .section-2-row .card-link {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  padding-bottom: calc(0.5rem + 0.25vw);
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+.services-page .section-2-billboards .billboard-1 {
+  background-color: #17685E;
+  color: white;
+  padding: calc(1rem + 1vw);
 }
 
-.services-page .section-2-row .card-link .card-link-text {
-  color: #17685E;
-  font-size: calc(1rem + 0.25vw);
-  margin-right: calc(0.5rem + 0.5vw);
-  position: relative;
-}
-
-.services-page .section-2-row .card-link .icon-arrow-right {
-  fill: #17685E;
-  height: calc(1rem + 0.25vw);
-  stroke: white;
-}
-
-.services-page .section-2-row .section-2-flair {
-  margin-bottom: calc(2rem + 1vw);
-}
-
-.services-page .section-2-row .section-2-flair img {
-  margin: calc(1rem + 0.5vw);
-}
-
-.services-page .section-2-row .section-2-flair .section-2-icon-flair-google {
-  height: calc(3.5rem + 2.5vw);
-}
-
-.services-page .section-2-row .section-2-flair .section-2-icon-flair-facebook {
-  height: calc(3rem + 2.5vw);
-}
-
-.services-page .section-2-row .section-2-flair .section-2-icon-flair-yelp {
-  height: calc(4rem + 3.5vw);
-}
-
-.services-page .section-2-row .section-2-flair .section-2-icon-flair-bbb {
-  height: calc(2.7rem + 2vw);
-}
-
-.services-page .section-3-row {
+.services-page .section-2-billboards .billboard-2 {
   background-color: white;
-  color: #17685E;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  padding: calc(0.5rem + 3.5vw);
-  text-align: center;
-}
-
-.services-page .section-3-row .section-3-text .section-3-text-headline {
-  font-size: calc(1.5rem + 0.5vw);
-  font-weight: 700;
-  margin-bottom: calc(2rem + 0.5vw);
-}
-
-.services-page .section-3-row .section-3-text .section-3-text-headline .section-3-text-headline-bold {
   color: #14D3C9;
-  font-style: italic;
-  font-weight: 800;
+  padding: calc(1rem + 1vw);
 }
 
-.services-page .section-3-row .section-3-text .section-3-text-paragraph {
-  font-size: calc(1rem + 0.5vw);
-}
-
-.services-page .section-3-row .section-3-text .section-3-text-paragraph .section-3-text-paragraph-bold {
-  color: #14D3C9;
-  font-style: italic;
-  font-weight: 700;
-}
-
-.services-page .section-3-row .section-3-text .section-3-text-paragraph-urgent {
-  font-size: calc(1.5rem + 0.5vw);
-  font-style: italic;
-  font-weight: 700;
-}
-
-.services-page .section-3-row .section-3-text .section-3-text-paragraph-phone {
-  font-size: calc(1.5rem + 0.5vw);
-  font-style: italic;
-  font-weight: 700;
-  margin-top: calc(1rem + 1vw);
-}
-
-.services-page .section-3-row .section-3-text .section-3-text-paragraph-phone .icon-phone {
-  height: calc(1.5rem + 0.5vw);
-}
-
-.services-page .section-3-row .section-3-text .section-3-text-paragraph-phone .icon-phone circle {
-  fill: #17685E;
-}
-
-.services-page .section-3-row .section-3-text .section-3-text-paragraph-phone .icon-phone path {
-  fill: white;
+.services-page .section-2-billboards .billboard-3 {
+  background-color: #17685E;
+  color: white;
+  padding: calc(1rem + 1vw);
 }
 
 .footer {

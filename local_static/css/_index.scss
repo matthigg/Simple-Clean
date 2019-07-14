@@ -14,7 +14,7 @@
 .index-page {
 
   // Landing Page
-  .landing-page-row {
+  & .landing-page-row {
     position: relative;
     & .landing-page-background {
       background-image: 
@@ -98,12 +98,12 @@
     }
   }
 
-  .landing-page-bottom-border {
+  & .landing-page-bottom-border {
     background-color: $secondary-color-rgba;
     height: calc(1rem + 1vw);
   }
 
-  .section-1-row {
+  & .section-1-row {
     background-color: $primary-color;
     color: $quarternary-color;
     height: 100%;
@@ -141,7 +141,7 @@
   // Section 2
   $section-2-hover-transition-time: 0.25s;
 
-  .section-2-row {
+  & .section-2-row {
     background-color: $secondary-color-rgba;
     height: max-content;
     padding: 0 calc(3rem + 3vw);
@@ -225,7 +225,7 @@
   }
 
   // Section 3
-  .section-3-row {
+  & .section-3-row {
     background-color: $primary-color;
     color: $quarternary-color;
     height: max-content;

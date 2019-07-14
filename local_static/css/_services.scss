@@ -14,7 +14,7 @@
 .services-page {
 
   // Services Splash Page
-  .services-splash-page-row {
+  & .services-splash-page-row {
     position: relative;
     & .services-splash-page-background {
       background-image: 
@@ -36,7 +36,7 @@
       font-size: calc(1rem + 3vw);
       left: 5vw;
       position: absolute;
-      top: 60vh;
+      top: 55vh;
       white-space: nowrap;  // prevent line breaks in text w/position: absolute
       & .ssph-line-1 {
         font-weight: 100;
@@ -101,20 +101,20 @@
     }
   }
 
-  .services-splash-page-bottom-border {
+  & .services-splash-page-bottom-border {
     background-color: $secondary-color-rgba;
     height: calc(1rem + 1vw);
   }
 
   // Section 1
-  .section-1-row {
+  & .section-1-row {
     background-color: $primary-color;
     color: $quarternary-color;
     height: 100%;
     overflow: hidden;
     padding: calc(0.5rem + 3.5vw);
     & .section-1-image-background {
-      background-image: url('/static/img/pressure-washer-1.png');
+      background-image: url('/static/img/pressure-washer-2.png');
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -143,137 +143,38 @@
   }
 
   // Section 2
-  $section-2-hover-transition-time: 0.25s;
-
-  .section-2-row {
+  & .section-2-headline{
     background-color: $secondary-color-rgba;
-    height: max-content;
+    color: $primary-color;
+    font-size: calc(2rem + 1vw);
+    font-weight: 700;
+    padding: calc(1rem + 1vw);
+    width: 100%;
+  }
+  & .section-2-billboards {
+    background-color: $secondary-color-rgba;
+    font-size: calc(1rem + 1vw);
     padding: 0 calc(3rem + 3vw);
-    & .card {
-      border: 0;
-      border-radius: calc(0.5rem + 0.5vw) calc(0.5rem + 0.5vw);
-      margin: calc(2rem + 0.5vw) auto;
-      &:hover {
-        cursor: pointer;
-        & .card-body {
-          color: $tertiary-color;
-          transition: $section-2-hover-transition-time;
-        }
-        & .card-link-text {
-          color: $tertiary-color;
-          transition: $section-2-hover-transition-time;
-        }
-        & .icon-arrow-right {
-          fill: $tertiary-color;
-          transition: $section-2-hover-transition-time;
-        }
-      }
+    text-align: center;
+    & .billboard-1 {
+      background-color: $quarternary-color;
+      color: $primary-color;
+      padding: calc(1rem + 1vw);
     }
-    & .card-background-house-washing {
-      background-image: url('/static/img/house1.jpg');
-      @extend %card-background;
-      @extend %background-fixed;
+    & .billboard-2 {
+      background-color: $primary-color;
+      color: $secondary-color;
+      padding: calc(1rem + 1vw);
     }
-    & .card-background-patio-and-deck {
-      background-image: url('/static/img/patio.jpg');
-      @extend %card-background;
-      @extend %background-fixed;
-    }
-    & .card-background-graffiti-removal {
-      background-image: url('/static/img/graffiti-removal.jpg');
-      @extend %card-background;
-      @extend %background-fixed;
-    }
-    & .card-body {
-      color: $quarternary-color;
-      font-size: calc(1rem + 0.25vw);
-      font-style: italic;
-      font-weight: 700;
-      padding: calc(0.25rem + 0.25vw) 0 0 0;  // padding: 20px by default
-      text-align: center;
-    }
-    & .card-link {
-      height: max-content;
-      padding-bottom: calc(0.5rem + 0.25vw);
-      width: max-content;
-      & .card-link-text {
-        color: $quarternary-color;
-        font-size: calc(1rem + 0.25vw);
-        margin-right: calc(0.5rem + 0.5vw);
-        position: relative;
-      }
-      & .icon-arrow-right {
-        fill: $quarternary-color;
-        height: calc(1rem + 0.25vw);
-        stroke: $primary-color;
-      }
-    }
-    & .section-2-flair {
-      margin-bottom: calc(2rem + 1vw);
-      & img {
-        margin: calc(1rem + 0.5vw);
-      }
-      & .section-2-icon-flair-google {
-        height: calc(3.5rem + 2.5vw);
-      }
-      & .section-2-icon-flair-facebook {
-        height: calc(3rem + 2.5vw);
-      }
-      & .section-2-icon-flair-yelp {
-        height: calc(4rem + 3.5vw);
-      }
-      & .section-2-icon-flair-bbb {
-        height: calc(2.7rem + 2vw);
-      }
+    & .billboard-3 {
+      background-color: $quarternary-color;
+      color: $primary-color;
+      padding: calc(1rem + 1vw);
     }
   }
 
   // Section 3
-  .section-3-row {
-    background-color: $primary-color;
-    color: $quarternary-color;
-    height: max-content;
-    padding: calc(0.5rem + 3.5vw);
-    text-align: center;
-    & .section-3-text {
-      & .section-3-text-headline {
-        font-size: calc(1.5rem + 0.5vw);
-        font-weight: 700;
-        margin-bottom: calc(2rem + 0.5vw);
-        & .section-3-text-headline-bold {
-          color: $secondary-color;
-          font-style: italic;
-          font-weight: 800;
-        }
-      }
-      & .section-3-text-paragraph {
-        font-size: calc(1rem + 0.5vw);
-        & .section-3-text-paragraph-bold {
-          color: $secondary-color;
-          font-style: italic;
-          font-weight: 700;
-        }
-      }
-      & .section-3-text-paragraph-urgent {
-        font-size: calc(1.5rem + 0.5vw);
-        font-style: italic;
-        font-weight: 700;
-      }
-      & .section-3-text-paragraph-phone {
-        font-size: calc(1.5rem + 0.5vw);
-        font-style: italic;
-        font-weight: 700;
-        margin-top: calc(1rem + 1vw);
-        & .icon-phone {
-          height: calc(1.5rem + 0.5vw);
-          & circle {
-            fill: $quarternary-color;
-          }
-          & path {
-            fill: $primary-color;
-          }
-        }
-      }
-    }
+  & .section-3-row {
+
   }
 }

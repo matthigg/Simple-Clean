@@ -1023,6 +1023,74 @@
   height: calc(1rem + 1vw);
 }
 
+.ourwork-page .section-1-row {
+  background-color: white;
+  height: 100%;
+  overflow: hidden;
+  padding: calc(0.5rem + 3.5vw);
+}
+
+.ourwork-page .section-1-row .section-1-headline {
+  font-size: calc(2rem + 0.5vw);
+  font-weight: 700;
+  margin: calc(1rem + 0.5vw) 0;
+  text-align: center;
+  width: 100%;
+}
+
+.ourwork-page .section-1-row .section-1-headline .section-1-headline-bold {
+  color: #14D3C9;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.ourwork-page .section-1-row .section-1-before-and-after-pictures .section-1-baap-group {
+  margin: calc(1rem + 1vw) 0;
+}
+
+.ourwork-page .section-1-row .section-1-before-and-after-pictures .section-1-baap-group .section-1-baap-group-before {
+  border: calc(0.15rem + 0.15vw) solid #14D3C9;
+  margin-right: calc(0.25rem + 0.25vw);
+  position: relative;
+}
+
+.ourwork-page .section-1-row .section-1-before-and-after-pictures .section-1-baap-group .section-1-baap-group-before::before {
+  background-color: #14D3C9;
+  color: white;
+  content: "BEFORE";
+  font-style: italic;
+  font-weight: 600;
+  left: calc(0.25rem + 0.25vw);
+  padding: 0 calc(0.1rem + 0.1vw);
+  position: absolute;
+  top: calc(0.25rem + 0.25vw);
+}
+
+.ourwork-page .section-1-row .section-1-before-and-after-pictures .section-1-baap-group .section-1-baap-group-before img {
+  height: 15vw;
+}
+
+.ourwork-page .section-1-row .section-1-before-and-after-pictures .section-1-baap-group .section-1-baap-group-after {
+  border: calc(0.15rem + 0.15vw) solid #14D3C9;
+  position: relative;
+}
+
+.ourwork-page .section-1-row .section-1-before-and-after-pictures .section-1-baap-group .section-1-baap-group-after::before {
+  background-color: #14D3C9;
+  color: white;
+  content: "AFTER";
+  font-style: italic;
+  font-weight: 600;
+  left: calc(0.25rem + 0.25vw);
+  padding: 0 calc(0.1rem + 0.1vw);
+  position: absolute;
+  top: calc(0.25rem + 0.25vw);
+}
+
+.ourwork-page .section-1-row .section-1-before-and-after-pictures .section-1-baap-group .section-1-baap-group-after img {
+  height: 15vw;
+}
+
 .footer {
   background-color: rgba(20, 211, 201, 0.8);
 }

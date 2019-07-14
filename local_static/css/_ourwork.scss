@@ -14,8 +14,6 @@
 .ourwork-page {
 
   // Our Work Splash Page
-  // rgba(23, 104, 94, 0.5),
-
   & .ourwork-splash-page-row {
     position: relative;
     & .ourwork-splash-page-background {
@@ -112,17 +110,64 @@
 
   // Section 1
   & .section-1-row {
-    // background-color: $primary-color;
-    // color: $quarternary-color;
-    // height: 100%;
-    // overflow: hidden;
-    // padding: calc(0.5rem + 3.5vw);
+    background-color: $primary-color;
+    height: 100%;
+    overflow: hidden;
+    padding: calc(0.5rem + 3.5vw);
     & .section-1-headline {
-      // font-size: calc(2rem + 0.5vw);
-      // font-weight: 700;
-      // margin: calc(1rem + 0.5vw) 0;
-      // text-align: center;
-      // width: 100%;
+      font-size: calc(2rem + 0.5vw);
+      font-weight: 700;
+      margin: calc(1rem + 0.5vw) 0;
+      text-align: center;
+      width: 100%;
+      & .section-1-headline-bold {
+        color: $secondary-color;
+        font-style: italic;
+        font-weight: 900;
+      }
+    }
+    & .section-1-before-and-after-pictures {
+
+      & .section-1-baap-group {
+        margin: calc(1rem + 1vw) 0;
+        & .section-1-baap-group-before {
+          border: calc(0.15rem + 0.15vw) solid $secondary-color;
+          margin-right: calc(0.25rem + 0.25vw);
+          position: relative;
+          &::before {
+            background-color: $secondary-color;
+            color: $primary-color;
+            content: "BEFORE";
+            font-style: italic;
+            font-weight: 600;
+            left: calc(0.25rem + 0.25vw);
+            padding: 0 calc(0.1rem + 0.1vw);
+            position: absolute;
+            top: calc(0.25rem + 0.25vw);
+          }
+          & img {
+            height: 15vw;
+          }
+        }
+        & .section-1-baap-group-after {
+          border: calc(0.15rem + 0.15vw) solid $secondary-color;
+          position: relative;
+          &::before {
+            background-color: $secondary-color;
+            color: $primary-color;
+            content: "AFTER";
+            font-style: italic;
+            font-weight: 600;
+            left: calc(0.25rem + 0.25vw);
+            padding: 0 calc(0.1rem + 0.1vw);
+            position: absolute;
+            top: calc(0.25rem + 0.25vw);
+          }
+          & img {
+            height: 15vw;
+          }
+        }
+      }
     }
   }
 }

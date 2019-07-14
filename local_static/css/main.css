@@ -270,7 +270,7 @@
   }
 }
 
-.index-page .landing-page-row .landing-page-background, .index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal, .contact-page .contact-page-row .contact-page-background, .services-page .services-splash-page-row .services-splash-page-background {
+.index-page .landing-page-row .landing-page-background, .index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal, .contact-page .contact-page-row .contact-page-background, .services-page .services-splash-page-row .services-splash-page-background, .ourwork-page .ourwork-splash-page-row .ourwork-splash-page-background {
   background-color: #17685E;
   background-repeat: no-repeat;
   background-position: center;
@@ -287,8 +287,8 @@
 }
 
 .index-page .landing-page-row .landing-page-background {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(23, 104, 94, 0.5)), to(rgba(23, 104, 94, 0.5))), url("/static/img/house2.jpg");
-  background-image: linear-gradient(rgba(23, 104, 94, 0.5), rgba(23, 104, 94, 0.5)), url("/static/img/house2.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 42, 29, 0.5)), to(rgba(0, 42, 29, 0.5))), url("/static/img/house2.jpg");
+  background-image: linear-gradient(rgba(0, 42, 29, 0.5), rgba(0, 42, 29, 0.5)), url("/static/img/house2.jpg");
   height: 100vh;
   left: 0;
   position: fixed;
@@ -582,7 +582,7 @@
   fill: white;
 }
 
-.index-page .landing-page-row .landing-page-background, .index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal, .contact-page .contact-page-row .contact-page-background, .services-page .services-splash-page-row .services-splash-page-background {
+.index-page .landing-page-row .landing-page-background, .index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal, .contact-page .contact-page-row .contact-page-background, .services-page .services-splash-page-row .services-splash-page-background, .ourwork-page .ourwork-splash-page-row .ourwork-splash-page-background {
   background-color: #17685E;
   background-repeat: no-repeat;
   background-position: center;
@@ -688,7 +688,7 @@
   font-weight: 700;
 }
 
-.index-page .landing-page-row .landing-page-background, .index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal, .contact-page .contact-page-row .contact-page-background, .services-page .services-splash-page-row .services-splash-page-background {
+.index-page .landing-page-row .landing-page-background, .index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal, .contact-page .contact-page-row .contact-page-background, .services-page .services-splash-page-row .services-splash-page-background, .ourwork-page .ourwork-splash-page-row .ourwork-splash-page-background {
   background-color: #17685E;
   background-repeat: no-repeat;
   background-position: center;
@@ -705,8 +705,8 @@
 }
 
 .services-page .services-splash-page-row .services-splash-page-background {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(23, 104, 94, 0.5)), to(rgba(23, 104, 94, 0.5))), url("/static/img/house3.jpeg");
-  background-image: linear-gradient(rgba(23, 104, 94, 0.5), rgba(23, 104, 94, 0.5)), url("/static/img/house3.jpeg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 42, 29, 0.5)), to(rgba(0, 42, 29, 0.5))), url("/static/img/house3.jpeg");
+  background-image: linear-gradient(rgba(0, 42, 29, 0.5), rgba(0, 42, 29, 0.5)), url("/static/img/house3.jpeg");
   height: 100vh;
   left: 0;
   position: fixed;
@@ -787,7 +787,7 @@
     top: calc(3.25rem + 2vw);
   }
   .services-page .services-splash-page-row .services-splash-page-headline .ssph-line-4 {
-    left: calc(6rem + 0.75vw);
+    left: calc(1rem + 0.75vw);
     top: calc(5rem + 3vw);
   }
 }
@@ -887,14 +887,140 @@
   padding: calc(2rem + 1vw);
 }
 
-.services-page .section-3-map {
+.services-page .section-3-map-background {
   background-color: white;
-  height: 80vh;
+}
+
+.services-page .section-3-map-background .section-3-map-image {
+  width: calc(100% - 15rem - 15vw);
+}
+
+@media (max-width: 769px) {
+  .services-page .section-3-map-background .section-3-map-image {
+    width: calc(100% - 5rem - 5vw);
+  }
 }
 
 .services-page .section-3-bottom-border {
   background-color: white;
   height: 10vh;
+}
+
+.index-page .landing-page-row .landing-page-background, .index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal, .contact-page .contact-page-row .contact-page-background, .services-page .services-splash-page-row .services-splash-page-background, .ourwork-page .ourwork-splash-page-row .ourwork-splash-page-background {
+  background-color: #17685E;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal {
+  border-radius: calc(0.5rem + 0.5vw) calc(0.5rem + 0.5vw) 0 0;
+  height: calc(10rem + 0.5vw);
+}
+
+.ourwork-page .ourwork-splash-page-row {
+  position: relative;
+}
+
+.ourwork-page .ourwork-splash-page-row .ourwork-splash-page-background {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 42, 29, 0.5)), to(rgba(0, 42, 29, 0.5))), url("/static/img/pressure-washer-3.jpg");
+  background-image: linear-gradient(rgba(0, 42, 29, 0.5), rgba(0, 42, 29, 0.5)), url("/static/img/pressure-washer-3.jpg");
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  width: 100%;
+  z-index: -1;
+}
+
+.ourwork-page .ourwork-splash-page-row .ourwork-splash-page-headline {
+  color: white;
+  font-size: calc(1rem + 3vw);
+  left: 45vw;
+  position: absolute;
+  top: 45vh;
+  white-space: nowrap;
+}
+
+.ourwork-page .ourwork-splash-page-row .ourwork-splash-page-headline .owsph-line-1 {
+  font-weight: 100;
+  position: absolute;
+}
+
+.ourwork-page .ourwork-splash-page-row .ourwork-splash-page-headline .owsph-line-2 {
+  left: calc(2rem + 8vw);
+  position: absolute;
+  top: calc(2.5rem + 1vw);
+}
+
+.ourwork-page .ourwork-splash-page-row .ourwork-splash-page-headline .owsph-line-3 {
+  left: calc(2rem + 8vw);
+  position: absolute;
+  top: calc(5rem + 2vw);
+}
+
+.ourwork-page .ourwork-splash-page-row .ourwork-splash-page-headline .owsph-line-4 {
+  font-weight: 100;
+  left: calc(2rem + 20vw);
+  position: absolute;
+  top: calc(7.5rem + 3vw);
+}
+
+.ourwork-page .ourwork-splash-page-row .ourwork-splash-page-headline .owsph-bold {
+  font-weight: 600;
+}
+
+.ourwork-page .ourwork-splash-page-row .ourwork-splash-page-headline .owsph-alpha-bold {
+  color: #14D3C9;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ourwork-page .ourwork-splash-page-row .ourwork-splash-page-headline .owsph-alpha-dash {
+  position: relative;
+  top: calc(-0.5rem - 1.5vw);
+}
+
+.ourwork-page .ourwork-splash-page-row .ourwork-splash-page-headline .owsph-omega-bold {
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ourwork-page .ourwork-splash-page-row .ourwork-splash-page-headline .owsph-omega-dash {
+  color: #14D3C9;
+  position: relative;
+  top: calc(-0.5rem - 1.5vw);
+}
+
+@media (max-width: 769px) {
+  .ourwork-page .ourwork-splash-page-row .ourwork-splash-page-headline {
+    left: 5vw;
+    top: 50vh;
+  }
+  .ourwork-page .ourwork-splash-page-row .ourwork-splash-page-headline .owsph-line-2 {
+    left: calc(4.5rem + 1vw);
+    top: calc(1.75rem + 1vw);
+  }
+  .ourwork-page .ourwork-splash-page-row .ourwork-splash-page-headline .owsph-line-3 {
+    left: calc(4.25rem + 1vw);
+    top: calc(3.25rem + 2vw);
+  }
+  .ourwork-page .ourwork-splash-page-row .ourwork-splash-page-headline .owsph-line-4 {
+    left: calc(6rem + 0.75vw);
+    top: calc(5rem + 3vw);
+  }
+}
+
+.ourwork-page .ourwork-splash-page-row .ourwork-splash-page-placeholder {
+  height: 100vh;
+  width: 100%;
+}
+
+.ourwork-page .ourwork-splash-page-bottom-border {
+  background-color: rgba(20, 211, 201, 0.8);
+  height: calc(1rem + 1vw);
 }
 
 .footer {

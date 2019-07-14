@@ -14,13 +14,15 @@
 .services-page {
 
   // Services Splash Page
+  // rgba(23, 104, 94, 0.5),
+
   & .services-splash-page-row {
     position: relative;
     & .services-splash-page-background {
       background-image: 
         linear-gradient(
-          rgba(23, 104, 94, 0.5),
-          rgba(23, 104, 94, 0.5)
+          rgba(0, 42, 29, 0.5),
+          rgba(0, 42, 29, 0.5),
         ),
         url('/static/img/house3.jpeg');
       height: 100vh;
@@ -90,7 +92,7 @@
           top: calc(3.25rem + 2vw);
         }
         & .ssph-line-4 {
-          left: calc(6rem + 0.75vw);
+          left: calc(1rem + 0.75vw);
           top: calc(5rem + 3vw);
         }
       }
@@ -183,9 +185,14 @@
     font-size: calc(2rem + 1vw);
     padding: calc(2rem + 1vw);
   }
-  & .section-3-map {
+  & .section-3-map-background {
     background-color: $primary-color;
-    height: 80vh;
+    & .section-3-map-image {
+      width: calc(100% - 15rem - 15vw);
+      @media (max-width: 769px) {
+        width: calc(100% - 5rem - 5vw);
+      }
+    }
   }
   & .section-3-bottom-border {
     background-color: $primary-color;

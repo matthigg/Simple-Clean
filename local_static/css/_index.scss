@@ -14,13 +14,15 @@
 .index-page {
 
   // Landing Page
+  // rgba(23, 104, 94, 0.5),
+
   & .landing-page-row {
     position: relative;
     & .landing-page-background {
       background-image: 
         linear-gradient(
-          rgba(23, 104, 94, 0.5),
-          rgba(23, 104, 94, 0.5)
+          rgba(0, 42, 29, 0.5),
+          rgba(0, 42, 29, 0.5),
         ),
         url('/static/img/house2.jpg');
       height: 100vh;

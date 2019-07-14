@@ -149,7 +149,6 @@
     font-size: calc(2rem + 1vw);
     font-weight: 700;
     padding: calc(1rem + 1vw);
-    width: 100%;
   }
   & .section-2-billboards {
     background-color: $secondary-color-rgba;
@@ -172,9 +171,24 @@
       padding: calc(1rem + 1vw);
     }
   }
+  & .section-2-bottom-border {
+    background-color: $secondary-color-rgba;
+    height: 10vh;
+  }
 
   // Section 3
-  & .section-3-row {
-
+  & .section-3-headline {
+    background-color: $primary-color;
+    color: $quarternary-color;
+    font-size: calc(2rem + 1vw);
+    padding: calc(2rem + 1vw);
+  }
+  & .section-3-map {
+    background-color: $primary-color;
+    height: 80vh;
+  }
+  & .section-3-bottom-border {
+    background-color: $primary-color;
+    height: 10vh;
   }
 }

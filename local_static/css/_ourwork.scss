@@ -111,7 +111,8 @@
   // Section 1, Headline
   & .section-1-headline {
     background-color: $primary-color;
-    font-size: calc(2rem + 0.5vw);
+    color: $quarternary-color;
+    font-size: calc(1rem + 1.5vw);
     font-weight: 700;
     padding: calc(1rem + 1vw) 0;
     text-align: center;
@@ -166,5 +167,9 @@
         }
       }
     }
+  }
+  & .ourwork-before-and-after-bottom-border {
+    background-color: $primary-color;
+    height: 10vh;
   }
 }

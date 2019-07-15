@@ -1025,7 +1025,8 @@
 
 .ourwork-page .section-1-headline {
   background-color: white;
-  font-size: calc(2rem + 0.5vw);
+  color: #17685E;
+  font-size: calc(1rem + 1.5vw);
   font-weight: 700;
   padding: calc(1rem + 1vw) 0;
   text-align: center;
@@ -1089,6 +1090,11 @@
     height: auto;
     width: 40vw;
   }
+}
+
+.ourwork-page .ourwork-before-and-after-bottom-border {
+  background-color: white;
+  height: 10vh;
 }
 
 .footer {

@@ -58,8 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.nav-link-home').classList.add('active');
   } else if (document.querySelector('.container-fluid').classList.contains('services-page')) {
     document.querySelector('.nav-link-services').classList.add('active');
-  } else if (document.querySelector('.container-fluid').classList.contains('work-page')) {
-    document.querySelector('.nav-link-work').classList.add('active');
+  } else if (document.querySelector('.container-fluid').classList.contains('ourwork-page')) {
+    document.querySelector('.nav-link-ourwork').classList.add('active');
   } else if (document.querySelector('.container-fluid').classList.contains('reviews-page')) {
     document.querySelector('.nav-link-reviews').classList.add('active');
   } else if (document.querySelector('.container-fluid').classList.contains('contact-page')) {

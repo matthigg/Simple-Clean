@@ -20,7 +20,7 @@ def contact_submit(request):
       
       send_mail(
         'Simple Clean Contact Form Submission',
-        request.POST['message'],
+        form.cleaned_data['message'],
         os.environ['CONTACT_FORM_ADMIN_EMAIL'],
         [os.environ['CONTACT_FORM_ADMIN_EMAIL']],
         fail_silently=False,

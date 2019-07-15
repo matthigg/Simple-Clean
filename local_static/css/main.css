@@ -744,6 +744,7 @@
 .services-page .services-splash-page-row .services-splash-page-headline .ssph-line-4 {
   font-weight: 100;
   left: calc(2rem + 20vw);
+  left: 0;
   position: absolute;
   top: calc(7.5rem + 3vw);
 }
@@ -787,7 +788,6 @@
     top: calc(3.25rem + 2vw);
   }
   .services-page .services-splash-page-row .services-splash-page-headline .ssph-line-4 {
-    left: calc(1rem + 0.75vw);
     top: calc(5rem + 3vw);
   }
 }
@@ -818,7 +818,7 @@
 }
 
 .services-page .section-1-row .section-1-headline {
-  font-size: calc(2rem + 0.5vw);
+  font-size: calc(1rem + 1.5vw);
   font-weight: 700;
   margin: calc(1rem + 0.5vw) 0;
   text-align: center;
@@ -845,7 +845,7 @@
 .services-page .section-2-headline {
   background-color: rgba(20, 211, 201, 0.8);
   color: white;
-  font-size: calc(2rem + 1vw);
+  font-size: calc(1rem + 1.5vw);
   font-weight: 700;
   padding: calc(1rem + 1vw);
 }
@@ -883,7 +883,7 @@
 .services-page .section-3-headline {
   background-color: white;
   color: #17685E;
-  font-size: calc(2rem + 1vw);
+  font-size: calc(1rem + 1.5vw);
   padding: calc(2rem + 1vw);
 }
 

@@ -619,13 +619,13 @@
 .contact-page .section-1-row {
   background-color: white;
   color: #17685E;
-  padding: calc(1rem + 7vw);
+  padding: calc(0.25rem + 3.75vw);
 }
 
 .contact-page .section-1-row .section-1-text-headline {
-  font-size: calc(1.5rem + 0.5vw);
+  font-size: calc(1rem + 1.5vw);
   font-weight: 600;
-  margin-bottom: calc(1rem + 1vw);
+  margin: calc(1rem + 1vw) 0;
 }
 
 .contact-page .section-1-row .section-1-text-headline .section-1-text-headline-bold {
@@ -744,7 +744,6 @@
 .services-page .services-splash-page-row .services-splash-page-headline .ssph-line-4 {
   font-weight: 100;
   left: calc(2rem + 20vw);
-  left: 0;
   position: absolute;
   top: calc(7.5rem + 3vw);
 }

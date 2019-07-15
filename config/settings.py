@@ -108,6 +108,15 @@ DATABASES = {
 #     }
 #   }
 
+# Email
+EMAIL_HOST = os.environ['SES_SERVER_NAME']
+EMAIL_PORT = os.environ['SES_PORT']
+EMAIL_HOST_USER = os.environ['SES_USERNAME']
+EMAIL_HOST_PASSWORD = os.environ['SES_PASSWORD']
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators

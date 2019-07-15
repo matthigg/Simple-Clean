@@ -1,9 +1,10 @@
 from django.contrib import messages
+from django.core.mail import send_mail
 from django.shortcuts import render, redirect
 from . import forms
 
 import os
-import smtplib
+# import smtplib
 
 
 # Create your views here.
@@ -16,17 +17,14 @@ def contact_submit(request):
     form = forms.CreateContactForm(request.POST)
     if form.is_valid():
       form.save()
-
-      s = smtplib.SMTP()
-      s.connect(os.environ['SES_SERVER_NAME'], os.environ['SES_PORT'])
-      s.starttls()
-      s.login(os.environ['SES_USERNAME'], os.environ['SES_PASSWORD'])
-      msg = 'From: {}\nTo: {}\nSubject: Simple Clean Contact Form Submission\n\n{}'.format(
-        os.environ['CONTACT_FORM_ADMIN_EMAIL'], 
-        os.environ['CONTACT_FORM_ADMIN_EMAIL'], 
+      
+      send_mail(
+        'Simple Clean Contact Form Submission',
         request.POST['message'],
+        os.environ['CONTACT_FORM_ADMIN_EMAIL'],
+        [os.environ['CONTACT_FORM_ADMIN_EMAIL']],
+        fail_silently=False,
       )
-      s.sendmail(os.environ['CONTACT_FORM_ADMIN_EMAIL'], os.environ['CONTACT_FORM_ADMIN_EMAIL'], msg)
 
       # Return 'success' message if form is valid
       messages.add_message(request, messages.INFO, 'Your message has been sent!')

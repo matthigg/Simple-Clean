@@ -14,7 +14,7 @@ def contact_submit(request):
   # then save it to the database and send a notification email.
   if request.method == "POST":
     form = forms.CreateContactForm(request.POST)
-    print('============= request.POST: ', request.POST)
+    print('============= request.POST ============== ', request.POST)
     if form.is_valid():
       form.save()
 

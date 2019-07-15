@@ -787,6 +787,7 @@
     top: calc(3.25rem + 2vw);
   }
   .services-page .services-splash-page-row .services-splash-page-headline .ssph-line-4 {
+    left: 0;
     top: calc(5rem + 3vw);
   }
 }

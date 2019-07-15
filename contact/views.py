@@ -14,7 +14,6 @@ def contact_submit(request):
   # then save it to the database and send a notification email.
   if request.method == "POST":
     form = forms.CreateContactForm(request.POST)
-    print('============= request.POST ============== ', request.POST)
     if form.is_valid():
       form.save()
 
@@ -22,7 +21,7 @@ def contact_submit(request):
       s.connect(os.environ['SES_SERVER_NAME'], os.environ['SES_PORT'])
       s.starttls()
       s.login(os.environ['SES_USERNAME'], os.environ['SES_PASSWORD'])
-      msg = 'From: {}\nTo: {}\nSubject: Simple Clean Pressure Washing\n\n{}'.format(
+      msg = 'From: {}\nTo: {}\nSubject: Simple Clean Contact Form Submission\n\n{}'.format(
         os.environ['CONTACT_FORM_ADMIN_EMAIL'], 
         os.environ['CONTACT_FORM_ADMIN_EMAIL'], 
         request.POST['message'],

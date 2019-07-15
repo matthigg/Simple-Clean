@@ -5,6 +5,13 @@ $tertiary-color: #00F2A5;
 $quarternary-color: #17685E;
 $quinary-color: #3F3F3F;
 
+.alert {
+  display: inline-block;
+  font-size: calc(1rem + 0.5vw);
+  font-weight: 700;
+  text-align: center;
+}
+
 .contact-form-heading {
   background-color: $quarternary-color;
   border-radius: calc(1rem + 0.1vw) calc(1rem + 0.1vw) 0 0;

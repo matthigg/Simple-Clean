@@ -4,8 +4,6 @@ from django.shortcuts import render, redirect
 from . import forms
 
 import os
-# import smtplib
-
 
 # Create your views here.
 def contact_submit(request):
@@ -27,11 +25,12 @@ def contact_submit(request):
       )
 
       # Return 'success' message if form is valid
-      messages.add_message(request, messages.INFO, 'Your message has been sent!')
+      messages.add_message(request, messages.SUCCESS, 'Your message has been sent!')
       return redirect('contact')
     
     # Handle any potential errors with form submission
     else:
-      form = forms.CreateContactForm()
-      messages.add_message(request, messages.INFO, 'There was an error processing your request. Please call us at (123) 456-7890 or email us at email@email.com.')
-    return render(request, 'contact', { 'form': form })
+      context = {
+        'form': form,
+      }
+      return render(request, 'contact.html', context)

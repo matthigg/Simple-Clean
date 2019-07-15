@@ -152,7 +152,6 @@
     top: calc(4rem + 2.5vw);
   }
   .navbar-stripe-wrapper.navbar-stripe-minimized-true {
-    opacity: 0;
     top: 0;
   }
   .navbar-stripe-wrapper .navbar-stripe {

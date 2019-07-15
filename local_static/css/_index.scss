@@ -116,7 +116,7 @@
       background-size: cover;
     }
     & .section-1-headline {
-      font-size: calc(2rem + 0.5vw);
+      font-size: calc(1rem + 1.5vw);
       font-weight: 700;
       margin: calc(1rem + 0.5vw) 0;
       text-align: center;
@@ -144,7 +144,7 @@
   & .section-2-row {
     background-color: $secondary-color-rgba;
     height: max-content;
-    padding: 0 calc(3rem + 3vw);
+    padding: 0 calc(1rem + 6vw);
     & .card {
       border: 0;
       border-radius: calc(0.5rem + 0.5vw) calc(0.5rem + 0.5vw);
@@ -229,11 +229,11 @@
     background-color: $primary-color;
     color: $quarternary-color;
     height: max-content;
-    padding: calc(0.5rem + 3.5vw);
+    padding: calc(0.25rem + 3.75vw);
     text-align: center;
     & .section-3-text {
       & .section-3-text-headline {
-        font-size: calc(1.5rem + 0.5vw);
+        font-size: calc(1rem + 1.5vw);
         font-weight: 700;
         margin-bottom: calc(2rem + 0.5vw);
         & .section-3-text-headline-bold {
@@ -251,17 +251,17 @@
         }
       }
       & .section-3-text-paragraph-urgent {
-        font-size: calc(1.5rem + 0.5vw);
+        font-size: calc(1rem + 1vw);
         font-style: italic;
         font-weight: 700;
       }
       & .section-3-text-paragraph-phone {
-        font-size: calc(1.5rem + 0.5vw);
+        font-size: calc(1rem + 1vw);
         font-style: italic;
         font-weight: 700;
-        margin-top: calc(1rem + 1vw);
+        margin: calc(1rem + 1vw) 0;
         & .icon-phone {
-          height: calc(1.5rem + 0.5vw);
+          height: calc(1rem + 1vw);
           & circle {
             fill: $quarternary-color;
           }

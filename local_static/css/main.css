@@ -397,7 +397,7 @@
 }
 
 .index-page .section-1-row .section-1-headline {
-  font-size: calc(2rem + 0.5vw);
+  font-size: calc(1rem + 1.5vw);
   font-weight: 700;
   margin: calc(1rem + 0.5vw) 0;
   text-align: center;
@@ -426,7 +426,7 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  padding: 0 calc(3rem + 3vw);
+  padding: 0 calc(1rem + 6vw);
 }
 
 .index-page .section-2-row .card {
@@ -531,12 +531,12 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  padding: calc(0.5rem + 3.5vw);
+  padding: calc(0.25rem + 3.75vw);
   text-align: center;
 }
 
 .index-page .section-3-row .section-3-text .section-3-text-headline {
-  font-size: calc(1.5rem + 0.5vw);
+  font-size: calc(1rem + 1.5vw);
   font-weight: 700;
   margin-bottom: calc(2rem + 0.5vw);
 }
@@ -558,20 +558,20 @@
 }
 
 .index-page .section-3-row .section-3-text .section-3-text-paragraph-urgent {
-  font-size: calc(1.5rem + 0.5vw);
+  font-size: calc(1rem + 1vw);
   font-style: italic;
   font-weight: 700;
 }
 
 .index-page .section-3-row .section-3-text .section-3-text-paragraph-phone {
-  font-size: calc(1.5rem + 0.5vw);
+  font-size: calc(1rem + 1vw);
   font-style: italic;
   font-weight: 700;
-  margin-top: calc(1rem + 1vw);
+  margin: calc(1rem + 1vw) 0;
 }
 
 .index-page .section-3-row .section-3-text .section-3-text-paragraph-phone .icon-phone {
-  height: calc(1.5rem + 0.5vw);
+  height: calc(1rem + 1vw);
 }
 
 .index-page .section-3-row .section-3-text .section-3-text-paragraph-phone .icon-phone circle {

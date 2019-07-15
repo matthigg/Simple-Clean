@@ -1055,6 +1055,7 @@
   background-color: #14D3C9;
   color: white;
   content: "BEFORE";
+  font-size: calc(0.5rem + 0.25vw);
   font-style: italic;
   font-weight: 600;
   left: calc(0.25rem + 0.25vw);
@@ -1072,6 +1073,7 @@
   background-color: #14D3C9;
   color: white;
   content: "AFTER";
+  font-size: calc(0.5rem + 0.25vw);
   font-style: italic;
   font-weight: 600;
   left: calc(0.25rem + 0.25vw);

@@ -136,6 +136,7 @@
           background-color: $secondary-color;
           color: $primary-color;
           content: "BEFORE";
+          font-size: calc(0.5rem + 0.25vw);
           font-style: italic;
           font-weight: 600;
           left: calc(0.25rem + 0.25vw);
@@ -151,6 +152,7 @@
           background-color: $secondary-color;
           color: $primary-color;
           content: "AFTER";
+          font-size: calc(0.5rem + 0.25vw);
           font-style: italic;
           font-weight: 600;
           left: calc(0.25rem + 0.25vw);

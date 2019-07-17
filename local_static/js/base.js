@@ -53,15 +53,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 
-  // Assign the .active class to the current page's nav-link
+  // Assign the .active class to the current page's nav-link & display the
+  // 'Free Quote' button if needed
   if (document.querySelector('.container-fluid').classList.contains('index-page')) {
     document.querySelector('.nav-link-home').classList.add('active');
+    document.querySelector('.navbar-free-quote').style.display = 'block';
   } else if (document.querySelector('.container-fluid').classList.contains('services-page')) {
     document.querySelector('.nav-link-services').classList.add('active');
+    document.querySelector('.navbar-free-quote').style.display = 'block';
   } else if (document.querySelector('.container-fluid').classList.contains('ourwork-page')) {
     document.querySelector('.nav-link-ourwork').classList.add('active');
+    document.querySelector('.navbar-free-quote').style.display = 'block';
   } else if (document.querySelector('.container-fluid').classList.contains('reviews-page')) {
     document.querySelector('.nav-link-reviews').classList.add('active');
+    document.querySelector('.navbar-free-quote').style.display = 'block';
   } else if (document.querySelector('.container-fluid').classList.contains('contact-page')) {
     document.querySelector('.nav-link-contact').classList.add('active');
   }

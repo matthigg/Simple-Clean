@@ -14,8 +14,7 @@ def contact_submit(request):
     'https://www.google.com/recaptcha/api/siteverify', 
     params={
       'response': request.POST["g-recaptcha-response"],
-      # 'secret': os.environ["RECAPTCHA_SECRET_KEY"],
-      'secret': 'fail',
+      'secret': os.environ["RECAPTCHA_SECRET_KEY"],
     }
   )
 

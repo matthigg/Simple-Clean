@@ -1,0 +1,15 @@
+.footer-recaptcha {
+  color: $primary-color;
+  font-size: calc(0.75rem + 0.25vw);
+  & a {
+    color: $quarternary-color;
+    font-weight: 700;
+  }
+  @media (max-width: 768px) {
+    margin-top: calc(2rem + 0.25vw);
+  }
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}

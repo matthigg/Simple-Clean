@@ -1192,6 +1192,7 @@
 
 .footer .footer-back-to-top-and-copyright .footer-copyright {
   font-size: calc(0.75rem + 0.5vw);
+  text-align: center;
 }
 
 .footer .footer-back-to-top-and-copyright .back-to-top-arrow-up-wrapper {
@@ -1235,6 +1236,26 @@
   border-bottom-color: #14D3C9;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+.footer-recaptcha {
+  color: white;
+  font-size: calc(0.75rem + 0.25vw);
+}
+
+.footer-recaptcha a {
+  color: #17685E;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .footer-recaptcha {
+    margin-top: calc(2rem + 0.25vw);
+  }
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
 }
 
 * {

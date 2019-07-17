@@ -4,9 +4,21 @@ from django.shortcuts import render, redirect
 from . import forms
 
 import os
+import requests
 
 # Create your views here.
 def contact_submit(request):
+
+  # print('============= request.POST["g-recaptcha-response"]: ', request.POST['g-recaptcha-response'])
+  # r = requests.post('https://www.google.com/recaptcha/api/siteverify', params=request.POST['g-recaptcha-response'])
+  r = requests.post(
+    'https://www.google.com/recaptcha/api/siteverify', 
+    params={
+      'response': request.POST["g-recaptcha-response"],
+      'secret': os.environ["RECAPTCHA_SECRET_KEY"],
+    }
+  )
+  print('============= r: ', r.json())
 
   # Use information submitted via POST request to create an instance of a contact
   # form via the CreateContactForm() class, check that it is_valid(), and if so

@@ -44,6 +44,7 @@ $quinary-color: #3F3F3F;
     &:hover {
       background-color: $quarternary-color;
       color: $primary-color;
+      transition: 0.15s ease-in;
     }
     &:focus {
       outline: none;

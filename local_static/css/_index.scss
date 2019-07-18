@@ -103,6 +103,7 @@
     height: calc(1rem + 1vw);
   }
 
+  // Section 1
   & .section-1-row {
     background-color: $primary-color;
     color: $quarternary-color;
@@ -273,3 +274,48 @@
     }
   }
 }
+
+.modal {
+  & .btn-free-quote {
+    border: none;
+    background-color: $primary-color;
+    border-radius: calc(0.5rem + 0.1vw);
+    color: $quarternary-color;
+    font-size: calc(1rem + 0.25vw);
+    & .btn-free-quote-highlight {
+      font-style: italic;
+      font-weight: 700;
+    }
+    &:hover {
+      background-color: $quarternary-color;
+      color: $primary-color;
+      transition: 0.15s ease-in;
+    }
+  }
+  & .modal-content {
+    border: 0;
+  }
+  & .modal-header {
+    background-color: $secondary-color;
+  }
+  & .modal-footer {
+    background-color: $secondary-color;
+  }
+  & .modal-title {
+    color: $primary-color;
+    font-size: calc(1rem + 0.5vw);
+    font-style: italic;
+    font-weight: 600;
+    & .modal-title-highlight{
+      font-weight: 800;
+    }
+  }
+}
+
+// Override the padding and scroll-hiding css properties of bootstrap on modals
+// https://stackoverflow.com/questions/25070144/bootstrap-modal-removes-scroll-bar
+.modal-open {
+  padding: 0 !important;
+  overflow-y: scroll;
+}
+

@@ -42,6 +42,8 @@
 .contact-form button:hover {
   background-color: #17685E;
   color: white;
+  -webkit-transition: 0.15s ease-in;
+  transition: 0.15s ease-in;
 }
 
 .contact-form button:focus {

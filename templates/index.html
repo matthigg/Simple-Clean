@@ -76,7 +76,7 @@
 
       <!-- House Washing Card -->
       <div class="col-md-4">
-        <div class="card card-first">
+        <div class="card card-first" data-toggle="modal" data-target="#modal-house-washing">
           <div class="card-background-house-washing"></div>
           <div class="card-body">HOUSE WASHING</div>
           <div class="d-flex justify-content-center">
@@ -87,10 +87,10 @@
           </div>
         </div>
       </div>
-
+      
       <!-- Patio & Deck -->
       <div class="col-md-4">
-        <div class="card">
+        <div class="card" data-toggle="modal" data-target="#modal-patio-and-deck">
           <div class="card-background-patio-and-deck"></div>
           <div class="card-body">PATIO & DECK</div>
           <div class="d-flex justify-content-center">
@@ -104,7 +104,7 @@
 
       <!-- Graffiti Removal -->
       <div class="col-md-4">
-        <div class="card">
+        <div class="card" data-toggle="modal" data-target="#modal-graffiti-removal">
           <div class="card-background-graffiti-removal"></div>
           <div class="card-body">GRAFFITI REMOVAL</div>
           <div class="d-flex justify-content-center">
@@ -116,6 +116,9 @@
         </div>
       </div>
     </div>
+
+    <!-- Section 1, Card Modals -->
+    {% include 'modals/index-modals.html' %}
 
     <!-- Section 2, Flair -->
     <div class="row section-2-row justify-content-center">

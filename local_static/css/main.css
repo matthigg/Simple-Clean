@@ -1132,6 +1132,9 @@
 
 .ourwork-page .section-1-before-and-after-pictures .section-1-baap-group img {
   height: 15vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 20vw;
 }
 
 @media (max-width: 769px) {

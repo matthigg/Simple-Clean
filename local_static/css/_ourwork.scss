@@ -163,6 +163,8 @@
       }
       & img {
         height: 15vw;
+        object-fit: cover;
+        width: 20vw;
         @media (max-width: 769px) {
           height: auto;
           width: 40vw;

@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from contact import forms
+# from contact import forms
+from apps.contact_form import forms
 
 def index(request):
   form = forms.CreateContactForm

@@ -1172,12 +1172,27 @@
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
+  margin: auto;
+}
+
+.ourwork-page .modal .modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 769px) {
+  .ourwork-page .modal .modal-body {
+    display: block;
+  }
 }
 
 .ourwork-page .modal .modal-baap-group-before {
   border: calc(0.15rem + 0.15vw) solid #14D3C9;
   margin-right: calc(0.25rem + 0.25vw);
+  margin: auto;
   position: relative;
+  width: 100%;
 }
 
 .ourwork-page .modal .modal-baap-group-before::before {
@@ -1191,6 +1206,19 @@
   padding: 0 calc(0.5rem + 0.1vw);
   position: absolute;
   top: calc(0.25rem + 0.25vw);
+}
+
+@media (max-width: 769px) {
+  .ourwork-page .modal .modal-baap-group-before::before {
+    font-size: calc(0.5rem + 0.1vw);
+  }
+}
+
+@media (max-width: 769px) {
+  .ourwork-page .modal .modal-baap-group-before {
+    margin-bottom: calc(0.25rem + 0.25vw);
+    margin-right: 0;
+  }
 }
 
 .ourwork-page .modal .modal-baap-group-after {
@@ -1209,6 +1237,12 @@
   padding: 0 calc(0.5rem + 0.1vw);
   position: absolute;
   top: calc(0.25rem + 0.25vw);
+}
+
+@media (max-width: 769px) {
+  .ourwork-page .modal .modal-baap-group-after::before {
+    font-size: calc(0.5rem + 0.1vw);
+  }
 }
 
 .ourwork-page .modal .modal-content {
@@ -1233,6 +1267,13 @@
 .ourwork-page .modal img {
   height: auto;
   width: 35vw;
+}
+
+@media (max-width: 769px) {
+  .ourwork-page .modal img {
+    height: auto;
+    width: 75vw;
+  }
 }
 
 .ourwork-page .modal .close {

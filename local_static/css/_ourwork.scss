@@ -184,11 +184,20 @@
   .modal {
     & .modal-dialog {
       max-width: max-content;
+      margin: auto;
+    }
+    & .modal-body {
+      display: flex;
+      @media (max-width: 769px) {
+        display: block;
+      }
     }
     & .modal-baap-group-before {
       border: calc(0.15rem + 0.15vw) solid $secondary-color;
       margin-right: calc(0.25rem + 0.25vw);
+      margin: auto;
       position: relative;
+      width: 100%;
       &::before {
         background-color: $secondary-color;
         color: $primary-color;
@@ -200,6 +209,13 @@
         padding: 0 calc(0.5rem + 0.1vw);
         position: absolute;
         top: calc(0.25rem + 0.25vw);
+        @media (max-width: 769px) {
+          font-size: calc(0.5rem + 0.1vw);
+        }
+      }
+      @media (max-width: 769px) {
+        margin-bottom: calc(0.25rem + 0.25vw);
+        margin-right: 0;
       }
     }
     & .modal-baap-group-after {
@@ -216,6 +232,9 @@
         padding: 0 calc(0.5rem + 0.1vw);
         position: absolute;
         top: calc(0.25rem + 0.25vw);
+        @media (max-width: 769px) {
+          font-size: calc(0.5rem + 0.1vw);
+        }
       }
     }
     & .modal-content {
@@ -236,6 +255,10 @@
     & img {
       height: auto;
       width: 35vw;
+      @media (max-width: 769px) {
+        height: auto;
+        width: 75vw;
+      }
     }
     & .close {
       color: $primary-color;

@@ -762,8 +762,8 @@
 }
 
 .services-page .services-splash-page-row .services-splash-page-background {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 42, 29, 0.5)), to(rgba(0, 42, 29, 0.5))), url("/static/img/house3.jpeg");
-  background-image: linear-gradient(rgba(0, 42, 29, 0.5), rgba(0, 42, 29, 0.5)), url("/static/img/house3.jpeg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 42, 29, 0.5)), to(rgba(0, 42, 29, 0.5))), url("/static/img/house3.jpg");
+  background-image: linear-gradient(rgba(0, 42, 29, 0.5), rgba(0, 42, 29, 0.5)), url("/static/img/house3.jpg");
   height: 100vh;
   left: 0;
   position: fixed;

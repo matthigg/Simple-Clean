@@ -27,3 +27,6 @@ def contact(request):
     'form': form,
   }
   return render(request, 'contact.html', context)
+
+def thanks(request):
+  return render(request, 'thanks.html')

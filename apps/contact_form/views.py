@@ -44,7 +44,7 @@ def submit(request):
 
       # Return 'success' message if form is valid
       messages.add_message(request, messages.SUCCESS, 'Your message has been sent!')
-      return redirect('contact')
+      return redirect('thanks')
     
     # Handle any potential errors with form submission
     else:

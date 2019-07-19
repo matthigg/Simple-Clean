@@ -15,15 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from .views import contact, index, ourwork, reviews, services
+from .views import contact, index, ourwork, reviews, services, thanks
 
 urlpatterns = [
     path('admin/',    admin.site.urls),
-    # path('',          include('contact.urls', namespace='contact')),
     path('',          include('apps.contact_form.urls', namespace='contact-form')),
     path('',          index,    name='index'),
     path('contact/',  contact,  name='contact'),
     path('ourwork/',  ourwork,  name='ourwork'),
     path('reviews/',  reviews,  name='reviews'),
     path('services/', services, name='services'),
+    path('thanks/',   thanks,   name='thanks'),
 ]

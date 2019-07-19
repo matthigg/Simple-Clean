@@ -24,6 +24,9 @@
 
 .navbar .navbar-brand {
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: calc(1.5rem + 2vw);
   font-style: italic;
   font-weight: 900;

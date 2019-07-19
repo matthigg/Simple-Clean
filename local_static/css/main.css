@@ -606,6 +606,11 @@
   transition: 0.15s ease-in;
 }
 
+.index-page .modal .modal-body {
+  color: #17685E;
+  font-size: calc(1rem + 0.5vw);
+}
+
 .index-page .modal .modal-content {
   border: 0;
 }

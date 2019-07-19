@@ -292,6 +292,10 @@
         transition: 0.15s ease-in;
       }
     }
+    & .modal-body {
+      color: $quarternary-color;
+      font-size: calc(1rem + 0.5vw);
+    }
     & .modal-content {
       border: 0;
     }

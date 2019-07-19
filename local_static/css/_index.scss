@@ -275,6 +275,7 @@
   }
 }
 
+// Index Page Modals
 .modal {
   & .btn-free-quote {
     border: none;
@@ -312,10 +313,5 @@
   }
 }
 
-// Override the padding and scroll-hiding css properties of bootstrap on modals
-// https://stackoverflow.com/questions/25070144/bootstrap-modal-removes-scroll-bar
-.modal-open {
-  padding: 0 !important;
-  overflow-y: scroll;
-}
+
 

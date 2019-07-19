@@ -17,3 +17,10 @@ html {
   font-family: Segoe UI, Franklin Gothic, Arial, Helvetica, Verdana, sans-serif;
   scroll-behavior: smooth;
 }
+
+// Override the padding and scroll-hiding css properties of bootstrap on modals
+// https://stackoverflow.com/questions/25070144/bootstrap-modal-removes-scroll-bar
+.modal-open {
+  padding: 0 !important;
+  overflow-y: scroll;
+}

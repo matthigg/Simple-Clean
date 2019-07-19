@@ -51,8 +51,14 @@
     <!-- Section 1, Before & After Pictures (baap) -->
     <div class="row section-1-before-and-after-pictures d-flex justify-content-around flex-wrap">
 
+      {% include 'modals/ourwork-modals.html' %}
+
       <!-- Section 1, BAAP, House 1 -->
-      <div class="section-1-baap-group d-flex justify-content-around">
+      <div class="section-1-baap-group d-flex justify-content-around" 
+        data-id="ba-house-01-lohalo-25.JPG" 
+        data-toggle="modal" 
+        data-target="#modal-baap-template"
+      >
         <div class="section-1-baap-group-before">
           <img src="{% static 'img/ba-house-01b-lohalo-25.JPG' %}">
         </div>
@@ -62,7 +68,11 @@
       </div>
 
       <!-- Section 1, BAAP, House 2 -->
-      <div class="section-1-baap-group d-flex justify-content-around">
+      <div class="section-1-baap-group d-flex justify-content-around"
+        data-id="ba-house-02-lohalo-25.JPG" 
+        data-toggle="modal" 
+        data-target="#modal-baap-template"
+      >
         <div class="section-1-baap-group-before">
           <img src="{% static 'img/ba-house-02b-90.jpg' %}">
         </div>

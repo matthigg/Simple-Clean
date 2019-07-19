@@ -70,4 +70,30 @@ document.addEventListener('DOMContentLoaded', () => {
   } else if (document.querySelector('.container-fluid').classList.contains('contact-page')) {
     document.querySelector('.nav-link-contact').classList.add('active');
   }
+
+  // Modals
+  // When a <div> .section-1-baap-group element or any of its children (all of 
+  // which are located in ourwork.html and together represent a 'before & after'
+  // picture group) are clicked, search/scrounge for the appropriate data-id
+  // attribute's value, which identifies that particular 'before & after' picture
+  // group. This data-id value is then used to construct the before & after <img>
+  // src attributes in the re-usable Bootstrap modal HTML markup located in 
+  // ourwork-modals.html.
+  const baap_groups = document.querySelectorAll('.section-1-baap-group');
+  baap_groups.forEach((baap_group) => {
+    baap_group.addEventListener('click', (event) => {
+      let element = event.target;
+      if (element.dataset.id === undefined) {
+        while (element.parentNode) {
+          element = element.parentNode;
+          if (element.dataset.id) {
+            console.log('element: ', element.dataset.id);
+            return
+          } 
+        }
+      } else {
+        console.log('element: ', element.dataset.id);
+      }
+    })
+  })  
 })

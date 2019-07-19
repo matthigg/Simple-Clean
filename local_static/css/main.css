@@ -624,11 +624,6 @@
   font-weight: 800;
 }
 
-.modal-open {
-  padding: 0 !important;
-  overflow-y: scroll;
-}
-
 .index-page .landing-page-row .landing-page-background, .index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal, .contact-page .contact-page-row .contact-page-background, .services-page .services-splash-page-row .services-splash-page-background, .ourwork-page .ourwork-splash-page-row .ourwork-splash-page-background {
   background-color: #17685E;
   background-repeat: no-repeat;
@@ -1144,9 +1139,71 @@
   }
 }
 
+.ourwork-page .section-1-before-and-after-pictures .section-1-baap-group:hover {
+  cursor: pointer;
+}
+
 .ourwork-page .ourwork-before-and-after-bottom-border {
   background-color: white;
   height: 10vh;
+}
+
+.modal .modal-dialog {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.modal .modal-baap-group-before {
+  border: calc(0.15rem + 0.15vw) solid #14D3C9;
+  margin-right: calc(0.25rem + 0.25vw);
+  position: relative;
+}
+
+.modal .modal-baap-group-before::before {
+  background-color: #14D3C9;
+  color: white;
+  content: "BEFORE";
+  font-size: calc(1rem + 0.25vw);
+  font-style: italic;
+  font-weight: 600;
+  left: calc(0.25rem + 0.25vw);
+  padding: 0 calc(0.5rem + 0.1vw);
+  position: absolute;
+  top: calc(0.25rem + 0.25vw);
+}
+
+.modal .modal-baap-group-after {
+  border: calc(0.15rem + 0.15vw) solid #14D3C9;
+  position: relative;
+}
+
+.modal .modal-baap-group-after::before {
+  background-color: #14D3C9;
+  color: white;
+  content: "AFTER";
+  font-size: calc(1rem + 0.25vw);
+  font-style: italic;
+  font-weight: 600;
+  left: calc(0.25rem + 0.25vw);
+  padding: 0 calc(0.5rem + 0.1vw);
+  position: absolute;
+  top: calc(0.25rem + 0.25vw);
+}
+
+.modal img {
+  height: auto;
+  width: 35vw;
+}
+
+.modal .close {
+  color: white;
+}
+
+.modal .close:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .footer {
@@ -1319,5 +1376,10 @@ html {
           box-sizing: border-box;
   font-family: Segoe UI, Franklin Gothic, Arial, Helvetica, Verdana, sans-serif;
   scroll-behavior: smooth;
+}
+
+.modal-open {
+  padding: 0 !important;
+  overflow-y: scroll;
 }
 /*# sourceMappingURL=main.css.map */

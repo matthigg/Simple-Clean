@@ -586,7 +586,7 @@
   fill: white;
 }
 
-.modal .btn-free-quote {
+.index-page .modal .btn-free-quote {
   border: none;
   background-color: white;
   border-radius: calc(0.5rem + 0.1vw);
@@ -594,38 +594,38 @@
   font-size: calc(1rem + 0.25vw);
 }
 
-.modal .btn-free-quote .btn-free-quote-highlight {
+.index-page .modal .btn-free-quote .btn-free-quote-highlight {
   font-style: italic;
   font-weight: 700;
 }
 
-.modal .btn-free-quote:hover {
+.index-page .modal .btn-free-quote:hover {
   background-color: #17685E;
   color: white;
   -webkit-transition: 0.15s ease-in;
   transition: 0.15s ease-in;
 }
 
-.modal .modal-content {
+.index-page .modal .modal-content {
   border: 0;
 }
 
-.modal .modal-header {
+.index-page .modal .modal-header {
   background-color: #14D3C9;
 }
 
-.modal .modal-footer {
+.index-page .modal .modal-footer {
   background-color: #14D3C9;
 }
 
-.modal .modal-title {
+.index-page .modal .modal-title {
   color: white;
   font-size: calc(1rem + 0.5vw);
   font-style: italic;
   font-weight: 600;
 }
 
-.modal .modal-title .modal-title-highlight {
+.index-page .modal .modal-title .modal-title-highlight {
   font-weight: 800;
 }
 
@@ -1153,19 +1153,19 @@
   height: 10vh;
 }
 
-.modal .modal-dialog {
+.ourwork-page .modal .modal-dialog {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
 }
 
-.modal .modal-baap-group-before {
+.ourwork-page .modal .modal-baap-group-before {
   border: calc(0.15rem + 0.15vw) solid #14D3C9;
   margin-right: calc(0.25rem + 0.25vw);
   position: relative;
 }
 
-.modal .modal-baap-group-before::before {
+.ourwork-page .modal .modal-baap-group-before::before {
   background-color: #14D3C9;
   color: white;
   content: "BEFORE";
@@ -1178,12 +1178,12 @@
   top: calc(0.25rem + 0.25vw);
 }
 
-.modal .modal-baap-group-after {
+.ourwork-page .modal .modal-baap-group-after {
   border: calc(0.15rem + 0.15vw) solid #14D3C9;
   position: relative;
 }
 
-.modal .modal-baap-group-after::before {
+.ourwork-page .modal .modal-baap-group-after::before {
   background-color: #14D3C9;
   color: white;
   content: "AFTER";
@@ -1196,16 +1196,16 @@
   top: calc(0.25rem + 0.25vw);
 }
 
-.modal img {
+.ourwork-page .modal img {
   height: auto;
   width: 35vw;
 }
 
-.modal .close {
+.ourwork-page .modal .close {
   color: white;
 }
 
-.modal .close:focus {
+.ourwork-page .modal .close:focus {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;

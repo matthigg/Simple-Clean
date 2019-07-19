@@ -179,55 +179,56 @@
     background-color: $primary-color;
     height: 10vh;
   }
+
+  // Our Work Modals
+  .modal {
+    & .modal-dialog {
+      max-width: max-content;
+    }
+    & .modal-baap-group-before {
+      border: calc(0.15rem + 0.15vw) solid $secondary-color;
+      margin-right: calc(0.25rem + 0.25vw);
+      position: relative;
+      &::before {
+        background-color: $secondary-color;
+        color: $primary-color;
+        content: "BEFORE";
+        font-size: calc(1rem + 0.25vw);
+        font-style: italic;
+        font-weight: 600;
+        left: calc(0.25rem + 0.25vw);
+        padding: 0 calc(0.5rem + 0.1vw);
+        position: absolute;
+        top: calc(0.25rem + 0.25vw);
+      }
+    }
+    & .modal-baap-group-after {
+      border: calc(0.15rem + 0.15vw) solid $secondary-color;
+      position: relative;
+      &::before {
+        background-color: $secondary-color;
+        color: $primary-color;
+        content: "AFTER";
+        font-size: calc(1rem + 0.25vw);
+        font-style: italic;
+        font-weight: 600;
+        left: calc(0.25rem + 0.25vw);
+        padding: 0 calc(0.5rem + 0.1vw);
+        position: absolute;
+        top: calc(0.25rem + 0.25vw);
+      }
+    }
+    & img {
+      height: auto;
+      width: 35vw;
+    }
+    & .close {
+      color: $primary-color;
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
 }
 
-// Our Work Modals
-.modal {
-  & .modal-dialog {
-    max-width: max-content;
-  }
-  & .modal-baap-group-before {
-    border: calc(0.15rem + 0.15vw) solid $secondary-color;
-    margin-right: calc(0.25rem + 0.25vw);
-    position: relative;
-    &::before {
-      background-color: $secondary-color;
-      color: $primary-color;
-      content: "BEFORE";
-      font-size: calc(1rem + 0.25vw);
-      font-style: italic;
-      font-weight: 600;
-      left: calc(0.25rem + 0.25vw);
-      padding: 0 calc(0.5rem + 0.1vw);
-      position: absolute;
-      top: calc(0.25rem + 0.25vw);
-    }
-  }
-  & .modal-baap-group-after {
-    border: calc(0.15rem + 0.15vw) solid $secondary-color;
-    position: relative;
-    &::before {
-      background-color: $secondary-color;
-      color: $primary-color;
-      content: "AFTER";
-      font-size: calc(1rem + 0.25vw);
-      font-style: italic;
-      font-weight: 600;
-      left: calc(0.25rem + 0.25vw);
-      padding: 0 calc(0.5rem + 0.1vw);
-      position: absolute;
-      top: calc(0.25rem + 0.25vw);
-    }
-  }
-  & img {
-    height: auto;
-    width: 35vw;
-  }
-  & .close {
-    color: $primary-color;
-    &:focus {
-      outline: none;
-      box-shadow: none;
-    }
-  }
-}

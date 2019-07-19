@@ -1190,7 +1190,6 @@
 .ourwork-page .modal .modal-baap-group-before {
   border: calc(0.15rem + 0.15vw) solid #14D3C9;
   margin-right: calc(0.25rem + 0.25vw);
-  margin: auto;
   position: relative;
   width: 100%;
 }

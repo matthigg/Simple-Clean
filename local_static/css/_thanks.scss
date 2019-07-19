@@ -1,0 +1,103 @@
+%background-fixed {
+  background-color: $quarternary-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+// Thanks Page
+.thanks-page {
+
+  // Thanks Splash Page
+  .thanks-page-row {
+    & .thanks-page-background {
+      background-image: 
+        linear-gradient(
+          rgba(23, 104, 94, 0.5),
+          rgba(23, 104, 94, 0.5)
+        ),
+        url('/static/img/house4.jpg');
+      height: 100vh;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+      @extend %background-fixed;
+    }
+    & .thanks-page-placeholder {
+      height: 30vh;
+      width: 100%;
+    }
+  }
+
+  .thanks-page-bottom-border {
+    background-color: $secondary-color-rgba;
+    height: 3vw;
+    @media (max-width: 769px) {
+      height: 2rem;
+    }
+  }
+
+  // Section 1
+  .section-1-row {
+    background-color: $primary-color;
+    color: $quarternary-color;
+    padding: calc(0.25rem + 3.75vw);
+    text-align: center;
+
+    & .section-1-text-headline {
+      font-size: calc(1rem + 1.5vw);
+      font-weight: 600;
+      margin: calc(1rem + 1vw) 0;
+      & .section-1-text-headline-bold {
+        color: $secondary-color;
+        font-style: italic;
+        font-weight: 700;
+      }
+    }
+    & .section-1-text-paragraph {
+      font-size: calc(1rem + 0.5vw);
+      margin-bottom: calc(1rem + 1vw);
+      & .section-1-text-paragraph-bold {
+        color: $secondary-color;
+        font-style: italic;
+        font-weight: 700;
+      }
+    }
+    & .section-1-text-paragraph-email {
+      font-size: calc(1rem + 1vw);
+      font-style: italic;
+      font-weight: 700;
+      & .icon-email {
+        height: calc(1.5rem + 1vw);
+        & circle {
+          fill: $quarternary-color;
+        }
+        & path {
+          fill: $primary-color;
+        }
+      }
+    }
+    & .section-1-text-paragraph-phone {
+      font-size: calc(1rem + 1vw);
+      font-style: italic;
+      font-weight: 700;
+      margin-bottom: calc(1rem + 1vw);
+      & .icon-phone {
+        height: calc(1.5rem + 1vw);
+        & circle {
+          fill: $quarternary-color;
+        }
+        & path {
+          fill: $primary-color;
+        }
+      }
+    }
+    & .section-1-text-paragraph-urgent {
+      font-size: calc(1rem + 0.5vw);
+      font-style: italic;
+      font-weight: 700;
+    }
+  }
+}

@@ -218,6 +218,21 @@
         top: calc(0.25rem + 0.25vw);
       }
     }
+    & .modal-content {
+      border: 0;
+    }
+    & .modal-header {
+      background-color: $secondary-color;
+    }
+    & .modal-title {
+      color: $primary-color;
+      font-size: calc(1rem + 0.5vw);
+      font-style: italic;
+      font-weight: 600;
+      & .modal-title-highlight{
+        font-weight: 800;
+      }
+    }
     & img {
       height: auto;
       width: 35vw;

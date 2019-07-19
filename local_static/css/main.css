@@ -629,6 +629,16 @@
   font-weight: 800;
 }
 
+.index-page .modal .close {
+  color: white;
+}
+
+.index-page .modal .close:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .index-page .landing-page-row .landing-page-background, .index-page .section-2-row .card-background-house-washing, .index-page .section-2-row .card-background-patio-and-deck, .index-page .section-2-row .card-background-graffiti-removal, .contact-page .contact-page-row .contact-page-background, .services-page .services-splash-page-row .services-splash-page-background, .ourwork-page .ourwork-splash-page-row .ourwork-splash-page-background {
   background-color: #17685E;
   background-repeat: no-repeat;
@@ -1194,6 +1204,25 @@
   padding: 0 calc(0.5rem + 0.1vw);
   position: absolute;
   top: calc(0.25rem + 0.25vw);
+}
+
+.ourwork-page .modal .modal-content {
+  border: 0;
+}
+
+.ourwork-page .modal .modal-header {
+  background-color: #14D3C9;
+}
+
+.ourwork-page .modal .modal-title {
+  color: white;
+  font-size: calc(1rem + 0.5vw);
+  font-style: italic;
+  font-weight: 600;
+}
+
+.ourwork-page .modal .modal-title .modal-title-highlight {
+  font-weight: 800;
 }
 
 .ourwork-page .modal img {

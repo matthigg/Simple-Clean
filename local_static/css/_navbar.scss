@@ -150,11 +150,11 @@ $navbar-call-phone-hover-transition: 0.15s ease-in;
   border: 2px solid $primary-color;
   border-radius: calc(0.5rem + 0.1vw);
   color: $primary-color;
+  display: none;
   font-size: calc(1rem + 0.25vw);
   font-style: italic;
   font-weight: 800;
   padding: calc(0.25rem + 0.25vw) calc(0.5rem + 0.25vw);
-  opacity: 0;
   position: fixed;
   left: calc(1rem + 0.5vw);
   top: calc(4.5rem + 0.5vw);
@@ -179,7 +179,7 @@ $navbar-call-phone-hover-transition: 0.15s ease-in;
     box-shadow: none;
   }
   @media (max-width: 769px) {
-    opacity: 1;
+    display: flex;
   }
 }
 

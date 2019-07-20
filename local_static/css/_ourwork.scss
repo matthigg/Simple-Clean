@@ -109,75 +109,78 @@
   }
 
   // Section 1, Headline
-  & .section-1-headline {
+  & .section-1-row {
     background-color: $primary-color;
-    color: $quarternary-color;
-    font-size: calc(1rem + 1.5vw);
-    font-weight: 700;
     padding: calc(1rem + 1vw) 0;
     text-align: center;
-    & .section-1-headline-bold {
-      color: $secondary-color;
-      font-style: italic;
-      font-weight: 900;
+    & .section-1-headline {
+      color: $quarternary-color;
+      font-size: calc(1rem + 1.5vw);
+      font-weight: 700;
+      & .section-1-headline-bold {
+        color: $secondary-color;
+        font-style: italic;
+        font-weight: 900;
+      }
     }
-  }
 
-  // Section 1, Before & After Pictures
-  & .section-1-before-and-after-pictures {
-    background-color: $primary-color;
-    & .section-1-baap-group {
-      margin: calc(1rem + 1vw) 0;
-      & .section-1-baap-group-before {
-        border: calc(0.15rem + 0.15vw) solid $secondary-color;
-        margin-right: calc(0.25rem + 0.25vw);
-        position: relative;
-        &::before {
-          background-color: $secondary-color;
-          color: $primary-color;
-          content: "BEFORE";
-          font-size: calc(0.5rem + 0.25vw);
-          font-style: italic;
-          font-weight: 600;
-          left: calc(0.25rem + 0.25vw);
-          padding: 0 calc(0.1rem + 0.1vw);
-          position: absolute;
-          top: calc(0.25rem + 0.25vw);
+    // Section 1, Before & After Pictures
+    & .section-1-before-and-after-pictures {
+      background-color: $primary-color;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      & .section-1-baap-group {
+        display: flex;
+        justify-content: space-around;
+        margin: calc(1rem + 1vw) 0;
+        & .section-1-baap-group-before {
+          border: calc(0.15rem + 0.15vw) solid $secondary-color;
+          margin-right: calc(0.25rem + 0.25vw);
+          position: relative;
+          &::before {
+            background-color: $secondary-color;
+            color: $primary-color;
+            content: "BEFORE";
+            font-size: calc(0.5rem + 0.25vw);
+            font-style: italic;
+            font-weight: 600;
+            left: calc(0.25rem + 0.25vw);
+            padding: 0 calc(0.1rem + 0.1vw);
+            position: absolute;
+            top: calc(0.25rem + 0.25vw);
+          }
         }
-      }
-      & .section-1-baap-group-after {
-        border: calc(0.15rem + 0.15vw) solid $secondary-color;
-        position: relative;
-        &::before {
-          background-color: $secondary-color;
-          color: $primary-color;
-          content: "AFTER";
-          font-size: calc(0.5rem + 0.25vw);
-          font-style: italic;
-          font-weight: 600;
-          left: calc(0.25rem + 0.25vw);
-          padding: 0 calc(0.1rem + 0.1vw);
-          position: absolute;
-          top: calc(0.25rem + 0.25vw);
+        & .section-1-baap-group-after {
+          border: calc(0.15rem + 0.15vw) solid $secondary-color;
+          position: relative;
+          &::before {
+            background-color: $secondary-color;
+            color: $primary-color;
+            content: "AFTER";
+            font-size: calc(0.5rem + 0.25vw);
+            font-style: italic;
+            font-weight: 600;
+            left: calc(0.25rem + 0.25vw);
+            padding: 0 calc(0.1rem + 0.1vw);
+            position: absolute;
+            top: calc(0.25rem + 0.25vw);
+          }
         }
-      }
-      & img {
-        height: 15vw;
-        object-fit: cover;
-        width: 20vw;
-        @media (max-width: 769px) {
-          height: auto;
-          width: 40vw;
+        & img {
+          height: 15vw;
+          object-fit: cover;
+          width: 20vw;
+          @media (max-width: 769px) {
+            height: auto;
+            width: 40vw;
+          }
         }
-      }
-      &:hover {
-        cursor: pointer;
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
-  }
-  & .ourwork-before-and-after-bottom-border {
-    background-color: $primary-color;
-    height: 10vh;
   }
 
   // Our Work Modals

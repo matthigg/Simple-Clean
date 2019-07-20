@@ -6,119 +6,121 @@
 {% endblock %}
 
 {% block metatag %}
-  <meta name="description" content="Take a look at our work. Let Simple Clean restore your home or property's exterior to new condition again.">
+  <meta name="description" content="Let Simple Clean restore your home or property's exterior to new condition again.">
 {% endblock%}
 
 {% block main %}
   <div class="container-fluid ourwork-page">
 
     <!-- Our Work Splash Page -->
-    <div class="row ourwork-splash-page-row">
+    <section class="row ourwork-splash-page-row">
       <div class="ourwork-splash-page-background"></div>
       <div class="col-12">
 
-        <!-- Our Work Splash Page Headline (owsph) -->
-        <div class="ourwork-splash-page-headline">
-          <div class="owsph-line-1">
+        <!-- Our Work Splash Page, Headline (owsph) -->
+        <h1 class="ourwork-splash-page-headline">
+          <span class="owsph-line-1">
             Restore
             <span class="owsph-bold">Your Home</span>
             To
-          </div>
-          <div class="owsph-line-2">
+          </span>
+          <span class="owsph-line-2">
             <span class="owsph-alpha-bold">NEW</span>
             <span class="owsph-alpha-dash">_______</span>
-          </div>
-          <div class="owsph-line-3">
+          </span>
+          <span class="owsph-line-3">
             <span class="owsph-omega-dash">___</span>
             <span class="owsph-omega-bold">CONDITION</span>
-          </div>
-          <div class="owsph-line-4">
+          </span>
+          <span class="owsph-line-4">
             <span class="owsph-bold">Again</span>
-          </div>
-        </div>
+          </span>
+        </h1>
 
+        <!-- Our Work Splash Page, Placeholder -->
         <div class="ourwork-splash-page-placeholder"></div>
       </div>
-    </div>
+    </section>
 
     <div class="row ourwork-splash-page-bottom-border"></div>
 
-    <!-- Section 1, Headline -->
-    <div class="row section-1-headline">
-      <div class="col-12">
+    <!-- Section 1 -->
+    <section class="row section-1-row">
+
+      <!-- Section 1, Headline -->
+      <h2 class="section-1-headline">
         We Can Restore Your Home To
         <span class="section-1-headline-bold">New Condition</span>
         Again
+      </h2>
+
+      <!-- Section 1, Before & After Pictures (BAAP) -->
+      <div class="section-1-before-and-after-pictures">
+
+        <!-- Section 1, BAAP, House 1 -->
+        <div class="section-1-baap-group" 
+          data-id="ba-house-01" 
+          data-src="{% static 'img' %}"
+          data-toggle="modal" 
+          data-target="#modal-baap-template"
+        >
+          <div class="section-1-baap-group-before">
+            <img src="{% static 'img/ba-house-01-before.jpg' %}">
+          </div>
+          <div class="section-1-baap-group-after">
+            <img src="{% static 'img/ba-house-01-after.jpg' %}">
+          </div>
+        </div>
+
+        <!-- Section 1, BAAP, House 2 -->
+        <div class="section-1-baap-group"
+          data-id="ba-house-02" 
+          data-src="{% static 'img' %}"
+          data-toggle="modal" 
+          data-target="#modal-baap-template"
+        >
+          <div class="section-1-baap-group-before">
+            <img src="{% static 'img/ba-house-02-before.jpg' %}">
+          </div>
+          <div class="section-1-baap-group-after">
+            <img src="{% static 'img/ba-house-02-after.jpg' %}">
+          </div>
+        </div>
+
+        <!-- Section 1, BAAP, House 3 -->
+        <div class="section-1-baap-group"
+          data-id="ba-house-03" 
+          data-src="{% static 'img' %}"
+          data-toggle="modal" 
+          data-target="#modal-baap-template"
+        >
+          <div class="section-1-baap-group-before">
+            <img src="{% static 'img/ba-house-03-before.jpg' %}">
+          </div>
+          <div class="section-1-baap-group-after">
+            <img src="{% static 'img/ba-house-03-after.jpg' %}">
+          </div>
+        </div>
+
+        <!-- Section 1, BAAP, Sidewalk 1 -->
+        <div class="section-1-baap-group"
+          data-id="ba-sidewalk-01"
+          data-src="{% static 'img' %}"
+          data-toggle="modal" 
+          data-target="#modal-baap-template"
+        >
+          <div class="section-1-baap-group-before">
+            <img src="{% static 'img/ba-sidewalk-01-before.jpg' %}">
+          </div>
+          <div class="section-1-baap-group-after">
+            <img src="{% static 'img/ba-sidewalk-01-after.jpg' %}">
+          </div>
+        </div>
+
+        <!-- Section 1, BAAP Modals -->
+        {% include 'modals/ourwork-modals.html' %}
+
       </div>
-    </div>
-
-    <!-- Section 1, Before & After Pictures (baap) -->
-    <div class="row section-1-before-and-after-pictures d-flex justify-content-around flex-wrap">
-
-      {% include 'modals/ourwork-modals.html' %}
-
-      <!-- Section 1, BAAP, House 1 -->
-      <div class="section-1-baap-group d-flex justify-content-around" 
-        data-id="ba-house-01" 
-        data-src="{% static 'img' %}"
-        data-toggle="modal" 
-        data-target="#modal-baap-template"
-      >
-        <div class="section-1-baap-group-before">
-          <img src="{% static 'img/ba-house-01-before.jpg' %}">
-        </div>
-        <div class="section-1-baap-group-after">
-          <img src="{% static 'img/ba-house-01-after.jpg' %}">
-        </div>
-      </div>
-
-      <!-- Section 1, BAAP, House 2 -->
-      <div class="section-1-baap-group d-flex justify-content-around"
-        data-id="ba-house-02" 
-        data-src="{% static 'img' %}"
-        data-toggle="modal" 
-        data-target="#modal-baap-template"
-      >
-        <div class="section-1-baap-group-before">
-          <img src="{% static 'img/ba-house-02-before.jpg' %}">
-        </div>
-        <div class="section-1-baap-group-after">
-          <img src="{% static 'img/ba-house-02-after.jpg' %}">
-        </div>
-      </div>
-
-      <!-- Section 1, BAAP, House 3 -->
-      <div class="section-1-baap-group d-flex justify-content-around"
-        data-id="ba-house-03" 
-        data-src="{% static 'img' %}"
-        data-toggle="modal" 
-        data-target="#modal-baap-template"
-      >
-        <div class="section-1-baap-group-before">
-          <img src="{% static 'img/ba-house-03-before.jpg' %}">
-        </div>
-        <div class="section-1-baap-group-after">
-          <img src="{% static 'img/ba-house-03-after.jpg' %}">
-        </div>
-      </div>
-
-      <!-- Section 1, BAAP, Sidewalk 1 -->
-      <div class="section-1-baap-group d-flex justify-content-around"
-        data-id="ba-sidewalk-01"
-        data-src="{% static 'img' %}"
-        data-toggle="modal" 
-        data-target="#modal-baap-template"
-      >
-        <div class="section-1-baap-group-before">
-          <img src="{% static 'img/ba-sidewalk-01-before.jpg' %}">
-        </div>
-        <div class="section-1-baap-group-after">
-          <img src="{% static 'img/ba-sidewalk-01-after.jpg' %}">
-        </div>
-      </div>
-    </div>
-
-    <div class="row ourwork-before-and-after-bottom-border"></div>
-
+    </section>
   </div>
 {% endblock %}

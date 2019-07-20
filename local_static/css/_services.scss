@@ -143,37 +143,107 @@
   }
 
   // Section 2
-  & .section-2-headline{
+  $section-2-hover-transition-time: 0.25s;
+
+  & .section-2-row {
     background-color: $secondary-color-rgba;
-    color: $primary-color;
-    font-size: calc(1rem + 1.5vw);
-    font-weight: 700;
-    padding: calc(1rem + 1vw);
-  }
-  & .section-2-billboards {
-    background-color: $secondary-color-rgba;
-    font-size: calc(1rem + 1vw);
-    padding: 0 calc(3rem + 3vw);
-    text-align: center;
-    & .billboard-1 {
-      background-color: $quarternary-color;
+    height: max-content;
+    padding: 0 calc(1rem + 6vw);
+    & .card {
+      border: 0;
+      border-radius: calc(0.5rem + 0.5vw) calc(0.5rem + 0.5vw);
+      margin-top: calc(1rem + 1vw);
+      &:hover {
+        cursor: pointer;
+        & .card-body {
+          color: $tertiary-color;
+          transition: $section-2-hover-transition-time;
+        }
+        & .card-link-text {
+          color: $tertiary-color;
+          transition: $section-2-hover-transition-time;
+        }
+        & .icon-arrow-right {
+          fill: $tertiary-color;
+          transition: $section-2-hover-transition-time;
+        }
+      }
+    }
+    & .card-background-house-washing {
+      background-image: url('/static/img/house1.jpg');
+      @extend %card-background;
+      @extend %background-fixed;
+    }
+    & .card-background-patio-and-deck {
+      background-image: url('/static/img/patio.jpg');
+      @extend %card-background;
+      @extend %background-fixed;
+    }
+    & .card-background-graffiti-removal {
+      background-image: url('/static/img/graffiti-removal.jpg');
+      @extend %card-background;
+      @extend %background-fixed;
+    }
+    & .card-body {
+      color: $quarternary-color;
+      font-size: calc(1rem + 0.25vw);
+      font-style: italic;
+      font-weight: 700;
+      padding: calc(0.25rem + 0.25vw) 0 0 0;  // padding: 20px by default
+      text-align: center;
+    }
+    & .card-link {
+      height: max-content;
+      padding-bottom: calc(0.5rem + 0.25vw);
+      width: max-content;
+      & .card-link-text {
+        color: $quarternary-color;
+        font-size: calc(1rem + 0.25vw);
+        margin-right: calc(0.5rem + 0.5vw);
+        position: relative;
+      }
+      & .icon-arrow-right {
+        fill: $quarternary-color;
+        height: calc(1rem + 0.25vw);
+        stroke: $primary-color;
+      }
+    }
+    & .section-2-billboards-headline{
       color: $primary-color;
+      display: inline-block;
+      font-size: calc(1rem + 1.5vw);
+      font-weight: 700;
+      margin: auto;
       padding: calc(1rem + 1vw);
     }
-    & .billboard-2 {
-      background-color: $primary-color;
-      color: $secondary-color;
-      padding: calc(1rem + 1vw);
+    & .section-2-billboards {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: calc(1rem + 1vw);
+      margin-bottom: calc(1rem + 1vw);
+      text-align: center;
+      & .billboard-1 {
+        align-items: center;
+        background-color: $quarternary-color;
+        color: $primary-color;
+        display: flex;
+        padding: calc(1rem + 1vw);
+      }
+      & .billboard-2 {
+        align-items: center;
+        background-color: $primary-color;
+        color: $secondary-color;
+        display: flex;
+        padding: calc(1rem + 1vw);
+      }
+      & .billboard-3 {
+        align-items: center;
+        background-color: $quarternary-color;
+        color: $primary-color;
+        display: flex;
+        padding: calc(1rem + 1vw);
+      }
     }
-    & .billboard-3 {
-      background-color: $quarternary-color;
-      color: $primary-color;
-      padding: calc(1rem + 1vw);
-    }
-  }
-  & .section-2-bottom-border {
-    background-color: $secondary-color-rgba;
-    height: 10vh;
   }
 
   // Section 3

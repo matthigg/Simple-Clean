@@ -79,31 +79,73 @@
       <div class="col-md-6 section-1-image-background"></div>
     </section>
 
-    <!-- Section 2, Headline -->
-    <section class="row section-2-headline d-flex justify-content-center">
-      By Hiring a Pro, You Can Avoid...
+    <!-- Section 2, Cards -->
+    <section class="row section-2-row">
+
+      <!-- House Washing Card -->
+      <div class="col-md-4">
+        <div class="card card-first" data-toggle="modal" data-target="#modal-house-washing">
+          <div class="card-background-house-washing"></div>
+          <h2 class="card-body">HOUSE WASHING</h2>
+          <div class="d-flex justify-content-center">
+            <div class="card-link">
+              <span class="card-link-text">Learn More</span>
+              {% include "svg/arrow-right.svg" %}
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      <!-- Patio & Deck -->
+      <div class="col-md-4">
+        <div class="card" data-toggle="modal" data-target="#modal-patio-and-deck">
+          <div class="card-background-patio-and-deck"></div>
+          <h2 class="card-body">PATIO & DECK</h2>
+          <div class="d-flex justify-content-center">
+            <div class="card-link">
+              <span class="card-link-text">Learn More</span>
+              {% include "svg/arrow-right.svg" %}
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Graffiti Removal -->
+      <div class="col-md-4">
+        <div class="card" data-toggle="modal" data-target="#modal-graffiti-removal">
+          <div class="card-background-graffiti-removal"></div>
+          <h2 class="card-body">GRAFFITI REMOVAL</h2>
+          <div class="d-flex justify-content-center">
+            <div class="card-link">
+              <span class="card-link-text">Learn More</span>
+              {% include "svg/arrow-right.svg" %}
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+  
+    <!-- Section 2, Card Modals -->
+    {% include 'modals/index-modals.html' %}
 
     <!-- Section 2, Billboards -->
-    <section class="row section-2-billboards">
-
-      <!-- Billboard 1 -->
-      <div class="col-md-4 billboard-1 d-flex justify-content-center align-items-center">
-        DAMAGE TO YOUR HOME & YOURSELF
-      </div>
-
-      <!-- Billboard 2 -->
-      <div class="col-md-4 billboard-2 d-flex justify-content-center align-items-center">
-        UNINSURED, POOR QUALITY SERVICES
-      </div>
-
-      <!-- Billboard 3 -->
-      <div class="col-md-4 billboard-3 d-flex justify-content-center align-items-center">
-        WASTING YOUR PRECIOUS TIME AND MONEY
+    <section class="row section-2-row">
+      <h2 class="section-2-billboards-headline">
+        By Hiring a Pro, You Can Avoid...
+      </h2>
+      <div class="section-2-billboards">
+        <div class="col-md-4 billboard-1">
+          DAMAGE TO YOUR HOME & YOURSELF
+        </div>
+        <div class="col-md-4 billboard-2">
+          UNINSURED, POOR QUALITY SERVICES
+        </div>
+        <div class="col-md-4 billboard-3">
+          WASTING YOUR PRECIOUS TIME AND MONEY
+        </div>
       </div>
     </section>
 
-    <div class="row section-2-bottom-border"></div>
 
     <!-- Section 3, Headline-->
     <section class="row section-3-row">

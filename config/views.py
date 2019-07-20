@@ -13,23 +13,33 @@ def index(request):
   return render(request, 'index.html', context)
 
 def services(request):
-  context = {}
+  context = {
+    'phone_number': os.environ['PHONE_NUMBER'],
+  }
   return render(request, 'services.html', context)
 
 def ourwork(request):
-  context = {}
+  context = {
+    'phone_number': os.environ['PHONE_NUMBER'],
+  }
   return render(request, 'ourwork.html', context)
 
 def reviews(request):
-  context = {}
+  context = {
+    'phone_number': os.environ['PHONE_NUMBER'],
+  }
   return render(request, 'reviews.html', context)
 
 def contact(request):
   form = forms.CreateContactForm
   context = {
     'form': form,
+    'phone_number': os.environ['PHONE_NUMBER'],
   }
   return render(request, 'contact.html', context)
 
 def thanks(request):
-  return render(request, 'thanks.html')
+  context = {
+    'phone_number': os.environ['PHONE_NUMBER'],
+  }
+  return render(request, 'thanks.html', context)

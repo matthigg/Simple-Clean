@@ -46,7 +46,8 @@ def submit(request):
       messages.add_message(request, messages.SUCCESS, 'Your message has been sent!')
       return redirect('thanks')
     
-    # Handle any potential errors with form submission
+    # Handle any potential errors with form submission (ie. incorrect email
+    # format) in terms of invalid input, or basically form.is_valid() == False.
     else:
       context = {
         'form': form,

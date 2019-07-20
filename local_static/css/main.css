@@ -301,19 +301,17 @@
   z-index: -1;
 }
 
-.index-page .landing-page-row .landing-page-h1-wrapper {
-  display: block;
-  position: absolute;
-  text-align: center;
-  top: 25vh;
-  width: 100%;
-}
-
 .index-page .landing-page-row .landing-page-h1 {
   color: white;
   font-size: calc(1rem + 0.5vw);
   font-style: italic;
   font-weight: 500;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 25vh;
 }
 
 .index-page .landing-page-row .landing-page-headline {

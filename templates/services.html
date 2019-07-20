@@ -6,14 +6,14 @@
 {% endblock %}
 
 {% block metatag %}
-  <meta name="description" content="Simple Clean offers the best pressure washing services in and around Waukesha, WI and Lake Country.">
+  <meta name="description" content="Simple Clean Pressure Washing offers house washing, patio & deck cleaning, and graffiti removal in Waukesha, WI, Lake Country, and the surrounding area.">
 {% endblock%}
 
 {% block main %}
   <div class="container-fluid services-page">
 
     <!-- Services Splash Page -->
-    <div class="row services-splash-page-row">
+    <section class="row services-splash-page-row">
       <div class="services-splash-page-background"></div>
       <div class="col-12">
 
@@ -39,12 +39,12 @@
 
         <div class="services-splash-page-placeholder"></div>
       </div>
-    </div>
+    </section>
 
     <div class="row services-splash-page-bottom-border"></div>
 
     <!-- Section 1 -->
-    <div class="row section-1-row">
+    <section class="row section-1-row">
       <div class="col-md-6">
         <h2 class="section-1-headline">
           Our Various <span class="section-1-headline-bold">House Washing</span> 
@@ -77,15 +77,15 @@
         </p>
       </div>
       <div class="col-md-6 section-1-image-background"></div>
-    </div>
+    </section>
 
     <!-- Section 2, Headline -->
-    <div class="row section-2-headline d-flex justify-content-center">
+    <section class="row section-2-headline d-flex justify-content-center">
       By Hiring a Pro, You Can Avoid...
-    </div>
+    </section>
 
     <!-- Section 2, Billboards -->
-    <div class="row section-2-billboards">
+    <section class="row section-2-billboards">
 
       <!-- Billboard 1 -->
       <div class="col-md-4 billboard-1 d-flex justify-content-center align-items-center">
@@ -101,19 +101,39 @@
       <div class="col-md-4 billboard-3 d-flex justify-content-center align-items-center">
         WASTING YOUR PRECIOUS TIME AND MONEY
       </div>
-    </div>
+    </section>
 
     <div class="row section-2-bottom-border"></div>
 
     <!-- Section 3, Headline-->
-    <div class="row section-3-headline justify-content-center">
-      Our Service Area
-    </div>
+    <section class="row section-3-row">
 
-    <!-- Section 3, Map -->
-    <div class="row section-3-map-background justify-content-center red">
-      <img class="section-3-map-image" src="{% static 'img/simple-clean-map.png' %}">
-    </div>
+      <!-- Section 3, Service Locations -->
+      <div class="col-md-6">
+        <h2 class="section-3-headline">
+          We service Waukesha, WI and the surrounding areas, including:
+        </h2>
+        <div class="section-3-service-locations">
+          <ul>
+            <li>Sussex, WI</li>
+            <li>Hartland, WI</li>
+            <li>Nashotah, WI</li>
+            <li>Delafield, WI</li>
+          </ul>
+          <ul>
+            <li>Wales, WI</li>
+            <li>New Berlin, WI</li>
+            <li>North Prairie, WI</li>
+            <li>Pewaukee, WI</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Section 3, Map -->
+      <div class="col-md-6">
+        <img class="section-3-map-image" src="{% static 'img/simple-clean-map.png' %}">
+      </div>
+    </section>
 
     <div class="row section-3-bottom-border"></div>
 

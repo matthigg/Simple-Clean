@@ -700,6 +700,7 @@
   background-color: white;
   color: #17685E;
   padding: calc(0.25rem + 3.75vw);
+  text-align: center;
 }
 
 .contact-page .section-1-row .section-1-text-headline {

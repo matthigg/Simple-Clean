@@ -32,10 +32,12 @@
   <div class="navbar-stripe-text navbar-stripe-minimized-false">PRESSURE WASHING</div>
 </div>
 
-<button class="navbar-call-now align-items-center">
-  {% include 'svg/phone.svg' %} &nbsp;
-  Call Now
-</button>
+<a href="tel:{{ phone_number }}">
+  <button class="navbar-call-now align-items-center">
+    {% include 'svg/phone.svg' %} &nbsp;
+    Call Now
+  </button>
+</a>
 
 <a href="{% url 'contact' %}">
   <button class="navbar-free-quote navbar-free-quote-minimized-false" style="display: none;">

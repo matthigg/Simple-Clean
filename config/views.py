@@ -2,10 +2,13 @@ from django.shortcuts import render
 # from contact import forms
 from apps.contact_form import forms
 
+import os
+
 def index(request):
   form = forms.CreateContactForm
   context = {
     'form': form,
+    'phone_number': os.environ['PHONE_NUMBER'],
   }
   return render(request, 'index.html', context)
 

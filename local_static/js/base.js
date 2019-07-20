@@ -8,6 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const navbar_offsetTop_initial = navbar.offsetTop;
 
   window.addEventListener('scroll', () => {
+
+    // Navbar
+    //
+    // Change the appearance of the navbar when the user scrolls down the page --
+    // specifically, shift the navbar up and make the navbar stripe & its
+    // accompanying text move upwards and disappear.
     if (window.scrollY > navbar_offsetTop_initial) {
 
       // "Minimize" the navbar
@@ -53,8 +59,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 
-  // Assign the .active class to the current page's nav-link & display the
-  // 'Free Quote' button if needed
+  // Navbar Links & Free Quote Button
+  //
+  // Assign the .active class to the current page's nav-link which decorates it
+  // with an underscore (to give an indication which page is the current page)
+  // & display the 'Free Quote' button -not- on contact.html or thanks.html.
   if (document.querySelector('.container-fluid').classList.contains('index-page')) {
     document.querySelector('.nav-link-home').classList.add('active');
     document.querySelector('.navbar-free-quote').style.display = 'block';
@@ -106,4 +115,20 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
   })  
+
+  // Contact Form 
+  //
+  // Add an asterisk * next to each contact form field that is a required field
+  if (document.querySelector('.contact-form') !== null) {
+    const labels = document.querySelectorAll('label')
+    labels.forEach((label) => {
+      if (
+        label.innerHTML === 'Name' ||
+        label.innerHTML === 'Email' ||
+        label.innerHTML === 'Message'
+      ) {
+        label.innerHTML += ' <span class="required-field-asterisk">*</span>';
+      }
+    })
+  }
 })

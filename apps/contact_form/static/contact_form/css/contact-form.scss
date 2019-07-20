@@ -105,4 +105,11 @@ $quinary-color: #3F3F3F;
     margin-bottom: calc(1rem + 0.5vw);
     position: relative;
   }
+  & .required-field-asterisk {
+    color: $quarternary-color;
+  }
+  & .required-field-text {
+    color: $primary-color;
+    font-size: calc(1rem + 0.25vw);
+  }
 }

@@ -141,4 +141,13 @@
   margin-bottom: calc(1rem + 0.5vw);
   position: relative;
 }
+
+.contact-form .required-field-asterisk {
+  color: #17685E;
+}
+
+.contact-form .required-field-text {
+  color: white;
+  font-size: calc(1rem + 0.25vw);
+}
 /*# sourceMappingURL=contact-form.css.map */

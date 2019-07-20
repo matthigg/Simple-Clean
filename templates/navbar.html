@@ -2,7 +2,8 @@
 
 <nav class="navbar navbar-expand-md navbar-minimized-false">
   <h1 class="navbar-brand align-items-center">
-    SIMPLE CLEAN <span class="navbar-brand-phone">(123) 456-7890</span>
+    SIMPLE CLEAN 
+    <span class="navbar-brand-phone">{% include 'business_information/phone-number.html' %}</span>
   </h1>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-simple-clean" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
     <img class="icon-hamburger" src="{% static 'img/icon-hamburger.svg' %}">

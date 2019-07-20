@@ -256,13 +256,27 @@
         font-style: italic;
         font-weight: 700;
       }
+      & .section-3-text-paragraph-email {
+        font-size: calc(1rem + 1vw);
+        font-style: italic;
+        font-weight: 700;
+        & .icon-email {
+          height: calc(1.5rem + 1vw);
+          & circle {
+            fill: $quarternary-color;
+          }
+          & path {
+            fill: $primary-color;
+          }
+        }
+      }
       & .section-3-text-paragraph-phone {
         font-size: calc(1rem + 1vw);
         font-style: italic;
         font-weight: 700;
-        margin: calc(1rem + 1vw) 0;
+        margin-bottom: calc(1rem + 1vw);
         & .icon-phone {
-          height: calc(1rem + 1vw);
+          height: calc(1.5rem + 1vw);
           & circle {
             fill: $quarternary-color;
           }

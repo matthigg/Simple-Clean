@@ -27,16 +27,20 @@
           Pressure Washing Services in the Waukesha, WI Area
         </h2>
         <p class="section-1-text-paragraph">
-          Send us a message through the Quote Request Form, send us an email, or call us at 
+          Send us a message through the Quote Request Form, send us an email, 
+          or call us at 
           <span class="section-1-text-paragraph-bold">(123) 456-7809</span> today!
         </p>
+        <p class="section-1-text-paragraph">
+            {% include 'business_information/hours-of-operation.html' %}
+          </p>
         <p class="section-1-text-paragraph-email">
           {% include 'svg/email.svg' %}
-          email@email.com
+          {% include 'business_information/email.html' %}
         </p>
         <p class="section-1-text-paragraph-phone">
           {% include 'svg/phone.svg' %}
-          (123) 456-7890
+          {% include 'business_information/phone-number.html' %}
         </p>
         <p class="section-1-text-paragraph-urgent">
           We look forward to hearing from you!

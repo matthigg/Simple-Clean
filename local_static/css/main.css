@@ -567,15 +567,33 @@
   font-weight: 700;
 }
 
+.index-page .section-3-row .section-3-text .section-3-text-paragraph-email {
+  font-size: calc(1rem + 1vw);
+  font-style: italic;
+  font-weight: 700;
+}
+
+.index-page .section-3-row .section-3-text .section-3-text-paragraph-email .icon-email {
+  height: calc(1.5rem + 1vw);
+}
+
+.index-page .section-3-row .section-3-text .section-3-text-paragraph-email .icon-email circle {
+  fill: #17685E;
+}
+
+.index-page .section-3-row .section-3-text .section-3-text-paragraph-email .icon-email path {
+  fill: white;
+}
+
 .index-page .section-3-row .section-3-text .section-3-text-paragraph-phone {
   font-size: calc(1rem + 1vw);
   font-style: italic;
   font-weight: 700;
-  margin: calc(1rem + 1vw) 0;
+  margin-bottom: calc(1rem + 1vw);
 }
 
 .index-page .section-3-row .section-3-text .section-3-text-paragraph-phone .icon-phone {
-  height: calc(1rem + 1vw);
+  height: calc(1.5rem + 1vw);
 }
 
 .index-page .section-3-row .section-3-text .section-3-text-paragraph-phone .icon-phone circle {
@@ -1345,6 +1363,11 @@
 
 .footer .footer-phone .icon-phone path {
   fill: rgba(20, 211, 201, 0.8);
+}
+
+.footer .footer-phone .footer-hours-of-operation-text {
+  font-size: calc(1rem + 0.5vw);
+  font-weight: 500;
 }
 
 .footer .footer-flair {

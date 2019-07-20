@@ -6,16 +6,21 @@
 {% endblock %}
 
 {% block metatag %}
-  <meta name="description" content="Simple Clean offers house washing, patio & deck cleaning, and graffiti removal services in Waukesha, WI - increase your home's curb appeal and request a free quote today!">
+  <meta name="description" content="Simple Clean offers fast & affordable pressure washing services in Waukesha, WI - increase your home's curb appeal and request a free quote today!">
 {% endblock%}
 
 {% block main %}
   <div class="container-fluid index-page">
 
     <!-- Landing Page -->
-    <div class="row landing-page-row">
+    <section class="row landing-page-row">
       <div class="landing-page-background"></div>
       <div class="col-12">
+
+        <!-- Landing Page H1 -->
+        <header class="landing-page-h1-wrapper">
+          <h1 class="landing-page-h1">Pressure Washing Services in Waukesha, WI</h1>
+        </header>
 
         <!-- Landing Page Headline (lph) -->
         <div class="landing-page-headline">
@@ -37,12 +42,12 @@
 
       </div>
       <div class="landing-page-placeholder"></div>
-    </div>
+    </section>
 
     <div class="row landing-page-bottom-border"></div>
 
     <!-- Section 1 -->
-    <div class="row section-1-row">
+    <section class="row section-1-row">
       <div class="col-md-6 section-1-image-background"></div>
       <div class="col-md-6">
         <h2 class="section-1-headline">
@@ -73,16 +78,16 @@
           pressure wash away that dirty Wisconsin grime!
         </p>
       </div>
-    </div>
+    </section>
 
     <!-- Section 2, Cards -->
-    <div class="row section-2-row">
+    <section class="row section-2-row">
 
       <!-- House Washing Card -->
       <div class="col-md-4">
         <div class="card card-first" data-toggle="modal" data-target="#modal-house-washing">
           <div class="card-background-house-washing"></div>
-          <div class="card-body">HOUSE WASHING</div>
+          <h2 class="card-body">HOUSE WASHING</h2>
           <div class="d-flex justify-content-center">
             <div class="card-link">
               <span class="card-link-text">Learn More</span>
@@ -96,7 +101,7 @@
       <div class="col-md-4">
         <div class="card" data-toggle="modal" data-target="#modal-patio-and-deck">
           <div class="card-background-patio-and-deck"></div>
-          <div class="card-body">PATIO & DECK</div>
+          <h2 class="card-body">PATIO & DECK</h2>
           <div class="d-flex justify-content-center">
             <div class="card-link">
               <span class="card-link-text">Learn More</span>
@@ -110,7 +115,7 @@
       <div class="col-md-4">
         <div class="card" data-toggle="modal" data-target="#modal-graffiti-removal">
           <div class="card-background-graffiti-removal"></div>
-          <div class="card-body">GRAFFITI REMOVAL</div>
+          <h2 class="card-body">GRAFFITI REMOVAL</h2>
           <div class="d-flex justify-content-center">
             <div class="card-link">
               <span class="card-link-text">Learn More</span>
@@ -119,13 +124,13 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Section 1, Card Modals -->
     {% include 'modals/index-modals.html' %}
 
     <!-- Section 2, Flair -->
-    <div class="row section-2-row justify-content-center">
+    <section class="row section-2-row justify-content-center">
       <div class="row section-2-flair">
         <div class="col-md-3 d-flex justify-content-around align-items-center">
           <img src="{% static 'img/google.svg' %}" alt="Simple Clean Google Reviews" class="section-2-icon-flair-google">
@@ -140,11 +145,11 @@
           <img src="{% static 'img/bbb.svg' %}" alt="Simple Clean Better Business Bureau Information" class="section-2-icon-flair-bbb">
         </div>
       </div>
-    </div>
+    </section>
 
 
     <!-- Section 3 -->
-    <div class="row section-3-row">
+    <section class="row section-3-row">
 
       <!-- Section 3 Text -->
       <div class="col-md-6 section-3-text">
@@ -177,6 +182,6 @@
       <div class="col-md-6">
         {% include 'contact_form/contact-form.html' %}
       </div>
-    </div>
+    </section>
   </div>
 {% endblock %}

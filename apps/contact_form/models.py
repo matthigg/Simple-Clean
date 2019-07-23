@@ -1,4 +1,5 @@
 from django.db import models
+# from django.urls import reverse
 
 # Create your models here.
 class ContactForm(models.Model):
@@ -8,3 +9,6 @@ class ContactForm(models.Model):
   email = models.EmailField(max_length=254)
   phone = models.CharField(max_length = 24, default=None, blank=True)
   message = models.TextField()
+
+  # def get_absolute_url(self):
+  #   return reverse('contact')

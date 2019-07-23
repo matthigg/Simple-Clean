@@ -17,6 +17,13 @@ from django.contrib import admin
 from django.urls import include, path
 from .views import contact, index, ourwork, reviews, services, thanks
 
+from django.contrib.sitemaps.views import sitemap
+from .sitemaps import StaticViewSitemap
+
+sitemaps = {
+  'static': StaticViewSitemap,
+}
+
 urlpatterns = [
     path('admin/',    admin.site.urls),
     path('',          include('apps.contact_form.urls', namespace='contact-form')),
@@ -26,4 +33,5 @@ urlpatterns = [
     path('reviews/',  reviews,  name='reviews'),
     path('services/', services, name='services'),
     path('thanks/',   thanks,   name='thanks'),
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
 ]

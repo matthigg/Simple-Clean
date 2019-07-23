@@ -36,13 +36,13 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.sitemaps',
     'django.contrib.sites',
+    'django.contrib.sitemaps',
     'django.contrib.staticfiles',
     'apps.contact_form',
 ]
 
-SITE_ID = 1
+# SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

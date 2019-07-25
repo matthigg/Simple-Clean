@@ -168,6 +168,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # locally on your own computer
 STATICFILES_DIRS = [
   os.path.join(BASE_DIR, 'local_static'),
-  # os.path.join(BASE_DIR, 'contact/static/contact'),
   os.path.join(BASE_DIR, 'apps/contact_form/static/contact_form'),
 ]

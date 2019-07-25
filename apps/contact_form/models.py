@@ -9,6 +9,3 @@ class ContactForm(models.Model):
   email = models.EmailField(max_length=254)
   phone = models.CharField(max_length = 24, default=None, blank=True)
   message = models.TextField()
-
-  # def get_absolute_url(self):
-  #   return reverse('contact')

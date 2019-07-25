@@ -80,7 +80,7 @@
   .footer-back-to-top-and-copyright {
     color: $primary-color;
     font-size: calc(1rem + 0.5vw);
-    padding: 0 calc(2rem + 2vw) calc(2rem + 2vw) calc(2rem + 2vw);
+    padding-bottom: calc(2rem + 2vw);
     & .footer-copyright {
       font-size: calc(0.75rem + 0.5vw);
       text-align: center;

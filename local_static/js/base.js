@@ -103,18 +103,21 @@ document.addEventListener('DOMContentLoaded', () => {
         while (element.parentNode) {
           element = element.parentNode;
           if (element.dataset.id) {
-            const img_src_before = element.dataset.src + '/' + element.dataset.id + '-before.jpg';
-            const img_src_after = element.dataset.src + '/' + element.dataset.id + '-after.jpg';            
-            document.querySelector('.modal-baap-group-img-before').src = img_src_before;
-            document.querySelector('.modal-baap-group-img-after').src = img_src_after;
+            assignModalImage(element.dataset.src, element.dataset.id);
             return
           } 
         }
       } else {
-        console.log('element: ', element.dataset.id);
+        assignModalImage(element.dataset.src, element.dataset.id);
       }
     })
-  })  
+  })
+  function assignModalImage(src, id) {
+    const img_src_before = src + '/' + id + '-before.jpg';
+    const img_src_after = src + '/' + id + '-after.jpg';            
+    document.querySelector('.modal-baap-group-img-before').src = img_src_before;
+    document.querySelector('.modal-baap-group-img-after').src = img_src_after;
+  }
 
   // Contact Form 
   //

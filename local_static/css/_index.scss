@@ -88,7 +88,7 @@
         position: relative;
         top: calc(-0.5rem - 1.5vw);
       }
-      @media (max-width: 769px) {
+      @media (max-width: 767.98px) {
         top: 70vh;
         & .lph-line-2 {
           left: 0;
@@ -223,16 +223,16 @@
         margin: calc(1rem + 0.5vw);
       }
       & .section-2-icon-flair-google {
-        height: calc(3.5rem + 2.5vw);
-      }
-      & .section-2-icon-flair-facebook {
         height: calc(3rem + 2.5vw);
       }
+      & .section-2-icon-flair-facebook {
+        height: calc(2.5rem + 2.5vw);
+      }
       & .section-2-icon-flair-yelp {
-        height: calc(4rem + 3.5vw);
+        height: calc(3.5rem + 3.5vw);
       }
       & .section-2-icon-flair-bbb {
-        height: calc(2.7rem + 2vw);
+        height: calc(2.25rem + 2vw);
       }
     }
   }
